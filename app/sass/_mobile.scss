@@ -1,0 +1,16 @@
+
+.solomobile {display: none !important;}
+
+// Solo mobile
+// @media handheld, screen and (max-width: 600px) {
+//   .preferida {display: none !important;}
+// }
+
+// Tablet y Mobile
+@media handheld, screen and (max-width: 992px) {
+  .nomobile {display: none !important;}
+  .solomobile {display: initial !important;}
+}
+
+
+

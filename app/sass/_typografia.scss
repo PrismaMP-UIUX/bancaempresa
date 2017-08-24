@@ -1,0 +1,148 @@
+
+// Variables 
+// --------------------------------------------------
+
+
+$font-tarjeta:            "KreditBack", Arial, Helvetica, sans-serif;
+$headings-font-weight:	  900;
+
+$font-size-base:          14px;
+$font-size-h1:            floor(($font-size-base * 2.6));  // 3
+$font-size-h2:            floor(($font-size-base * 2.3));// 2.5
+$font-size-h3:            ceil(($font-size-base * 2)); // 2.2
+$font-size-h4:            ceil(($font-size-base * 1.7)); // 1.8
+$font-size-h5:            ceil(($font-size-base * 1.4)); // 1.5
+$font-size-h6:            ceil(($font-size-base * 1.1)); // 1.2
+
+$line-height-base:        1.428571429; // 20/14
+$line-height-computed:    floor(($font-size-base * $line-height-base)); 
+
+$headings-line-height:    $line-height-computed;
+
+$tamanio-iconos-fa: 1em; 
+$tamanio-iconos-menu-fa: $tamanio-iconos-fa*1.1;
+
+// Iconos del flotante 
+$tamanio-iconos-flotante-fa: $tamanio-iconos-fa*1.2;
+// Icono grande del primero
+$tamanio-icono-grande-flotante-fa: $tamanio-iconos-fa*1.6;
+
+$tamanio-fuente-menu: 1.2em;
+
+
+// Tipografía
+// --------------------------------------------------
+
+// Solo con estas lineas puedo reemplazar font awesome completo por las versiones que quiera
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../fonts/awesome/fontawesome-webfont.eot?v=4.4.0');
+  src: url('../fonts/awesome/fontawesome-webfont.eot?#iefix&v=4.4.0') format('embedded-opentype'), 
+       url('../fonts/awesome/fontawesome-webfont.woff2?v=4.4.0') format('woff2'), 
+       url('../fonts/awesome/fontawesome-webfont.woff?v=4.4.0') format('woff'), 
+       url('../fonts/awesome/fontawesome-webfont.ttf?v=4.4.0') format('truetype'), 
+       url('../fonts/awesome/fontawesome-webfont.svg?v=4.4.0#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+h1, h2, h3, h4, h5, h6   {
+	color: $celeste-oscuro;
+	font: {
+	    //family: 'Avenir LT Std';
+	    weight: $headings-font-weight;
+	    line-height: $headings-line-height
+	}
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+//html {font-family: 'Avenir LT Std';}
+
+// Tamaño de los títulos
+
+h1 {font-size: $font-size-h1;}
+h2 {font-size: $font-size-h2;}
+h3 {font-size: $font-size-h3;}
+h4 {font-size: $font-size-h4;}
+h5 {font-size: $font-size-h5;}
+h6 {font-size: $font-size-h6;}
+
+// .card-action a {font-size: 1.2em} Esto agrandaba los botones
+
+// Fondo extendido del padding de los textos 
+.transpi {
+  background-color: $celeste-azul-transp; 
+  display: inline; 
+  box-shadow: 20px 0 0 $celeste-azul-transp, -20px 0 0 $celeste-azul-transp; 
+  padding: 3px 0px; line-height: 33px;
+  color: white;
+}
+
+p.transpi {line-height: 18px;}
+
+
+// Íconos y Menu
+// --------------------------------------------------
+
+// Font Awesome
+//.fa, .pmc-font {display:initial !important; font-size: $tamanio-iconos-fa; margin: 3px; }
+.fa, .pmc-font {display:inline-block !important; font-size: $tamanio-iconos-fa; }
+
+// Font Awesome (íconos) en menu
+nav .nav-wrapper {
+	i.fa, span.pmc-font { @extend .fa; font-size: $tamanio-iconos-menu-fa}
+	}
+
+// Texto en menú
+nav ul a  {font-size: $tamanio-fuente-menu;}
+
+// Iconos del menu flotante
+.btn-floating i, .btn-floating span {font-size: $tamanio-iconos-flotante-fa;}
+
+// El grande 
+.btn-floating.btn-large i {font-size: $tamanio-icono-grande-flotante-fa; }
+
+hr {border: inset 1px rgba(1, 147, 207, 0.31)}
+
+a {color: $celeste-marca;}
+
+// Fuentes raras e iconos
+// --------------------------------------------------
+
+// Iconos de la home (Consultas Generales, Operaciones Disponibles y Tarjeta de Coordenadas)
+.big {font-size: 1.2em;}
+
+.big2 {font-size: 1.5em;}
+
+.big3 {font-size: 2em;}
+
+.small {font-size: 0.8em !important;}
+
+.small2 {font-size: 0.6em !important;}
+
+.small3 {font-size: 0.4em !important;}
+
+.normal {font-size: 1.1em !important;}
+
+
+// Font Mas grande
+.fa.bigger {font-size: 150% !important; margin: 3px;}
+
+// Para ponerlos en la misma línea
+.fa-stack {line-height: 1.5em;}
+
+.fonttarjeta   {
+  font: {
+      family: $font-tarjeta;
+  }
+}
+
+ul.listaconpuntitos { 
+  padding-left: 30px;
+  &, li {list-style-type: disc;}
+}
+
+
