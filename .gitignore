@@ -1,15 +1,2 @@
 
-node_modules/.bin/acorn
-node_modules/.bin/acorn.cmd
-node_modules/.bin/bin-version-check
-node_modules/.bin/bin-version-check.cmd
-node_modules/.bin/browser-pack
-node_modules/.bin/browser-pack.cmd
-node_modules/.bin/browser-sync
-node_modules/.bin/browser-sync.cmd
-node_modules/.bin/browserify
-node_modules/.bin/browserify.cmd
-node_modules/.bin/csso
-node_modules/.bin/csso.cmd
-node_modules/.bin/deps-sort
-node_modules/.bin/deps-sort.cmd
+*node_modules
