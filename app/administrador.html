@@ -12,9 +12,10 @@
 								<li class="tab col s6"><a href="#empresas">Empresas</a></li>
 							</ul>
 						</div>
+						<!-- TABLA DE USUARIOS -->
 						<div id="usuarios" class="col s12">
 							<div class="col s4 offset-s8 center-align">
-								<a class="waves-effect indigo waves-light btn modal-trigger" href="#modal_nuevo_usuario"">Nuevo usuario</a>
+								<a class="waves-effect indigo waves-light btn modal-trigger" href="#modal_nuevo_usuario">Nuevo usuario</a>
 							</div>
 							<table class="responsive-table striped">
 								<thead>
@@ -84,7 +85,7 @@
 										</select>
 									</div>
 									<div class="input-field col s5">
-										<input placeholder="Número sin puntos ni espacios" id="" type="text">
+										<input placeholder="" id="" type="text">
 									</div>
 								</div>
 								<div class="row">
@@ -92,37 +93,66 @@
 										<p>Clave (*)</p>
 									</div>
 									<div class="input-field col s8">
-										<input placeholder="Ingresa tu clave" id="" type="password">
+										<input placeholder="" id="" type="password">
 									</div>
 								</div>
 								<div class="divider"></div>
 								<h5>Perfil</h5>
-								
 								<form action="#">
+									<h6>Permisos de pago</h6>
 									<div class="row">
-										<h6>Permisos de pago</h6>
-										<p>
-											<input type="checkbox" id="genera" />
-											<label for="genera">Genera</label>
-										</p>
-										<p>
-											<input type="checkbox" id="autoriza" />
-											<label for="autoriza">Autoriza</label>
-										</p>
+										<div class="input-field col s6">
+											<input type="checkbox" id="p_genera" />
+											<label for="p_genera">Genera</label>
+											<input type="checkbox" id="p_autoriza" checked="checked"/>
+											<label for="p_autoriza">Autoriza</label>
+										</div>
+										<div class="col s6 offset-6">
+											<div class="input-field col s4">
+												<p>Límite</p>
+											</div>
+											<div class="input-field col s8">
+												<input placeholder="$" id="" type="text">
+											</div>
+										</div>
+									</div>
+									<h6>Permisos de transferencia</h6>
+									<div class="row">
+										<div class="input-field col s6">
+											<input type="checkbox" id="t_genera" checked="checked" />
+											<label for="t_genera">Genera</label>
+											<input type="checkbox" id="t_autoriza" checked="checked" />
+											<label for="t_autoriza">Autoriza</label>
+										</div>
+										<div class="col s6 offset-6">
+											<div class="input-field col s4">
+												<p>Límite</p>
+											</div>
+											<div class="input-field col s8">
+												<input placeholder="$" id="" type="text">
+											</div>
+										</div>
+									</div>
+									<h6><b>Permisos de cuenta</b></h6>
+									<div class="row">
+										<div class="input-field col s12">
+											<input type="checkbox" id="CA_1" />
+											<label for="CA_1">CA$ 156488913115</label>
+											<input type="checkbox" id="CA_2" checked="checked" />
+											<label for="CA_2">CA$ 156488913115</label>
+										</div>
 									</div>
 								</form>
-								
 							</div>
 							<div class="modal-footer">
-								<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+								<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Cancelar</a>
+								<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Crear</a>
 							</div>
 						</div>
-
-
-
+						<!-- TABLA EMPRESAS -->
 						<div id="empresas" class="col s12">
 							<div class="col s4 offset-s8 center-align">
-								<a class="waves-effect indigo waves-light btn">Nueva empresa</a>
+								<a class="waves-effect indigo waves-light btn modal-trigger" href="#modal_nueva_empresa">Nueva empresa</a>
 							</div>
 							<table class="responsive-table striped">
 								<thead>
@@ -165,6 +195,56 @@
 									</tr>
 								</tbody>
 							</table>
+						</div>
+						<!-- Modal Nueva Empresa -->
+						<div id="modal_nueva_empresa" class="modal">
+							<div class="modal-content">
+								<h4>Nueva Empresa</h4>
+								<div class="row">
+									<div class="input-field col s4 right-align">
+										<p>Nombre (*)</p>
+									</div>
+									<div class="input-field col s8">
+										<input placeholder="" id="" type="text">
+									</div>
+								</div>
+								<div class="row">
+									<div class="input-field col s4 right-align">
+										<p>CUIT (*)</p>
+									</div>
+									<div class="input-field col s8">
+										<input placeholder="" id="" type="text">
+									</div>
+								</div>
+								<div class="row">
+									<div class="input-field col s4 right-align">
+										<p>Nro. de Cuenta 1 (*)</p>
+									</div>
+									<div class="input-field col s8">
+										<input placeholder="" id="" type="text">
+									</div>
+								</div>
+								<div class="row">
+									<div class="input-field col s4 right-align">
+										<p>Nro. de Cuenta 2</p>
+									</div>
+									<div class="input-field col s8">
+										<input placeholder="" id="" type="text">
+									</div>
+								</div>
+								<div class="row">
+									<div class="input-field col s4 right-align">
+										<p>Nro. de Cuenta 3</p>
+									</div>
+									<div class="input-field col s8">
+										<input placeholder="" id="" type="text">
+									</div>
+								</div>
+							</div>
+							<div class="modal-footer">
+								<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Cancelar</a>
+								<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Crear</a>
+							</div>
 						</div>
 					</div>
 				</div>

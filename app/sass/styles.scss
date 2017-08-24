@@ -33,6 +33,19 @@
 	}
 }
 
+#modal_nuevo_usuario, #modal_nueva_empresa {
+	.row {
+		margin-bottom: 0;
+	}
+	.input-field {
+		margin-top: 0;
+	}
+	[type="checkbox"] + label {
+		padding-left: 25px;
+		margin-right: 20px;
+	}
+}
+
 /* @media only screen and (max-width: 1080px){
 	nav ul#nav-mobile a {
 		display: block !important;
