@@ -1,0 +1,287 @@
+@@include("_partials/header.html")
+	<body>
+<!-- 	@@include("_partials/nav_out.html") -->
+		@@include("_partials/nav_columbia.html")
+		<main>
+			<div class="container">
+				<div id="panel-usuarios" class="section">
+					<div class="row">
+						<div class="col s3 offset-s9 right-align">
+							<a class="waves-effect indigo waves-light btn modal-trigger" href="#modal-nuevo-usuario"><i class="material-icons">add</i><p>Nuevo usuario</p></a>
+						</div>
+					</div>
+					<!-- cards -->
+					<div class="row">
+						<div class="col s3">
+							<div class="card">
+								<div class="card-content">
+									<div class="row">
+										<div class="col s12">
+											<i class="material-icons right">cancel</i>
+											<i class="material-icons right">edit</i>
+										</div>
+									</div>
+									<p class="inline-editable" id="usu-nombre">FluxIT</p>
+									<p class="inline-editable" id="usu-cuit">20-32098739/5</p>
+									<p>Operador</p>
+								</div>
+							</div>
+							<ul class="collapsible" data-collapsible="accordion">
+								<li>
+									<div class="collapsible-header"><i class="material-icons">keyboard_arrow_down</i></div>
+									<div class="collapsible-body">
+										<p class="inline-editable" id="usu-dni">DNI 38726265</p>
+										<p>Tiene permisos para:</p>
+										<p>Pagos y Transferencias</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+
+						<div class="col s3">
+							<div class="card">
+								<div class="card-content">
+									<div class="row">
+										<div class="col s12">
+											<i class="material-icons right">cancel</i>
+											<i class="material-icons right">edit</i>
+										</div>
+									</div>
+									<p class="inline-editable" id="usu-nombre">FluxIT</p>
+									<p class="inline-editable" id="usu-cuit">20-32098739/5</p>
+									<p>Operador</p>
+								</div>
+							</div>
+							<ul class="collapsible" data-collapsible="accordion">
+								<li>
+									<div class="collapsible-header"><i class="material-icons">keyboard_arrow_down</i></div>
+									<div class="collapsible-body">
+										<p class="inline-editable" id="usu-dni">DNI 38726265</p>
+										<p>Tiene permisos para:</p>
+										<p>Pagos y Transferencias</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+
+						<div class="col s3">
+							<div class="card">
+								<div class="card-content">
+									<div class="row">
+										<div class="col s12">
+											<i class="material-icons right">cancel</i>
+											<i class="material-icons right">edit</i>
+										</div>
+									</div>
+									<p class="inline-editable" id="usu-nombre">FluxIT</p>
+									<p class="inline-editable" id="usu-cuit">20-32098739/5</p>
+									<p>Operador</p>
+								</div>
+							</div>
+							<ul class="collapsible" data-collapsible="accordion">
+								<li>
+									<div class="collapsible-header"><i class="material-icons">keyboard_arrow_down</i></div>
+									<div class="collapsible-body">
+										<p class="inline-editable" id="usu-dni">DNI 38726265</p>
+										<p>Tiene permisos para:</p>
+										<p>Pagos y Transferencias</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+
+						<div class="col s3">
+							<div class="card">
+								<div class="card-content">
+									<div class="row">
+										<div class="col s12">
+											<i class="material-icons right">cancel</i>
+											<i class="material-icons right">edit</i>
+										</div>
+									</div>
+									<p class="inline-editable" id="usu-nombre">FluxIT</p>
+									<p class="inline-editable" id="usu-cuit">20-32098739/5</p>
+									<p>Operador</p>
+								</div>
+							</div>
+							<ul class="collapsible" data-collapsible="accordion">
+								<li>
+									<div class="collapsible-header"><i class="material-icons">keyboard_arrow_down</i></div>
+									<div class="collapsible-body">
+										<p class="inline-editable" id="usu-dni">DNI 38726265</p>
+										<p>Tiene permisos para:</p>
+										<p>Pagos y Transferencias</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+						
+					</div>
+					<!-- fin de cards -->
+					<!-- MODAL NUEVO USUARIO -->
+					<div id="modal-nuevo-usuario" class="modal">
+						<div class="modal-content">
+							<h4>Nuevo Usuario</h4>
+							<div class="row">
+								<div class="input-field col s4">
+									<p>CUIT / Empresa (*)</p>
+								</div>
+								<div class="input-field col s8">
+									<select>
+										<option value="1" selected>20-31038007-4 - Nombre Empresa</option>
+										<option value="2">20-33438457-4 - Nombre Empresa</option>
+									</select>
+								</div>
+							</div>
+							<div class="row">
+								<div class="input-field col s4">
+									<p>Documento (*)</p>
+								</div>
+								<div class="input-field col s3">
+									<select>
+										<option value="dni" selected>DNI</option>
+										<option value="lc">Libreta Cívica</option>
+									</select>
+								</div>
+								<div class="input-field col s5">
+									<input placeholder="" id="" type="text">
+								</div>
+							</div>
+							<div class="row">
+								<div class="input-field col s4">
+									<p>Clave (*)</p>
+								</div>
+								<div class="input-field col s8">
+									<input placeholder="" id="" type="password">
+								</div>
+							</div>
+							<div class="divider"></div>
+							<h5>Perfil</h5>
+							<form action="#">
+								<h6>Permisos de pago</h6>
+								<div class="row">
+									<div class="input-field col s6">
+										<input type="checkbox" id="p_genera" />
+										<label for="p_genera">Genera</label>
+										<input type="checkbox" id="p_autoriza" checked="checked"/>
+										<label for="p_autoriza">Autoriza</label>
+									</div>
+									<div class="col s6 offset-6">
+										<div class="input-field col s4">
+											<p>Límite</p>
+										</div>
+										<div class="input-field col s8">
+											<input placeholder="$" id="" type="text">
+										</div>
+									</div>
+								</div>
+								<h6>Permisos de transferencia</h6>
+								<div class="row">
+									<div class="input-field col s6">
+										<input type="checkbox" id="t_genera" checked="checked" />
+										<label for="t_genera">Genera</label>
+										<input type="checkbox" id="t_autoriza" checked="checked" />
+										<label for="t_autoriza">Autoriza</label>
+									</div>
+									<div class="col s6 offset-6">
+										<div class="input-field col s4">
+											<p>Límite</p>
+										</div>
+										<div class="input-field col s8">
+											<input placeholder="$" id="" type="text">
+										</div>
+									</div>
+								</div>
+								<h6><b>Permisos de cuenta</b></h6>
+								<div class="row">
+									<div class="input-field col s12">
+										<input type="checkbox" id="CA_1" />
+										<label for="CA_1">CA$ 156488913115</label>
+										<input type="checkbox" id="CA_2" checked="checked" />
+										<label for="CA_2">CA$ 156488913115</label>
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="modal-footer">
+							<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Cancelar</a>
+							<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Crear</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		@@include("_partials/footer.html")
+		<script>
+			$( document ).ready(function() {
+		   $(".inline-editable").hover(
+		        function() {$(this).addClass("editHover"); }, 
+		        function() { $(this).removeClass("editHover"); }
+		    );
+		  
+		  var oldText,
+		      newText;
+		 
+		  $(".inline-editable").bind("click", replaceHTML)
+		  
+		  function replaceHTML() {
+		      // console.log($(".editing"))
+		      if(! $(".editing").length){
+		        oldText = $(this).html()
+		        $(this).addClass("editing");
+		        var form = createForm(oldText);
+		        $(this).html("")
+		                 .html(form);
+		        $(this).unbind('click', replaceHTML);
+		       }
+		    }
+		  
+		  function createForm(text) {
+		    var form = "<form class=\"inline-editor\">";
+		    form += "<input type=\"text\" class=\"editBox\" value=\"";
+		    form += oldText;
+		    form += "\" /> </form>";
+		    form += "<a href=\"#\" class=\"btnSave btn-flat \"><i class='material-icons green-text'>done</i></a>";
+		    form += "<a href=\"#\" class=\"btnDiscard btn-flat\"><i class='material-icons red-text'>cancel</i></a>";
+		    return form
+		  }
+		  
+		  $(document.body).on("click", ".btnDiscard", function() {
+		        $(this).parent().html(oldText);
+		        $(".inline-editable").removeClass("editing");
+		        $(".inline-editable").bind('click', replaceHTML);
+		        $(".inline-editable").removeClass("editHover");
+		  });
+		  
+		  $(document.body).on("click", ".btnSave", function() {
+		       newText = $(this).parent() 
+		                         .find(".editBox")
+		                         .val();
+		       saveChanges(this, newText)
+		  });
+		  
+		  // use enter button
+		  $(document.body).on("submit", ".inline-editor", function(e) {
+		     e.preventDefault();
+		     var newText = $(div).find(".editBox").val()
+		     saveChanges(this, newText)
+		  })
+
+		  function saveChanges(div, newText) {
+		    
+		    // get data for DB
+		    var id =  $(div).parent().attr("id");
+		    var dataToUpdate = { id : id, text : newText };
+		    console.log(dataToUpdate)
+		   
+		    $(".inline-editable").removeClass("editing");
+		    $(div).parent().html(newText);
+		    $(".inline-editable").bind('click', replaceHTML);
+		    $(".inline-editable").removeClass("editHover");
+		    
+		  }
+
+		});
+		</script>
+	</body>
+</html>

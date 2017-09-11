@@ -1,4 +1,76 @@
-// Color de Todo Pago para la home
+/* Esto lo uso para administrador.html */
+//Tab Usuarios
+#usuarios, #empresas {
+  background-color: lightblue;
+  border: 1px solid white;
+  padding: 10px;
+  table {
+    border: 1px solid lightgrey;
+    margin-top: 50px;
+  }
+}
+
+#modal_nuevo_usuario, #modal_nueva_empresa {
+  .row {
+    margin-bottom: 0;
+  }
+  .input-field {
+    margin-top: 0;
+  }
+  [type="checkbox"] + label {
+    padding-left: 25px;
+    margin-right: 20px;
+  }
+}
+// Fin administrador.html
+
+
+// Esto para USUARIOS.HTML
+#panel-usuarios {
+  & > .row:nth-child(1) > .col > a {
+    display: flex;
+    align-items: center;
+    text-transform: none;
+  }
+  & > .row:nth-child(2) > .col > .card {
+    margin-bottom: 0;
+    text-align: center;
+    & > .card-content > .row > .col > i {
+      font-size: 1.2em;
+    }
+  }
+  & > .row > .col > ul.collapsible {
+    margin-top: 0;
+    & > li > .collapsible-header {
+      justify-content: center;
+      i {
+        margin: 0;
+      }
+    }
+  }
+  // Para la edicion de la card
+  form.inline-editor {
+    .btnSave, .btn-Discard {
+      padding: 0;
+      width: 50%;
+    }
+  }
+  .editHover {
+    background: #E8F3FF; 
+  }
+  // Fin de la edicion de la card
+}
+
+
+
+
+
+
+
+
+
+
+/* // Color de Todo Pago para la home
 .todopagocolor {background-color: #E6007E !important;}
 
 
@@ -191,4 +263,4 @@ img.margendedo { margin: 0 10px 2px 0}
     i {text-transform: initial;}
 }
 
-.card .card-image span.card-title {text-shadow: 0 0px 8px #000;}
+.card .card-image span.card-title {text-shadow: 0 0px 8px #000;} */

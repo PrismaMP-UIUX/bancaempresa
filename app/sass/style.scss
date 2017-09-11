@@ -5,415 +5,415 @@
  */
 
 
-// Variables de Branding
-// --------------------------------------------------
+// // Variables de Branding
+// // --------------------------------------------------
 
-@import "_variables.scss";
-
-
-// Tipografía
-// --------------------------------------------------
-
-@import "_typografia.scss";
+// @import "_variables.scss";
 
 
-// Ubicación del Logo, position y padding 
-// --------------------------------------------------
+// // Tipografía
+// // --------------------------------------------------
 
-// Fondo del html
-html {background-color: #dceaf7;}
-
-home {
-  display: flex;   
-  justify-content: space-between;
-  flex-direction: column;
-  min-height: 100%;
-  position: absolute;
-  width: 100%;
-}
-.brand-logo img {
-  top: 5px;
-  position: absolute;
-  @media only screen and (max-width: 992px) { position: relative; }
-  @media only screen and (max-width: 600px) { top: 3px; }
-}
-
-//.celestito {background-image: url("../img/trama.jpg");}
-.celestito {background-color: #dceaf7;}
+// @import "_typografia.scss";
 
 
-// Menu
-// --------------------------------------------------
+// // Ubicación del Logo, position y padding 
+// // --------------------------------------------------
 
-// Index search input 
-.card-content input#search {
-    padding-left: 45px;
-    width: calc(100% - 45px);
-}
+// // Fondo del html
+// html {background-color: #dceaf7;}
 
-// Celeste para los desplegables del menu
-.input-field .prefix.active { color: $celeste-marca;}
-.dropdown-content li > a, 
-.dropdown-content li > span {color: $celeste-marca;}
+// home {
+//   display: flex;   
+//   justify-content: space-between;
+//   flex-direction: column;
+//   min-height: 100%;
+//   position: absolute;
+//   width: 100%;
+// }
+// .brand-logo img {
+//   top: 5px;
+//   position: absolute;
+//   @media only screen and (max-width: 992px) { position: relative; }
+//   @media only screen and (max-width: 600px) { top: 3px; }
+// }
 
-// Para que todos tomen un ancho que necesiten y no haga wrap el texto 
-// ul#cuentas,  ul#pagos, ul#mas {width: auto !important; white-space: nowrap;}
-// El anterior no sirve más, el siguiente es más generico
-nav ul.dropdown-content {width: auto !important; white-space: nowrap;}
-
-// Para el menu de mas que no se vaya para el medio
-@media only screen and (max-width: 1300px) {
-  ul#mas {right: 0px !important;}
-}
-
-nav.fondomarca {background-color: $celeste-marca;}
-
-// Sacar los iconos antes que toquen el logo
-@media only screen and (max-width: 1080px) {
-  .sacaricono:before {display:none;}
-  // Para que no se ropa en cierta medida los links de arriba del menu
-  nav ul a {display: inline-flex !important;}
-  nav ul#nav-mobile a {display: block !important;}
-}
-
-// Para que achicar el grisado del hover de los links del menu nav
-// Es necesario con hijo mayor para que los sub ul y lis no tomen esto y se chonguee el submenu
-nav > ul li {height: 64px;}
-
-// Desplegable del menú (problema en firefox)
-
-@-moz-document url-prefix() { 
-  // Se agrega un border-bottom para simular el border inset en el hr para las lineas divisoras
-  // Del menu "MAS"
-  nav ul#mas > li:nth-child(1),nav ul#mas > li:nth-last-child(3){ border-bottom: 2px solid rgba(1, 147, 207, 0.31); }
-  // En firefox pone una barra de desplazamiento en el dropdown del menu "MAS" 
-  nav ul#mas { overflow: hidden }
-}
+// //.celestito {background-image: url("../img/trama.jpg");}
+// .celestito {background-color: #dceaf7;}
 
 
+// // Menu
+// // --------------------------------------------------
 
-// Menu mobile
-// --------------------------------------------------
+// // Index search input 
+// .card-content input#search {
+//     padding-left: 45px;
+//     width: calc(100% - 45px);
+// }
 
-.side-nav {
-  background-color: $celeste-marca;
-  a { 
-    color: $blanco;
-    font-size: 1.2rem;
-    padding: 0 5px 10px;
-  &:hover {
-    color: $celeste-marca;
-    }
-  }
-  li:hover { background-color: $blanco; }
-}
+// // Celeste para los desplegables del menu
+// .input-field .prefix.active { color: $celeste-marca;}
+// .dropdown-content li > a, 
+// .dropdown-content li > span {color: $celeste-marca;}
 
-// Alto de los menues en mobile
-// @media (max-width:991px) 
-//   {
-//     #nav-mobile li {height: $altodelmenumobile;}
-//     .side-nav a {height: $altodelmenumobile;}
+// // Para que todos tomen un ancho que necesiten y no haga wrap el texto 
+// // ul#cuentas,  ul#pagos, ul#mas {width: auto !important; white-space: nowrap;}
+// // El anterior no sirve más, el siguiente es más generico
+// nav ul.dropdown-content {width: auto !important; white-space: nowrap;}
+
+// // Para el menu de mas que no se vaya para el medio
+// @media only screen and (max-width: 1300px) {
+//   ul#mas {right: 0px !important;}
+// }
+
+// nav.fondomarca {background-color: $celeste-marca;}
+
+// // Sacar los iconos antes que toquen el logo
+// @media only screen and (max-width: 1080px) {
+//   .sacaricono:before {display:none;}
+//   // Para que no se ropa en cierta medida los links de arriba del menu
+//   nav ul a {display: inline-flex !important;}
+//   nav ul#nav-mobile a {display: block !important;}
+// }
+
+// // Para que achicar el grisado del hover de los links del menu nav
+// // Es necesario con hijo mayor para que los sub ul y lis no tomen esto y se chonguee el submenu
+// nav > ul li {height: 64px;}
+
+// // Desplegable del menú (problema en firefox)
+
+// @-moz-document url-prefix() { 
+//   // Se agrega un border-bottom para simular el border inset en el hr para las lineas divisoras
+//   // Del menu "MAS"
+//   nav ul#mas > li:nth-child(1),nav ul#mas > li:nth-last-child(3){ border-bottom: 2px solid rgba(1, 147, 207, 0.31); }
+//   // En firefox pone una barra de desplazamiento en el dropdown del menu "MAS" 
+//   nav ul#mas { overflow: hidden }
 // }
 
 
 
-// Modal del login
-// --------------------------------------------------
+// // Menu mobile
+// // --------------------------------------------------
 
-// Alto fijo, ancho y padding para el modal del login
-#login { height: 400px; padding: 50px 30px 0px; max-height: 90%;
-}
+// .side-nav {
+//   background-color: $celeste-marca;
+//   a { 
+//     color: $blanco;
+//     font-size: 1.2rem;
+//     padding: 0 5px 10px;
+//   &:hover {
+//     color: $celeste-marca;
+//     }
+//   }
+//   li:hover { background-color: $blanco; }
+// }
 
-// Mobile first
-@media only screen and (max-width: 600px) {
-  #login {
-    padding: 20px 2px 0px; 
-    width: 95%;
-    //height: 80vh;
-    top: 10vh;
-    }
-}
-
-// Ubicación del dropdown del DNI del login
-.inputdni ul {top: -120px !important; width: 350px !important; }
-
-// Colores para los inputs del login
-.input-field {
-  label, // Label
-  input[type=text]:focus + label // Label focus
-  {color: $celeste-marca;} 
-  input[type=text]:focus,
-  input[type=text].valid,
-  input[type=text].invalid {
-    border-bottom: 1px solid $celeste-marca;
-    box-shadow: 0 1px 0 0 $celeste-marca;
-  }
-}
-
-// Todos los inputs para que cambie el color si o si
- input[type=text]:focus:not([readonly]), 
- input[type=password]:focus:not([readonly]), 
- input[type=email]:focus:not([readonly]), 
- input[type=url]:focus:not([readonly]), 
- input[type=time]:focus:not([readonly]), 
- input[type=date]:focus:not([readonly]), 
- input[type=datetime-local]:focus:not([readonly]), 
- input[type=tel]:focus:not([readonly]), 
- input[type=number]:focus:not([readonly]), 
- input[type=search]:focus:not([readonly]), 
- textarea.materialize-textarea:focus:not([readonly]) {
-    border-bottom: 1px solid $celeste-marca;
-    box-shadow: 0 1px 0 0 $celeste-marca; }
-  input[type=text]:focus:not([readonly]) + label,
-  input[type=password]:focus:not([readonly]) + label, 
-  input[type=email]:focus:not([readonly]) + label, 
-  input[type=url]:focus:not([readonly]) + label, 
-  input[type=time]:focus:not([readonly]) + label, 
-  input[type=date]:focus:not([readonly]) + label, 
-  input[type=datetime-local]:focus:not([readonly]) + label, 
-  input[type=tel]:focus:not([readonly]) + label, 
-  input[type=number]:focus:not([readonly]) + label, 
-  input[type=search]:focus:not([readonly]) + label, 
-  textarea.materialize-textarea:focus:not([readonly]) + label {
-    color: $celeste-marca; }
-
-.sobreblanco {
-  input[type=password] {
-    border-bottom: 1px solid transparentize($blanco,0.5) ;
-  }
-
- input[type=text]:focus:not([readonly]), 
- input[type=password]:focus:not([readonly]), 
- input[type=email]:focus:not([readonly]), 
- input[type=url]:focus:not([readonly]), 
- input[type=time]:focus:not([readonly]), 
- input[type=date]:focus:not([readonly]), 
- input[type=datetime-local]:focus:not([readonly]), 
- input[type=tel]:focus:not([readonly]), 
- input[type=number]:focus:not([readonly]), 
- input[type=search]:focus:not([readonly]), 
- textarea.materialize-textarea:focus:not([readonly]) {
-    border-bottom: 1px solid $blanco;
-    box-shadow: 0 1px 0 0 $blanco; }
-
-  .input-field label, 
-  .input-field input[type=text]:focus + label,
-  input[type=text]:focus:not([readonly]) + label,
-  input[type=password]:focus:not([readonly]) + label, 
-  input[type=email]:focus:not([readonly]) + label, 
-  input[type=url]:focus:not([readonly]) + label, 
-  input[type=time]:focus:not([readonly]) + label, 
-  input[type=date]:focus:not([readonly]) + label, 
-  input[type=datetime-local]:focus:not([readonly]) + label, 
-  input[type=tel]:focus:not([readonly]) + label, 
-  input[type=number]:focus:not([readonly]) + label, 
-  input[type=search]:focus:not([readonly]) + label, 
-  textarea.materialize-textarea:focus:not([readonly]) + label {
-    color: $blanco; }
-  }
-
-  [type="radio"]:checked + label:after {
-    border: $celeste-marca;
-    background-color: $celeste-marca;
-  }
-
-// Cambiar color globito del slider
-input[type=range] + .thumb {background-color: $celeste-marca !important;}
-
-// Cambiar color puntito del slider (no se porque no me deja juntarlos)
-input[type=range]::-webkit-slider-thumb {background-color: $celeste-marca;}
-input[type=range]::-moz-range-thumb {background-color: $celeste-marca;}
-input[type=range]::-ms-thumb {background-color: $celeste-marca;}
-
-// ¿? 
-#mensajealbanco label[for=email]::after {width: 200px;}
-
-// Sacar el titulo en menos de 600px
-@media only screen and (max-width: 800px){
-  .chautitulo {display: none;}
-}
-
-// Margenes del login 
-#login.modal .modal-content {padding: 0px !important;}
-input[type=range] {width: 50%; margin: 15px 25%;}
-
-// Margenes del login
- .nomargin {margin-bottom: 0px !important;}
- .nomarginup {margin-top: 0px !important;}
- .marginup {margin-top: 20px !important;}
- .marginupch {margin-top: 5px !important;}
- .margindown {margin-bottom: 20px !important;}
- .margindownch {margin-bottom: 5px !important;}
-
-
-@media only screen and (min-width: 400px) { 
-    #condocumento .dropdown-content li > a, .dropdown-content li > span {padding: 0.5rem 1rem; /*white-space: nowrap;*/}
-    #condocumento .dropdown-content { max-height: 400px;}
-}
-@media only screen and (max-width: 399px) { 
-}
-
-// Estilos para las imágenes de parallax, fondos y demás de la home
-// --------------------------------------------------
-
-// Parallax Inicio
-.parallax-container {
-  // min-height: 220px;
-  // line-height: 0;
-  // height: auto;
-  // color: transparentize(white,0.1);
-  // color: rgba(255,255,255,.9);
-  .section {
-    width: 100%;
-    // @media only screen and (max-width : 992px) {
-    // position: absolute;
-    // top: 40%;
-    // }
-  }
-}
-
-// Imagen de parallax del inicio 
-#index-banner .section { top: 10%; }
-
-@media only screen and (max-width : 600px) {
-  #index-banner .section {
-    top: 0;
-  }
-}
-
-// Limitar
-.limitarparallax {max-height: 300px;}
-.limitarparallax2 {max-height: 350px; overflow: initial;}
-
-
-// Colores de los tabs del login (con documento y sin documento)
-.tabs .tab a {
-  color: $celeste-marca;
-  font-weight: bold;
-  &:hover, &.active {color: $celeste-oscuro; }
-}
-.tabs .indicator { background-color: $celeste-oscuro;}
-
-// Para los iconos de la home que se separen del texto 
-.icon-block {  padding: 0 15px; }
+// // Alto de los menues en mobile
+// // @media (max-width:991px) 
+// //   {
+// //     #nav-mobile li {height: $altodelmenumobile;}
+// //     .side-nav a {height: $altodelmenumobile;}
+// // }
 
 
 
-// Footer
-// --------------------------------------------------
+// // Modal del login
+// // --------------------------------------------------
 
-// Footer pegado. Necesita ambas propiedades 
-body {display: flex; min-height: 100vh; flex-direction: column; }
-main {flex: 1 0 auto;}
+// // Alto fijo, ancho y padding para el modal del login
+// #login { height: 400px; padding: 50px 30px 0px; max-height: 90%;
+// }
 
-//Esto saca un pequeño bordecito que queda al final sino. Eliminado hasta que vuelva a aparecer
-footer.page-footer { margin: 0;}
+// // Mobile first
+// @media only screen and (max-width: 600px) {
+//   #login {
+//     padding: 20px 2px 0px; 
+//     width: 95%;
+//     //height: 80vh;
+//     top: 10vh;
+//     }
+// }
 
+// // Ubicación del dropdown del DNI del login
+// .inputdni ul {top: -120px !important; width: 350px !important; }
 
-
-// Slider interior
-// --------------------------------------------------
-
-// Color del indicador del slider
-.slider .indicators .indicator-item.active { background-color: $celeste-marca; }
-
-
-
-// Toast y Tooltips
-// --------------------------------------------------
-
-// Color de fondo del toast (mensajes de ultima conexión y demás)
-.toast {background-color: $celeste-marca;}
-
-.material-tooltip, .backdrop {
-  background-color: $verde-oscuro;
-  -webkit-box-shadow: 0px 0px 7px 0px #666;
-  -moz-box-shadow: 0px 0px 7px 0px #666;
-  box-shadow: 0px 0px 7px 0px #666;
-}
-
-
-// Masonry
-// --------------------------------------------------
-              
-.cards-container {
-  column-break-inside: avoid;
-}
-.cards-container .card {
-  display: inline-block;
-  overflow: visible;
-}
-
-@media only screen and (max-width: 600px) {
-  .cards-container {
-    -webkit-column-count: 1;
-    -moz-column-count: 1;
-    column-count: 1;
-  }
-}
-@media only screen and (max-width: 9292px) {
-  .cards-container {
-    -webkit-column-count: 2;
-    -moz-column-count: 2;
-    column-count: 2;
-  }
-}
-@media only screen and (min-width: 993px) {
-  .cards-container {
-    -webkit-column-count: 3;
-    -moz-column-count: 3;
-    column-count: 3;
-  }
-}
-// @media only screen and (min-width: 1500px) {
-//   .cards-container {
-//     -webkit-column-count: 4;
-//     -moz-column-count: 4;
-//     column-count: 4;
+// // Colores para los inputs del login
+// .input-field {
+//   label, // Label
+//   input[type=text]:focus + label // Label focus
+//   {color: $celeste-marca;} 
+//   input[type=text]:focus,
+//   input[type=text].valid,
+//   input[type=text].invalid {
+//     border-bottom: 1px solid $celeste-marca;
+//     box-shadow: 0 1px 0 0 $celeste-marca;
 //   }
 // }
 
-.backlogin {
-  @extend .blue;
-  // background: url("img/background1.jpg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed;
-  background-size: cover;
-}
+// // Todos los inputs para que cambie el color si o si
+//  input[type=text]:focus:not([readonly]), 
+//  input[type=password]:focus:not([readonly]), 
+//  input[type=email]:focus:not([readonly]), 
+//  input[type=url]:focus:not([readonly]), 
+//  input[type=time]:focus:not([readonly]), 
+//  input[type=date]:focus:not([readonly]), 
+//  input[type=datetime-local]:focus:not([readonly]), 
+//  input[type=tel]:focus:not([readonly]), 
+//  input[type=number]:focus:not([readonly]), 
+//  input[type=search]:focus:not([readonly]), 
+//  textarea.materialize-textarea:focus:not([readonly]) {
+//     border-bottom: 1px solid $celeste-marca;
+//     box-shadow: 0 1px 0 0 $celeste-marca; }
+//   input[type=text]:focus:not([readonly]) + label,
+//   input[type=password]:focus:not([readonly]) + label, 
+//   input[type=email]:focus:not([readonly]) + label, 
+//   input[type=url]:focus:not([readonly]) + label, 
+//   input[type=time]:focus:not([readonly]) + label, 
+//   input[type=date]:focus:not([readonly]) + label, 
+//   input[type=datetime-local]:focus:not([readonly]) + label, 
+//   input[type=tel]:focus:not([readonly]) + label, 
+//   input[type=number]:focus:not([readonly]) + label, 
+//   input[type=search]:focus:not([readonly]) + label, 
+//   textarea.materialize-textarea:focus:not([readonly]) + label {
+//     color: $celeste-marca; }
+
+// .sobreblanco {
+//   input[type=password] {
+//     border-bottom: 1px solid transparentize($blanco,0.5) ;
+//   }
+
+//  input[type=text]:focus:not([readonly]), 
+//  input[type=password]:focus:not([readonly]), 
+//  input[type=email]:focus:not([readonly]), 
+//  input[type=url]:focus:not([readonly]), 
+//  input[type=time]:focus:not([readonly]), 
+//  input[type=date]:focus:not([readonly]), 
+//  input[type=datetime-local]:focus:not([readonly]), 
+//  input[type=tel]:focus:not([readonly]), 
+//  input[type=number]:focus:not([readonly]), 
+//  input[type=search]:focus:not([readonly]), 
+//  textarea.materialize-textarea:focus:not([readonly]) {
+//     border-bottom: 1px solid $blanco;
+//     box-shadow: 0 1px 0 0 $blanco; }
+
+//   .input-field label, 
+//   .input-field input[type=text]:focus + label,
+//   input[type=text]:focus:not([readonly]) + label,
+//   input[type=password]:focus:not([readonly]) + label, 
+//   input[type=email]:focus:not([readonly]) + label, 
+//   input[type=url]:focus:not([readonly]) + label, 
+//   input[type=time]:focus:not([readonly]) + label, 
+//   input[type=date]:focus:not([readonly]) + label, 
+//   input[type=datetime-local]:focus:not([readonly]) + label, 
+//   input[type=tel]:focus:not([readonly]) + label, 
+//   input[type=number]:focus:not([readonly]) + label, 
+//   input[type=search]:focus:not([readonly]) + label, 
+//   textarea.materialize-textarea:focus:not([readonly]) + label {
+//     color: $blanco; }
+//   }
+
+//   [type="radio"]:checked + label:after {
+//     border: $celeste-marca;
+//     background-color: $celeste-marca;
+//   }
+
+// // Cambiar color globito del slider
+// input[type=range] + .thumb {background-color: $celeste-marca !important;}
+
+// // Cambiar color puntito del slider (no se porque no me deja juntarlos)
+// input[type=range]::-webkit-slider-thumb {background-color: $celeste-marca;}
+// input[type=range]::-moz-range-thumb {background-color: $celeste-marca;}
+// input[type=range]::-ms-thumb {background-color: $celeste-marca;}
+
+// // ¿? 
+// #mensajealbanco label[for=email]::after {width: 200px;}
+
+// // Sacar el titulo en menos de 600px
+// @media only screen and (max-width: 800px){
+//   .chautitulo {display: none;}
+// }
+
+// // Margenes del login 
+// #login.modal .modal-content {padding: 0px !important;}
+// input[type=range] {width: 50%; margin: 15px 25%;}
+
+// // Margenes del login
+//  .nomargin {margin-bottom: 0px !important;}
+//  .nomarginup {margin-top: 0px !important;}
+//  .marginup {margin-top: 20px !important;}
+//  .marginupch {margin-top: 5px !important;}
+//  .margindown {margin-bottom: 20px !important;}
+//  .margindownch {margin-bottom: 5px !important;}
 
 
-@for $mg from 0 through 1000 {
-    .mg-#{$mg} {margin: #{$mg}px !important;}
-    .mg-l-#{$mg} {margin-left: #{$mg}px !important;}
-    .mg-r-#{$mg} {margin-right: #{$mg}px !important;}
-    .mg-t-#{$mg} {margin-top: #{$mg}px !important;}
-    .mg-b-#{$mg} {margin-bottom: #{$mg}px !important;}
-}
+// @media only screen and (min-width: 400px) { 
+//     #condocumento .dropdown-content li > a, .dropdown-content li > span {padding: 0.5rem 1rem; /*white-space: nowrap;*/}
+//     #condocumento .dropdown-content { max-height: 400px;}
+// }
+// @media only screen and (max-width: 399px) { 
+// }
+
+// // Estilos para las imágenes de parallax, fondos y demás de la home
+// // --------------------------------------------------
+
+// // Parallax Inicio
+// .parallax-container {
+//   // min-height: 220px;
+//   // line-height: 0;
+//   // height: auto;
+//   // color: transparentize(white,0.1);
+//   // color: rgba(255,255,255,.9);
+//   .section {
+//     width: 100%;
+//     // @media only screen and (max-width : 992px) {
+//     // position: absolute;
+//     // top: 40%;
+//     // }
+//   }
+// }
+
+// // Imagen de parallax del inicio 
+// #index-banner .section { top: 10%; }
+
+// @media only screen and (max-width : 600px) {
+//   #index-banner .section {
+//     top: 0;
+//   }
+// }
+
+// // Limitar
+// .limitarparallax {max-height: 300px;}
+// .limitarparallax2 {max-height: 350px; overflow: initial;}
 
 
-// Menu flotante abajo
-// --------------------------------------------------
+// // Colores de los tabs del login (con documento y sin documento)
+// .tabs .tab a {
+//   color: $celeste-marca;
+//   font-weight: bold;
+//   &:hover, &.active {color: $celeste-oscuro; }
+// }
+// .tabs .indicator { background-color: $celeste-oscuro;}
 
-// Esto es un intento de escribirle la leyenda al menu flotante. Esta en el archivo actions.php
-.leyend {position:relative; right:150px; top:30px; background-color: rgba(0,0,0,0.8); border-radius: 5px; z-index:999; color:#fff; width:150px;}
-
-
-// Estilos solo para mobile
-// --------------------------------------------------
-
-@import "_mobile.scss";
-
-
-
-// Particularidades
-// --------------------------------------------------
-
-@import "_particularidades.scss";
+// // Para los iconos de la home que se separen del texto 
+// .icon-block {  padding: 0 15px; }
 
 
 
-// Variables de Impresión
-// --------------------------------------------------
+// // Footer
+// // --------------------------------------------------
 
-@import "_print.scss";
+// // Footer pegado. Necesita ambas propiedades 
+// body {display: flex; min-height: 100vh; flex-direction: column; }
+// main {flex: 1 0 auto;}
+
+// //Esto saca un pequeño bordecito que queda al final sino. Eliminado hasta que vuelva a aparecer
+// footer.page-footer { margin: 0;}
+
+
+
+// // Slider interior
+// // --------------------------------------------------
+
+// // Color del indicador del slider
+// .slider .indicators .indicator-item.active { background-color: $celeste-marca; }
+
+
+
+// // Toast y Tooltips
+// // --------------------------------------------------
+
+// // Color de fondo del toast (mensajes de ultima conexión y demás)
+// .toast {background-color: $celeste-marca;}
+
+// .material-tooltip, .backdrop {
+//   background-color: $verde-oscuro;
+//   -webkit-box-shadow: 0px 0px 7px 0px #666;
+//   -moz-box-shadow: 0px 0px 7px 0px #666;
+//   box-shadow: 0px 0px 7px 0px #666;
+// }
+
+
+// // Masonry
+// // --------------------------------------------------
+              
+// .cards-container {
+//   column-break-inside: avoid;
+// }
+// .cards-container .card {
+//   display: inline-block;
+//   overflow: visible;
+// }
+
+// @media only screen and (max-width: 600px) {
+//   .cards-container {
+//     -webkit-column-count: 1;
+//     -moz-column-count: 1;
+//     column-count: 1;
+//   }
+// }
+// @media only screen and (max-width: 9292px) {
+//   .cards-container {
+//     -webkit-column-count: 2;
+//     -moz-column-count: 2;
+//     column-count: 2;
+//   }
+// }
+// @media only screen and (min-width: 993px) {
+//   .cards-container {
+//     -webkit-column-count: 3;
+//     -moz-column-count: 3;
+//     column-count: 3;
+//   }
+// }
+// // @media only screen and (min-width: 1500px) {
+// //   .cards-container {
+// //     -webkit-column-count: 4;
+// //     -moz-column-count: 4;
+// //     column-count: 4;
+// //   }
+// // }
+
+// .backlogin {
+//   @extend .blue;
+//   // background: url("img/background1.jpg");
+//   background-repeat: no-repeat;
+//   background-position: center center;
+//   background-attachment: fixed;
+//   background-size: cover;
+// }
+
+
+// @for $mg from 0 through 1000 {
+//     .mg-#{$mg} {margin: #{$mg}px !important;}
+//     .mg-l-#{$mg} {margin-left: #{$mg}px !important;}
+//     .mg-r-#{$mg} {margin-right: #{$mg}px !important;}
+//     .mg-t-#{$mg} {margin-top: #{$mg}px !important;}
+//     .mg-b-#{$mg} {margin-bottom: #{$mg}px !important;}
+// }
+
+
+// // Menu flotante abajo
+// // --------------------------------------------------
+
+// // Esto es un intento de escribirle la leyenda al menu flotante. Esta en el archivo actions.php
+// .leyend {position:relative; right:150px; top:30px; background-color: rgba(0,0,0,0.8); border-radius: 5px; z-index:999; color:#fff; width:150px;}
+
+
+// // Estilos solo para mobile
+// // --------------------------------------------------
+
+// @import "_mobile.scss";
+
+
+
+// // Particularidades
+// // --------------------------------------------------
+
+// @import "_particularidades.scss";
+
+
+
+// // Variables de Impresión
+// // --------------------------------------------------
+
+// @import "_print.scss";
