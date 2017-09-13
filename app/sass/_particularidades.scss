@@ -10,7 +10,7 @@
   }
 }
 
-#modal_nuevo_usuario, #modal_nueva_empresa {
+/* #modal_nuevo_usuario, #modal_nueva_empresa {
   .row {
     margin-bottom: 0;
   }
@@ -21,15 +21,16 @@
     padding-left: 25px;
     margin-right: 20px;
   }
-}
+} */
 // Fin administrador.html
 
 
-// Esto para USUARIOS.HTML
-#panel-usuarios {
+// Esto para USUARIOS.HTML y EMPRESAS.HTML
+#panel-usuarios, #panel-empresas {
   & > .row:nth-child(1) > .col > a {
     display: flex;
     align-items: center;
+    justify-content: center;
     text-transform: none;
   }
   & > .row:nth-child(2) > .col > .card {
@@ -39,26 +40,10 @@
       font-size: 1.2em;
     }
   }
-  & > .row > .col > ul.collapsible {
-    margin-top: 0;
-    & > li > .collapsible-header {
-      justify-content: center;
-      i {
-        margin: 0;
-      }
-    }
+  & .card-reveal > .row:first-child {
+    margin: 0;
   }
-  // Para la edicion de la card
-  form.inline-editor {
-    .btnSave, .btn-Discard {
-      padding: 0;
-      width: 50%;
-    }
-  }
-  .editHover {
-    background: #E8F3FF; 
-  }
-  // Fin de la edicion de la card
+
 }
 
 

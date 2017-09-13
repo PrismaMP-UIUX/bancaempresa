@@ -1,0 +1,234 @@
+@@include("_partials/header.html")
+	<body>
+<!-- 	@@include("_partials/nav_out.html") -->
+		@@include("_partials/nav_columbia.html")
+		<main>
+			<div class="container">
+				<div id="panel-empresas" class="section">
+					<div class="row valign-wrapper">
+						<div class="col m9 s6 left-align ">
+							<h5>Empresas</h5>
+						</div>
+						<div class="col m3 s6 right-align">
+							<a class="waves-effect blue waves-light btn modal-trigger" href="#modal-nueva-empresa"><i class="material-icons">add</i><p>Nueva empresa</p></a>
+						</div>
+					</div>
+					<!-- cards -->
+					<div class="row">
+
+						<div class="col l3 m6 s12">
+							<div class="card small">
+								<div class="card-content activator">
+									<div class="row">
+										<div class="col s12">
+											<a href="#"><i class="material-icons right">delete</i></a>
+											<a class="modal-trigger" href="#modal-editar-empresa"><i class="material-icons right">edit</i></a>
+										</div>
+									</div>
+									<h6>Telecom</h6>
+									<h6>20-32098739/5</h6>
+								</div>
+								<div class="card-reveal">
+									<div class="row">
+										<div class="col s12">
+											<span class="card-title"><i class="material-icons right">keyboard_arrow_down</i></span>
+										</div>
+									</div>
+									<h6>Nro de Cuenta 1</h6>
+									<h6>0000-5412-65 45 6235</h6>
+									<h6>Nro de Cuenta 2</h6>
+									<h6>0000-5412-65 45 7484</h6>
+								</div>
+							</div>
+						</div>
+
+						<div class="col l3 m6 s12">
+							<div class="card small">
+								<div class="card-content activator">
+									<div class="row">
+										<div class="col s12">
+											<a href="#"><i class="material-icons right">delete</i></a>
+											<a class="modal-trigger" href="#modal-editar-empresa"><i class="material-icons right">edit</i></a>
+										</div>
+									</div>
+									<h6>Prisma</h6>
+									<h6>20-32098739/5</h6>
+								</div>
+								<div class="card-reveal">
+									<div class="row">
+										<div class="col s12">
+											<span class="card-title"><i class="material-icons right">keyboard_arrow_down</i></span>
+										</div>
+									</div>
+									<h6>Nro de Cuenta 1</h6>
+									<h6>0000-5412-65 45 6235</h6>
+									<h6>Nro de Cuenta 2</h6>
+									<h6>0000-5412-65 45 7484</h6>
+								</div>
+							</div>
+						</div>
+
+						<div class="col l3 m6 s12">
+							<div class="card small">
+								<div class="card-content activator">
+									<div class="row">
+										<div class="col s12">
+											<a href="#"><i class="material-icons right">delete</i></a>
+											<a class="modal-trigger" href="#modal-editar-empresa"><i class="material-icons right">edit</i></a>
+										</div>
+									</div>
+									<h6>Banelco</h6>
+									<h6>20-32098739/5</h6>
+								</div>
+								<div class="card-reveal">
+									<div class="row">
+										<div class="col s12">
+											<span class="card-title"><i class="material-icons right">keyboard_arrow_down</i></span>
+										</div>
+									</div>
+									<h6>Nro de Cuenta 1</h6>
+									<h6>0000-5412-65 45 6235</h6>
+									<h6>Nro de Cuenta 2</h6>
+									<h6>0000-5412-65 45 7484</h6>
+								</div>
+							</div>
+						</div>
+
+						<div class="col l3 m6 s12">
+							<div class="card small">
+								<div class="card-content activator">
+									<div class="row">
+										<div class="col s12">
+											<a href="#"><i class="material-icons right">delete</i></a>
+											<a class="modal-trigger" href="#modal-editar-empresa"><i class="material-icons right">edit</i></a>
+										</div>
+									</div>
+									<h6>VISA</h6>
+									<h6>20-32098739/5</h6>
+								</div>
+								<div class="card-reveal">
+									<div class="row">
+										<div class="col s12">
+											<span class="card-title"><i class="material-icons right">keyboard_arrow_down</i></span>
+										</div>
+									</div>
+									<h6>Nro de Cuenta 1</h6>
+									<h6>0000-5412-65 45 6235</h6>
+									<h6>Nro de Cuenta 2</h6>
+									<h6>0000-5412-65 45 7484</h6>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+					<!-- fin de cards -->
+
+					<!-- MODAL EDITAR EMPRESA -->
+					<div id="modal-editar-empresa" class="modal">
+						<form action="#">
+							<div class="modal-content">
+
+								<h5 class="valign-wrapper"><i class="material-icons">edit</i>Editar Empresa</h5>
+
+								<div class="divider"></div>
+
+								<div class="row">
+									<div class="input-field col m4 s12 offset-m2">
+										<p>Empresa (*)</p>
+									</div>
+									<div class="input-field col m6 s12">
+										<input placeholder="Telecom" id="" type="text">
+									</div>
+								</div>
+								<div class="row">
+									<div class="input-field col m4 s12 offset-m2">
+										<p>CUIT/CUIL/CDI (*)</p>
+									</div>
+									<div class="input-field col m6 s12">
+										<input placeholder="20-383746/9" id="" type="text">
+									</div>
+								</div>
+
+								<div class="divider"></div>
+
+								<div class="row">
+									<div class="input-field col m4 s12 offset-m2">
+										<p>Nro. de Cuenta 1 (*)</p>
+									</div>
+									<div class="input-field col m6 s12">
+										<input placeholder="0000-5412-65 45 6235" id="" type="text">
+									</div>
+								</div>
+								<div class="row">
+									<div class="input-field col m4 s12 offset-m2">
+										<p>Nro. de Cuenta 2</p>
+									</div>
+									<div class="input-field col m6 s12">
+										<input placeholder="0000-5412-65 45 7484" id="" type="text">
+									</div>
+								</div>
+							</div>
+							<div class="modal-footer">
+								<a href="#!" class="modal-action modal-close waves-effect waves-green btn">Cancelar</a>
+								<a href="#!" class="modal-action modal-close waves-effect waves-green btn">Guardar</a>
+							</div>
+						</form>
+					</div>
+
+					<!-- MODAL NUEVA EMPRESA -->
+					<div id="modal-nueva-empresa" class="modal">
+						<form action="#">
+							<div class="modal-content">
+
+								<h5 class="valign-wrapper"><i class="material-icons">add</i>Nueva Empresa</h5>
+
+								<div class="divider"></div>
+
+								<div class="row">
+									<div class="input-field col m4 s12 offset-m2">
+										<p>Empresa (*)</p>
+									</div>
+									<div class="input-field col m6 s12">
+										<input placeholder="" id="" type="text">
+									</div>
+								</div>
+								<div class="row">
+									<div class="input-field col m4 s12 offset-m2">
+										<p>CUIT/CUIL/CDI (*)</p>
+									</div>
+									<div class="input-field col m6 s12">
+										<input placeholder="" id="" type="text">
+									</div>
+								</div>
+
+								<div class="divider"></div>
+
+								<div class="row">
+									<div class="input-field col m4 s12 offset-m2">
+										<p>Nro. de Cuenta 1 (*)</p>
+									</div>
+									<div class="input-field col m6 s12">
+										<input placeholder="" id="" type="text">
+									</div>
+								</div>
+								<div class="row">
+									<div class="input-field col m4 s12 offset-m2">
+										<p>Nro. de Cuenta 2</p>
+									</div>
+									<div class="input-field col m6 s12">
+										<input placeholder="" id="" type="text">
+									</div>
+								</div>
+							</div>
+							<div class="modal-footer">
+								<a href="#!" class="modal-action modal-close waves-effect waves-green btn">Cancelar</a>
+								<a href="#!" class="modal-action modal-close waves-effect waves-green btn">Agregar</a>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</main>
+		@@include("_partials/footer.html")
+	</body>
+</html>
