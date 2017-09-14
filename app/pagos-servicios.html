@@ -1,0 +1,154 @@
+@@include("_partials/header.html")
+	<body>
+<!-- 	@@include("_partials/nav_out.html") -->
+		@@include("_partials/nav_columbia.html")
+		<main>
+			<div class="container">
+				<div class="section">
+					<div class="row valign-wrapper">
+						<div class="col s6 left-align ">
+							<h5>Pagos</h5>
+							<h6>Servicios</h6>
+						</div>
+						<div class="col s6 right-align">
+							<a class="waves-effect waves-light blue btn-large modal-trigger" href="#modal-nuevo-pago-servicios"><i class="material-icons left">add</i>Nuevo servicio</a>
+						</div>
+					</div>
+					
+					<div class="row">
+						<!-- Inicio de cards -->
+						<div class="col l3 m6 s12">
+							<div class="card">
+								<div class="card-content">
+									<div class="row">
+										<div class="col s12">
+											<a href="#"><i class="material-icons right">delete</i></a>
+										</div>
+									</div>
+									<h6 class="center">Camuzzi</h6>
+									<h6 class="center"><b>5241541</b></h6>
+									<div class="divider transparent"></div>
+									<h6 class="center">Desde 12/06/11</h6>
+								</div>
+								<div class="card-reveal">
+									<div class="row">
+										<div class="col s12">
+											<span class="card-title"><i class="material-icons right">close</i></span>
+										</div>
+									</div>
+									<h6 class="center">Lorem ipsum</h6>
+									<h6 class="center">Lorem ipsum</h6>
+									<h6 class="center">Lorem ipsum</h6>
+								</div>
+								<div class="card-action">
+									<span class="card-title btn blue activator valign-wrapper"><i class="material-icons left">add</i> Info</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="col l3 m6 s12">
+							<div class="card">
+								<div class="card-content">
+									<div class="row">
+										<div class="col s12">
+											<a href="#"><i class="material-icons right">delete</i></a>
+										</div>
+									</div>
+									<h6 class="center">ABSA</h6>
+									<h6 class="center"><b>5241541</b></h6>
+									<div class="divider transparent"></div>
+									<h6 class="center">Desde 12/06/11</h6>
+								</div>
+								<div class="card-reveal">
+									<div class="row">
+										<div class="col s12">
+											<span class="card-title"><i class="material-icons right">close</i></span>
+										</div>
+									</div>
+									<h6 class="center">Lorem ipsum</h6>
+									<h6 class="center">Lorem ipsum</h6>
+									<h6 class="center">Lorem ipsum</h6>
+								</div>
+								<div class="card-action">
+									<span class="card-title btn blue activator valign-wrapper"><i class="material-icons left">add</i> Info</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="col l3 m6 s12">
+							<div class="card">
+								<div class="card-content">
+									<div class="row">
+										<div class="col s12">
+											<a href="#"><i class="material-icons right">delete</i></a>
+										</div>
+									</div>
+									<h6 class="center">Swiss Medical</h6>
+									<h6 class="center"><b>5241541</b></h6>
+									<div class="divider transparent"></div>
+									<h6 class="center">Desde 12/06/11</h6>
+								</div>
+								<div class="card-reveal">
+									<div class="row">
+										<div class="col s12">
+											<span class="card-title"><i class="material-icons right">close</i></span>
+										</div>
+									</div>
+									<h6 class="center">Lorem ipsum</h6>
+									<h6 class="center">Lorem ipsum</h6>
+									<h6 class="center">Lorem ipsum</h6>
+								</div>
+								<div class="card-action">
+									<span class="card-title btn blue activator valign-wrapper"><i class="material-icons left">add</i> Info</span>
+								</div>
+							</div>
+						</div>
+						<!-- Fin de cards -->
+					</div>
+					
+					<!-- inicio MODAL NUEVO PAGO SERVICIOS -->
+					<div id="modal-nuevo-pago-servicios" class="modal">
+						<form action="#">
+							<div class="modal-content">
+								
+								<i class="material-icons right modal-close">close</i>
+								<h5 class="valign-wrapper"><i class="material-icons left">edit</i>Nuevo servicio</h5>
+
+								<div class="divider"></div>
+
+								<div class="row">
+									<div class="input-field col s6">
+										<p class="center">Empresa de servicio</p>
+									</div>
+									<div class="input-field col s6">
+										<select>
+											<option value="" selected disabled>Seleccione</option>
+											<option value="directv">DirecTV</option>
+											<option value="cablevision">Cablevisión</option>
+										</select>
+									</div>
+								</div>
+								<div class="row">
+									<div class="input-field col s6">
+										<p class="center">N° de referencia</p>
+									</div>
+									<div class="input-field col s6">
+										<input placeholder="" id="" type="text">
+									</div>
+								</div>
+
+							</div>
+							<div class="modal-footer">
+								<a href="#!" class="modal-action modal-close blue waves-effect waves-blue btn">Cancelar</a>
+								<a href="#!" class="modal-action modal-close blue waves-effect waves-blue btn">Agregar</a>
+							</div>
+						</form>
+					</div>
+					<!-- fin MODAL NUEVO PAGO SERVICIOS -->
+
+				</div>
+			</div>
+		</main>
+		@@include("_partials/footer.html")
+	</body>
+</html>

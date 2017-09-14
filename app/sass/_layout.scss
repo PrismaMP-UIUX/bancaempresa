@@ -1,3 +1,13 @@
+body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+main {
+	flex: 1 0 auto;
+}
+
 //Para que no se rompa la side-nav
 .navbar-fixed {
 	z-index: 1000;
@@ -11,3 +21,5 @@
 
 	}
 }
+
+
