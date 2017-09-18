@@ -1,0 +1,307 @@
+@@include("_partials/header.html")
+	<body>
+<!-- 	@@include("_partials/nav_out.html") -->
+		@@include("_partials/nav_columbia.html")
+		<main>
+			<div class="container">
+				<div class="section">
+					<div class="row valign-wrapper">
+						<div class="col s12 left-align ">
+							<h5>Transferencias</h5>
+						</div>
+					</div>
+					
+					<div class="row">
+						<div class="col m8 s12">
+							<ul class="tabs">
+								<li class="tab col s4"><a href="#pendientes" class="blue-text">Pendientes</a></li>
+								<li class="tab col s4"><a href="#rechazadas" class="blue-text">Rechazadas</a></li>
+							</ul>
+						</div>
+						<!-- Inicio de tab PENDIENTES -->
+						<div id="pendientes" class="col s12">
+							<div class="row">
+								<div class="col s12">
+									<input type="checkbox" id="todas-pendientes" />
+									<label for="todas-pendientes">Seleccionar todos</label>
+								</div>
+							</div>
+							<!-- Inicio de cards pendientes -->
+							<div class="card">
+								<div class="card-content">
+									<div class="row">
+										<div class="col l10 m12 s12">
+											<div class="col l12 m12 s12">
+												<input type="checkbox" id="card1" />
+												<label for="card1"></label>
+											</div>
+											<div class="col l2 m2 s12">
+												<h6 class="center-align"><b>Paula Castro</b></h6>
+												<h6 class="center-align">Transporte</h6>
+											</div>
+											<div class="col l4 m4 s12">
+												<h6 class="center-align"><b>CBU/Alias origen</b></h6>
+												<h6 class="center-align">0720043488000016122518</h6>
+											</div>
+											<div class="col l4 m4 s12">
+												<h6 class="center-align"><b>CUIT/CUIL/CDI Originante</b></h6>
+												<h6 class="center-align">20-33445566/7</h6>
+											</div>
+											<div class="col l2 m2 s12">
+												<h6 class="center-align"><b>$8.300,00-</b></h6>
+												<h6 class="center-align">14/10/17</h6>
+											</div>
+										</div>
+										<div class="col l2 m8 s12 offset-m2">
+											<div class="col l12 m6 s6 center-align">
+												<a class="modal-trigger" href="#modal-rechazar-transferencia-pendiente"><i class="material-icons">thumb_down</i></a>
+												<h6>Rechazar</h6>
+											</div>
+											<div class="col l12 m6 s6 center-align">
+												<a class="modal-trigger" href="#modal-aprobar-transferencia-pendiente"><i class="material-icons">thumb_up</i></a>
+												<h6>Aprobar</h6>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="card">
+								<div class="card-content">
+									<div class="row">
+										<div class="col l10 m12 s12">
+											<div class="col l12 m12 s12">
+												<input type="checkbox" id="card2" />
+												<label for="card2"></label>
+											</div>
+											<div class="col l2 m2 s12">
+												<h6 class="center-align"><b>Lucrecia Feller</b></h6>
+												<h6 class="center-align">Diseño</h6>
+											</div>
+											<div class="col l4 m4 s12">
+												<h6 class="center-align"><b>CBU/Alias origen</b></h6>
+												<h6 class="center-align">0720043488000016122518</h6>
+											</div>
+											<div class="col l4 m4 s12">
+												<h6 class="center-align"><b>CUIT/CUIL/CDI Originante</b></h6>
+												<h6 class="center-align">20-33445566/7</h6>
+											</div>
+											<div class="col l2 m2 s12">
+												<h6 class="center-align"><b>$4.860,00-</b></h6>
+												<h6 class="center-align">17/09/17</h6>
+											</div>
+										</div>
+										<div class="col l2 m8 s12 offset-m2">
+											<div class="col l12 m6 s6 center-align">
+												<a class="modal-trigger" href="#modal-rechazar-transferencia-pendiente"><i class="material-icons">thumb_down</i></a>
+												<h6>Rechazar</h6>
+											</div>
+											<div class="col l12 m6 s6 center-align">
+												<a class="modal-trigger" href="#modal-aprobar-transferencia-pendiente"><i class="material-icons">thumb_up</i></a>
+												<h6>Aprobar</h6>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Fin de cards pendientes -->
+							<!-- Inicio Rechazar/aprobar todos -->
+							<div class="row">
+								<div class="col l5 m5 s12 offset-l7 offset-m7">
+									<div class="card">
+										<div class="card-content">
+											<div class="row">
+												<div class="col l6 m6 s6 center-align">
+													<a class="modal-trigger" href="#modal-rechazar-pago-pendiente"><i class="material-icons">thumb_down</i></a>
+													<h6>Rechazar todos</h6>
+												</div>
+												<div class="col l6 m6 s6 center-align">
+													<a class="modal-trigger" href="#modal-aprobar-pago-pendiente"><i class="material-icons">thumb_up</i></a>
+													<h6>Aprobar todos</h6>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- Fin Rechazar/aprobar todos -->
+						</div>
+						<!-- Fin de tab PENDIENTES -->
+
+						<!-- Inicio de tab RECHAZADAS -->
+						<div id="rechazadas" class="col s12">
+							<!-- Inicio de cards rechazadas -->
+							<div class="col l4 m6 s12">
+								<div class="card">
+									<div class="card-content">
+										<h6 class="center-align">ID15421225</h6>
+										<h6 class="center-align"><b>$7.635,00</b></h6>
+										<div class="divider transparent"></div>
+										<h6 class="center-align">11/06/17</h6>
+									</div>
+									<div class="card-reveal">
+										<div class="row">
+											<div class="col s12">
+												<span class="card-title"><i class="material-icons right">close</i></span>
+											</div>
+										</div>
+										<h6 class="center-align">Lorem ipsum</h6>
+										<h6 class="center-align">Lorem ipsum</h6>
+										<h6 class="center-align">Lorem ipsum</h6>
+									</div>
+									<div class="card-action center-align">
+										<i class="material-icons left">chat</i>
+										<h6 class="left-align">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus sit in natus.</h6>
+										<span class="btn blue activator valign-wrapper"><i class="material-icons left">add</i> Info</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="col l4 m6 s12">
+								<div class="card">
+									<div class="card-content">
+										<h6 class="center-align">ID15421878</h6>
+										<h6 class="center-align"><b>$235,00</b></h6>
+										<div class="divider transparent"></div>
+										<h6 class="center-align">11/06/17</h6>
+									</div>
+									<div class="card-reveal">
+										<div class="row">
+											<div class="col s12">
+												<span class="card-title"><i class="material-icons right">close</i></span>
+											</div>
+										</div>
+										<h6 class="center-align">Lorem ipsum</h6>
+										<h6 class="center-align">Lorem ipsum</h6>
+										<h6 class="center-align">Lorem ipsum</h6>
+									</div>
+									<div class="card-action center-align">
+										<i class="material-icons left">chat</i>
+										<h6 class="left-align">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus sit in natus.</h6>
+										<span class="btn blue activator valign-wrapper"><i class="material-icons left">add</i> Info</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="col l4 m6 s12">
+								<div class="card">
+									<div class="card-content">
+										<h6 class="center-align">ID15429865</h6>
+										<h6 class="center-align"><b>$9.545,00</b></h6>
+										<div class="divider transparent"></div>
+										<h6 class="center-align">11/06/17</h6>
+									</div>
+									<div class="card-reveal">
+										<div class="row">
+											<div class="col s12">
+												<span class="card-title"><i class="material-icons right">close</i></span>
+											</div>
+										</div>
+										<h6 class="center-align">Lorem ipsum</h6>
+										<h6 class="center-align">Lorem ipsum</h6>
+										<h6 class="center-align">Lorem ipsum</h6>
+									</div>
+									<div class="card-action center-align">
+										<i class="material-icons left">chat</i>
+										<h6 class="left-align">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus sit in natus.</h6>
+										<span class="btn blue activator valign-wrapper"><i class="material-icons left">add</i> Info</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="col l4 m6 s12">
+								<div class="card">
+									<div class="card-content">
+										<h6 class="center-align">ID15426633</h6>
+										<h6 class="center-align"><b>$3.252,00</b></h6>
+										<div class="divider transparent"></div>
+										<h6 class="center-align">11/06/17</h6>
+									</div>
+									<div class="card-reveal">
+										<div class="row">
+											<div class="col s12">
+												<span class="card-title"><i class="material-icons right">close</i></span>
+											</div>
+										</div>
+										<h6 class="center-align">Lorem ipsum</h6>
+										<h6 class="center-align">Lorem ipsum</h6>
+										<h6 class="center-align">Lorem ipsum</h6>
+									</div>
+									<div class="card-action center-align">
+										<i class="material-icons left">chat</i>
+										<h6 class="left-align">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus sit in natus.</h6>
+										<span class="btn blue activator valign-wrapper"><i class="material-icons left">add</i> Info</span>
+									</div>
+								</div>
+							</div>
+							<!-- Fin de cards rechazadas -->
+						</div>
+						<!-- Fin de tab RECHAZADAS -->
+					</div>
+
+					<!-- MODAL RECHAZAR TRANSFERENCIA PENDIENTE -->
+					<div id="modal-rechazar-transferencia-pendiente" class="modal">
+						<form action="#">
+							<div class="modal-content">
+								
+								<i class="material-icons right modal-close">close</i>
+								<h5 class="valign-wrapper"><i class="material-icons left">chat</i>Motivo del rechazo</h5>
+
+								<div class="divider"></div>
+								
+								<div class="input-field col s12">
+									<textarea id="motivo-rechazo" class="materialize-textarea"></textarea>
+									<label for="motivo-rechazo">Escribe el motivo del rechazo</label>
+								</div>
+
+							</div>
+							<div class="modal-footer">
+								<a href="#!" class="modal-action modal-close blue waves-effect waves-blue btn">Cancelar</a>
+								<a href="#!" class="modal-action modal-close blue waves-effect waves-blue btn">Guardar</a>
+							</div>
+						</form>
+					</div>
+					<!-- fin MODAL RECHAZAR TRANSFERENCIA PENDIENTE -->
+
+					<!-- MODAL APROBAR TRANSFERENCIA PENDIENTE -->
+					<div id="modal-aprobar-transferencia-pendiente" class="modal">
+						<form action="#">
+							<div class="modal-content">
+								
+								<i class="material-icons right modal-close">close</i>
+								<h5 class="valign-wrapper"><i class="material-icons left">thumb_up</i>Aprobar pago</h5>
+
+								<div class="divider"></div>
+
+								<div class="row">
+									<div class="input-field col s12">
+										<p class="center-align">Ingrese clave Token virtual</p>
+									</div>
+									<div class="input-field col s4 offset-s4">
+										<input placeholder="" id="" type="text">
+									</div>
+								</div>
+
+								<div class="divider"></div>
+
+								<div class="row">
+									<div class="col s12 ">
+										<p class="valign-wrapper"><i class="material-icons left">info</i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit nulla obcaecati aut explicabo sunt vero iure.</p>
+									</div>
+								</div>
+
+							</div>
+							<div class="modal-footer">
+								<a href="#!" class="modal-action modal-close blue waves-effect waves-blue btn">Cancelar</a>
+								<a href="#!" class="modal-action modal-close blue waves-effect waves-blue btn">Aplicar</a>
+							</div>
+						</form>
+					</div>
+					<!-- fin MODAL APROBAR TRANSFERENCIA PENDIENTE -->
+				</div>
+			</div>
+		</main>
+		@@include("_partials/footer.html")
+	</body>
+</html>
