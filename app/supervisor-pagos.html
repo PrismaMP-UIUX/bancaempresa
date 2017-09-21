@@ -11,334 +11,529 @@
 						</div>
 					</div>
 					
-					<div class="row">
-						<div class="col m8 s12">
+					<div class="card">
+						<div class="card-tabs">
 							<ul class="tabs">
-								<li class="tab col s4"><a href="#pendientes" class="blue-text">Pendientes</a></li>
-								<li class="tab col s4"><a href="#rechazados" class="blue-text">Rechazados</a></li>
+								<li class="tab col s4"><a href="#pendientes" class="azul-text">Pendientes</a></li>
+								<li class="tab col s4"><a href="#rechazados" class="azul-text">Rechazados</a></li>
 							</ul>
 						</div>
-						<!-- Inicio de tab PENDIENTES -->
-						<div id="pendientes" class="col s12">
-							<div class="row">
-								<div class="col s12">
-									<input type="checkbox" id="all_cards" />
-									<label for="all_cards">Seleccionar todos</label>
-								</div>
-							</div>
-							<!-- Inicio de cards pendientes -->
-							<div class="card">
-								<div class="card-content">
-									<div class="row">
-										<div class="col l9 m9 s12">
-											<div class="col l1 m1 s12">
-												<input type="checkbox" id="card1" />
-												<label for="card1"></label>
-											</div>
-											<div class="col l4 m4 s12">
-												<p class="center-align"><b>Telecom</b></p>
-												<p class="center-align">05412447</p>
-											</div>
-											<div class="col l4 m4 s12">
-												<p class="center-align">CA$</p>
-												<p class="center-align">043-161225/1</p>
-											</div>
-											<div class="col l3 m3 s12">
-												<p class="center-align"><b>$5.300,00-</b></p>
-												<p class="center-align">14/08/17</p>
-											</div>
-										</div>
-										<div class="col l3 m3 s12">
-											<div class="col l6 m6 s6 center-align">
-												<a class="modal-trigger" href="#modal-rechazar-pago-pendiente"><i class="material-icons">thumb_down</i></a>
-												<p>Rechazar</p>
-											</div>
-											<div class="col l6 m6 s6 center-align">
-												<a class="modal-trigger" href="#modal-aprobar-pago-pendiente"><i class="material-icons">thumb_up</i></a>
-												<p>Aprobar</p>
-											</div>
-										</div>
+						<div class="card-content">
+							<!-- Inicio de tab PENDIENTES -->
+							<div id="pendientes" class="col s12">
+								<div class="row">
+									<div class="col s12">
+										<input type="checkbox" id="all_cards" />
+										<label for="all_cards">Seleccionar todos</label>
 									</div>
 								</div>
-							</div>
-
-							<div class="card">
-								<div class="card-content">
-									<div class="row">
-										<div class="col l9 m9 s12">
-											<div class="col l1 m1 s12">
-												<input type="checkbox" id="card2" />
-												<label for="card2"></label>
-											</div>
-											<div class="col l4 m4 s12">
-												<p class="center-align"><b>Movistar</b></p>
-												<p class="center-align">05412447</p>
-											</div>
-											<div class="col l4 m4 s12">
-												<p class="center-align">CA$</p>
-												<p class="center-align">043-161225/1</p>
-											</div>
-											<div class="col l3 m3 s12">
-												<p class="center-align"><b>$5.460,00-</b></p>
-												<p class="center-align">07/09/17</p>
-											</div>
-										</div>
-										<div class="col l3 m3 s12">
-											<div class="col l6 m6 s6 center-align">
-												<a class="modal-trigger" href="#modal-rechazar-pago-pendiente"><i class="material-icons">thumb_down</i></a>
-												<p>Rechazar</p>
-											</div>
-											<div class="col l6 m6 s6 center-align">
-												<a class="modal-trigger" href="#modal-aprobar-pago-pendiente"><i class="material-icons">thumb_up</i></a>
-												<p>Aprobar</p>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="card">
-								<div class="card-content">
-									<div class="row">
-										<div class="col l9 m9 s12">
-											<div class="col l1 m1 s12">
-												<input type="checkbox" id="card3" />
-												<label for="card3"></label>
-											</div>
-											<div class="col l4 m4 s12">
-												<p class="center-align"><b>Camuzzi</b></p>
-												<p class="center-align">05412447</p>
-											</div>
-											<div class="col l4 m4 s12">
-												<p class="center-align">CA$</p>
-												<p class="center-align">043-161225/1</p>
+								<!-- Inicio de cards horizontales pendientes -->
+								<div class="card grey lighten-4">
+									<div class="card-content">
+										<div class="row">
+											<div class="col l9 m9 s12">
+												<div class="col l1 m1 s12">
+													<input type="checkbox" id="card1" />
+													<label for="card1"></label>
+												</div>
+												<div class="col l4 m4 s12">
+													<h6 class="center-align mg-0">Telecom</h6>
+													<p class="center-align">05412447</p>
+												</div>
+												<div class="col l4 m4 s12">
+													<p class="center-align">CA$</p>
+													<p class="center-align">043-161225/1</p>
+												</div>
+												<div class="col l3 m3 s12">
+													<p class="center-align"><b>$5.300,00</b></p>
+													<p class="center-align">14/08/17</p>
+												</div>
 											</div>
 											<div class="col l3 m3 s12">
-												<p class="center-align"><b>$10.240,00-</b></p>
-												<p class="center-align">17/09/17</p>
-											</div>
-										</div>
-										<div class="col l3 m3 s12">
-											<div class="col l6 m6 s6 center-align">
-												<a class="modal-trigger" href="#modal-rechazar-pago-pendiente"><i class="material-icons">thumb_down</i></a>
-												<p>Rechazar</p>
-											</div>
-											<div class="col l6 m6 s6 center-align">
-												<a class="modal-trigger" href="#modal-aprobar-pago-pendiente"><i class="material-icons">thumb_up</i></a>
-												<p>Aprobar</p>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="card">
-								<div class="card-content">
-									<div class="row">
-										<div class="col l9 m9 s12">
-											<div class="col l1 m1 s12">
-												<input type="checkbox" id="card4" />
-												<label for="card4"></label>
-											</div>
-											<div class="col l4 m4 s12">
-												<p class="center-align"><b>EDELAP</b></p>
-												<p class="center-align">05412447</p>
-											</div>
-											<div class="col l4 m4 s12">
-												<p class="center-align">CA$</p>
-												<p class="center-align">043-161225/1</p>
-											</div>
-											<div class="col l3 m3 s12">
-												<p class="center-align"><b>$48.300,00-</b></p>
-												<p class="center-align">17/09/17</p>
-											</div>
-										</div>
-										<div class="col l3 m3 s12">
-											<div class="col l6 m6 s6 center-align">
-												<a class="modal-trigger" href="#modal-rechazar-pago-pendiente"><i class="material-icons">thumb_down</i></a>
-												<p>Rechazar</p>
-											</div>
-											<div class="col l6 m6 s6 center-align">
-												<a class="modal-trigger" href="#modal-aprobar-pago-pendiente"><i class="material-icons">thumb_up</i></a>
-												<p>Aprobar</p>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="card">
-								<div class="card-content">
-									<div class="row">
-										<div class="col l9 m9 s12">
-											<div class="col l1 m1 s12">
-												<input type="checkbox" id="card5" />
-												<label for="card5"></label>
-											</div>
-											<div class="col l4 m4 s12">
-												<p class="center-align"><b>ARBA</b></p>
-												<p class="center-align">05412447</p>
-											</div>
-											<div class="col l4 m4 s12">
-												<p class="center-align">CA$</p>
-												<p class="center-align">043-161225/1</p>
-											</div>
-											<div class="col l3 m3 s12">
-												<p class="center-align"><b>$1.340,00-</b></p>
-												<p class="center-align">17/09/17</p>
-											</div>
-										</div>
-										<div class="col l3 m3 s12">
-											<div class="col l6 m6 s6 center-align">
-												<a class="modal-trigger" href="#modal-rechazar-pago-pendiente"><i class="material-icons">thumb_down</i></a>
-												<p>Rechazar</p>
-											</div>
-											<div class="col l6 m6 s6 center-align">
-												<a class="modal-trigger" href="#modal-aprobar-pago-pendiente"><i class="material-icons">thumb_up</i></a>
-												<p>Aprobar</p>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- Fin de cards pendientes -->
-							<!-- Inicio Rechazar/aprobar todos -->
-							<div class="row">
-								<div class="col l4 m4 s12 offset-l8 offset-m8">
-									<div class="card">
-										<div class="card-content">
-											<div class="row">
 												<div class="col l6 m6 s6 center-align">
 													<a class="modal-trigger" href="#modal-rechazar-pago-pendiente"><i class="material-icons">thumb_down</i></a>
-													<p>Rechazar todos</p>
+													<p>Rechazar</p>
 												</div>
 												<div class="col l6 m6 s6 center-align">
 													<a class="modal-trigger" href="#modal-aprobar-pago-pendiente"><i class="material-icons">thumb_up</i></a>
-													<p>Aprobar todos</p>
+													<p>Aprobar</p>
 												</div>
 											</div>
 										</div>
 									</div>
 								</div>
+
+								<div class="card grey lighten-4">
+									<div class="card-content">
+										<div class="row">
+											<div class="col l9 m9 s12">
+												<div class="col l1 m1 s12">
+													<input type="checkbox" id="card2" />
+													<label for="card2"></label>
+												</div>
+												<div class="col l4 m4 s12">
+													<h6 class="center-align mg-0">Movistar</h6>
+													<p class="center-align">05412447</p>
+												</div>
+												<div class="col l4 m4 s12">
+													<p class="center-align">CA$</p>
+													<p class="center-align">043-161225/1</p>
+												</div>
+												<div class="col l3 m3 s12">
+													<p class="center-align"><b>$5.460,00</b></p>
+													<p class="center-align">07/09/17</p>
+												</div>
+											</div>
+											<div class="col l3 m3 s12">
+												<div class="col l6 m6 s6 center-align">
+													<a class="modal-trigger" href="#modal-rechazar-pago-pendiente"><i class="material-icons">thumb_down</i></a>
+													<p>Rechazar</p>
+												</div>
+												<div class="col l6 m6 s6 center-align">
+													<a class="modal-trigger" href="#modal-aprobar-pago-pendiente"><i class="material-icons">thumb_up</i></a>
+													<p>Aprobar</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="card grey lighten-4">
+									<div class="card-content">
+										<div class="row">
+											<div class="col l9 m9 s12">
+												<div class="col l1 m1 s12">
+													<input type="checkbox" id="card3" />
+													<label for="card3"></label>
+												</div>
+												<div class="col l4 m4 s12">
+													<h6 class="center-align mg-0">Camuzzi</h6>
+													<p class="center-align">05412447</p>
+												</div>
+												<div class="col l4 m4 s12">
+													<p class="center-align">CA$</p>
+													<p class="center-align">043-161225/1</p>
+												</div>
+												<div class="col l3 m3 s12">
+													<p class="center-align"><b>$10.240,00</b></p>
+													<p class="center-align">17/09/17</p>
+												</div>
+											</div>
+											<div class="col l3 m3 s12">
+												<div class="col l6 m6 s6 center-align">
+													<a class="modal-trigger" href="#modal-rechazar-pago-pendiente"><i class="material-icons">thumb_down</i></a>
+													<p>Rechazar</p>
+												</div>
+												<div class="col l6 m6 s6 center-align">
+													<a class="modal-trigger" href="#modal-aprobar-pago-pendiente"><i class="material-icons">thumb_up</i></a>
+													<p>Aprobar</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- Fin de cards horizontales pendientes -->
+
+								<!-- inicio collapsible pendientes -->
+								<ul class="collapsible popout" data-collapsible="expandable">
+
+									<li>
+										<div class="collapsible-header grey lighten-4">
+											<div class="row valign-wrapper">
+												<div class="col l1 m1 s1 valign-wrapper">
+													<input type="checkbox" id="card4" />
+													<label for="card4"></label>
+												</div>
+												<div class="col l4 m4 s5">
+													<h6 class="center-align">Telecom</h6>
+												</div>
+												<div class="col l4 offset-l3 m4 offset-m3 s6">
+													<p class="center-align"><b>$5.300,00</b></p>
+												</div>
+											</div>
+										</div>
+										<div class="collapsible-body">
+											<div class="row mg-b-0">
+												<div class="col l9 m8 s12">
+													<div class="col l4 m4 s12">
+														<h6 class="center-align">Telecom</h6>
+														<p class="center-align mg-b-10">05412447</p>
+													</div>
+													<div class="col l4 m4 s12">
+														<p class="center-align">CA$</p>
+														<p class="center-align mg-b-10">043-161225/1</p>
+													</div>
+													<div class="col l4 m4 s12">
+														<p class="center-align"><b>$5.300,00</b></p>
+														<p class="center-align">14/08/17</p>
+													</div>
+												</div>
+												<div class="col l3 m4 s12">
+													<div class="col l6 m6 s6 center-align">
+														<a class="modal-trigger" href="#modal-rechazar-pago-pendiente"><i class="material-icons">thumb_down</i></a>
+														<p>Rechazar</p>
+													</div>
+													<div class="col l6 m6 s6 center-align">
+														<a class="modal-trigger" href="#modal-aprobar-pago-pendiente"><i class="material-icons">thumb_up</i></a>
+														<p>Aprobar</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+									
+									<li>
+										<div class="collapsible-header grey lighten-4">
+											<div class="row valign-wrapper">
+												<div class="col l1 m1 s1 valign-wrapper">
+													<input type="checkbox" id="card5" />
+													<label for="card5"></label>
+												</div>
+												<div class="col l4 m4 s5">
+													<h6 class="center-align">Movistar</h6>
+												</div>
+												<div class="col l4 offset-l3 m4 offset-m3 s6">
+													<p class="center-align"><b>$5.460,00</b></p>
+												</div>
+											</div>
+										</div>
+										<div class="collapsible-body">
+											<div class="row mg-b-0">
+												<div class="col l9 m8 s12">
+													<div class="col l4 m4 s12">
+														<h6 class="center-align">Movistar</h6>
+														<p class="center-align mg-b-10">05412447</p>
+													</div>
+													<div class="col l4 m4 s12">
+														<p class="center-align">CA$</p>
+														<p class="center-align mg-b-10">043-161225/1</p>
+													</div>
+													<div class="col l4 m4 s12">
+														<p class="center-align"><b>$5.460,00</b></p>
+														<p class="center-align">07/09/17</p>
+													</div>
+												</div>
+												<div class="col l3 m4 s12">
+													<div class="col l6 m6 s6 center-align">
+														<a class="modal-trigger" href="#modal-rechazar-pago-pendiente"><i class="material-icons">thumb_down</i></a>
+														<p>Rechazar</p>
+													</div>
+													<div class="col l6 m6 s6 center-align">
+														<a class="modal-trigger" href="#modal-aprobar-pago-pendiente"><i class="material-icons">thumb_up</i></a>
+														<p>Aprobar</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+									
+									<li>
+										<div class="collapsible-header grey lighten-4">
+											<div class="row valign-wrapper">
+												<div class="col l1 m1 s1 valign-wrapper">
+													<input type="checkbox" id="card6" />
+													<label for="card6"></label>
+												</div>
+												<div class="col l4 m4 s5">
+													<h6 class="center-align">Camuzzi</h6>
+												</div>
+												<div class="col l4 offset-l3 m4 offset-m3 s6">
+													<p class="center-align"><b>$10.240,00</b></p>
+												</div>
+											</div>
+										</div>
+										<div class="collapsible-body">
+											<div class="row mg-b-0">
+												<div class="col l9 m8 s12">
+													<div class="col l4 m4 s12">
+														<h6 class="center-align">Camuzzi</h6>
+														<p class="center-align mg-b-10">05412447</p>
+													</div>
+													<div class="col l4 m4 s12">
+														<p class="center-align">CA$</p>
+														<p class="center-align mg-b-10">043-161225/1</p>
+													</div>
+													<div class="col l4 m4 s12">
+														<p class="center-align"><b>$10.240,00</b></p>
+														<p class="center-align">17/09/17</p>
+													</div>
+												</div>
+												<div class="col l3 m4 s12">
+													<div class="col l6 m6 s6 center-align">
+														<a class="modal-trigger" href="#modal-rechazar-pago-pendiente"><i class="material-icons">thumb_down</i></a>
+														<p>Rechazar</p>
+													</div>
+													<div class="col l6 m6 s6 center-align">
+														<a class="modal-trigger" href="#modal-aprobar-pago-pendiente"><i class="material-icons">thumb_up</i></a>
+														<p>Aprobar</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+									
+								</ul>
+								<!-- fin collapsible pendientes -->
+
+
+								<div class="row">
+									<!-- inicio Cards pendientes -->
+									<div class="col l4 m6 s12">
+										<div class="card grey lighten-4">
+											<div class="card-content">
+												<div class="row">
+													<div class="col l1 m1 s2 valign-wrapper">
+														<input type="checkbox" id="card7" />
+														<label for="card7"></label>
+													</div>
+												</div>
+												<h6 class="center-align mg-b-50">Telecom</h6>
+												<p class="center-align mg-b-30"><b>$5.300,00</b></p>
+											</div>
+											<div class="card-reveal">
+												<div class="row">
+													<div class="col s12">
+														<span class="card-title"><i class="material-icons right">close</i></span>
+													</div>
+												</div>
+												<h6 class="center-align">Telecom</h6>
+												<p class="center-align mg-b-5">05412447</p>
+												<p class="center-align">CA$</p>
+												<p class="center-align mg-b-5">043-161225/1</p>
+												<p class="center-align">14/08/17</p>
+												<div class="col s6 center-align mg-t-10">
+													<a class="modal-trigger" href="#modal-rechazar-pago-pendiente"><i class="material-icons">thumb_down</i></a>
+													<p>Rechazar</p>
+												</div>
+												<div class="col s6 center-align mg-t-10">
+													<a class="modal-trigger" href="#modal-aprobar-pago-pendiente"><i class="material-icons">thumb_up</i></a>
+													<p>Aprobar</p>
+												</div>
+											</div>
+											<div class="card-action right-align">
+												<span class="btn azul activator valign-wrapper">Más info<i class="material-icons right">info</i></span>
+											</div>
+										</div>
+									</div>
+
+									<div class="col l4 m6 s12">
+										<div class="card grey lighten-4">
+											<div class="card-content">
+												<div class="row">
+													<div class="col l1 m1 s2 valign-wrapper">
+														<input type="checkbox" id="card8" />
+														<label for="card8"></label>
+													</div>
+												</div>
+												<h6 class="center-align mg-b-50">Movistar</h6>
+												<p class="center-align mg-b-30"><b>$5.460,00</b></p>
+											</div>
+											<div class="card-reveal">
+												<div class="row">
+													<div class="col s12">
+														<span class="card-title"><i class="material-icons right">close</i></span>
+													</div>
+												</div>
+												<h6 class="center-align">Movistar</h6>
+												<p class="center-align mg-b-5">05412447</p>
+												<p class="center-align">CA$</p>
+												<p class="center-align mg-b-5">043-161225/1</p>
+												<p class="center-align">07/09/17</p>
+												<div class="col s6 center-align mg-t-10">
+													<a class="modal-trigger" href="#modal-rechazar-pago-pendiente"><i class="material-icons">thumb_down</i></a>
+													<p>Rechazar</p>
+												</div>
+												<div class="col s6 center-align mg-t-10">
+													<a class="modal-trigger" href="#modal-aprobar-pago-pendiente"><i class="material-icons">thumb_up</i></a>
+													<p>Aprobar</p>
+												</div>
+											</div>
+											<div class="card-action right-align">
+												<span class="btn azul activator valign-wrapper">Más info<i class="material-icons right">info</i></span>
+											</div>
+										</div>
+									</div>
+
+									<div class="col l4 m6 s12">
+										<div class="card grey lighten-4">
+											<div class="card-content">
+												<div class="row">
+													<div class="col l1 m1 s2 valign-wrapper">
+														<input type="checkbox" id="card9" />
+														<label for="card9"></label>
+													</div>
+												</div>
+												<h6 class="center-align mg-b-50">Camuzzi</h6>
+												<p class="center-align mg-b-30"><b>$10.240,00</b></p>
+											</div>
+											<div class="card-reveal">
+												<div class="row">
+													<div class="col s12">
+														<span class="card-title"><i class="material-icons right">close</i></span>
+													</div>
+												</div>
+												<h6 class="center-align">Camuzzi</h6>
+												<p class="center-align mg-b-5">05412447</p>
+												<p class="center-align">CA$</p>
+												<p class="center-align mg-b-5">043-161225/1</p>
+												<p class="center-align">17/09/17</p>
+												<div class="col s6 center-align mg-t-10">
+													<a class="modal-trigger" href="#modal-rechazar-pago-pendiente"><i class="material-icons">thumb_down</i></a>
+													<p>Rechazar</p>
+												</div>
+												<div class="col s6 center-align mg-t-10">
+													<a class="modal-trigger" href="#modal-aprobar-pago-pendiente"><i class="material-icons">thumb_up</i></a>
+													<p>Aprobar</p>
+												</div>
+											</div>
+											<div class="card-action right-align">
+												<span class="btn azul activator valign-wrapper">Más info<i class="material-icons right">info</i></span>
+											</div>
+										</div>
+									</div>
+									<!-- fin Cards pendientes -->
+								</div>
+
+
+								<!-- Inicio Rechazar/aprobar todos -->
+								<div class="row mg-0">
+									<div class="col l5 m5 s12 offset-l7 offset-m7">
+										<div class="card grey lighten-4">
+											<div class="card-content">
+												<div class="row mg-0">
+													<div class="col l6 m6 s6 center-align">
+														<a class="modal-trigger" href="#modal-rechazar-pago-pendiente"><i class="material-icons">thumb_down</i></a>
+														<p>Rechazar todos</p>
+													</div>
+													<div class="col l6 m6 s6 center-align">
+														<a class="modal-trigger" href="#modal-aprobar-pago-pendiente"><i class="material-icons">thumb_up</i></a>
+														<p>Aprobar todos</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- Fin Rechazar/aprobar todos -->
 							</div>
-							<!-- Fin Rechazar/aprobar todos -->
+							<!-- Fin de tab PENDIENTES -->
+
+							<!-- Inicio de tab RECHAZADOS -->
+							<div id="rechazados" class="col s12">
+								<div class="row mg-b-0">
+									<!-- Inicio de cards rechazados -->
+									<div class="col l4 m6 s12">
+										<div class="card grey lighten-4">
+											<div class="card-content">
+												<h6 class="center-align">EDENOR</h6>
+												<p class="center-align"><b>$5.300,00</b></p>
+												<div class="divider transparent"></div>
+												<p class="center-align mg-t-10">Vencimiento</p>
+												<p class="center-align">14/08/17</p>
+											</div>
+											<div class="card-reveal">
+												<div class="row">
+													<div class="col s12">
+														<span class="card-title"><i class="material-icons right">close</i></span>
+													</div>
+												</div>
+												<p class="center-align">Lorem ipsum</p>
+												<p class="center-align">Lorem ipsum</p>
+												<p class="center-align">Lorem ipsum</p>
+											</div>
+											<div class="card-action center-align">
+												<i class="material-icons left">chat</i>
+												<p class="left-align">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus sit in natus.</p>
+												<span class="btn azul activator valign-wrapper">Más info<i class="material-icons right">info</i></span>
+											</div>
+										</div>
+									</div>
+
+									<div class="col l4 m6 s12">
+										<div class="card grey lighten-4">
+											<div class="card-content">
+												<h6 class="center-align">Agua SRL</h6>
+												<p class="center-align"><b>$10.240,00</b></p>
+												<div class="divider transparent"></div>
+												<p class="center-align mg-t-10">Vencimiento</p>
+												<p class="center-align">14/08/17</p>
+											</div>
+											<div class="card-reveal">
+												<div class="row">
+													<div class="col s12">
+														<span class="card-title"><i class="material-icons right">close</i></span>
+													</div>
+												</div>
+												<p class="center-align">Lorem ipsum</p>
+												<p class="center-align">Lorem ipsum</p>
+												<p class="center-align">Lorem ipsum</p>
+											</div>
+											<div class="card-action center-align">
+												<i class="material-icons left">chat</i>
+												<p class="left-align">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus sit in natus.</p>
+												<span class="btn azul activator valign-wrapper">Más info<i class="material-icons right">info</i></span>
+											</div>
+										</div>
+									</div>
+
+									<div class="col l4 m6 s12">
+										<div class="card grey lighten-4">
+											<div class="card-content">
+												<h6 class="center-align">Serv. inmobiliario</h6>
+												<p class="center-align"><b>$48.300,00</b></p>
+												<div class="divider transparent"></div>
+												<p class="center-align mg-t-10">Vencimiento</p>
+												<p class="center-align">14/08/17</p>
+											</div>
+											<div class="card-reveal">
+												<div class="row">
+													<div class="col s12">
+														<span class="card-title"><i class="material-icons right">close</i></span>
+													</div>
+												</div>
+												<p class="center-align">Lorem ipsum</p>
+												<p class="center-align">Lorem ipsum</p>
+												<p class="center-align">Lorem ipsum</p>
+											</div>
+											<div class="card-action center-align">
+												<i class="material-icons left">chat</i>
+												<p class="left-align">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus sit in natus.</p>
+												<span class="btn azul activator valign-wrapper">Más info<i class="material-icons right">info</i></span>
+											</div>
+										</div>
+									</div>
+
+									<div class="col l4 m6 s12">
+										<div class="card grey lighten-4">
+											<div class="card-content">
+												<h6 class="center-align">EDENOR</h6>
+												<p class="center-align"><b>$5.300,00</b></p>
+												<div class="divider transparent"></div>
+												<p class="center-align mg-t-10">Vencimiento</p>
+												<p class="center-align">14/08/17</p>
+											</div>
+											<div class="card-reveal">
+												<div class="row">
+													<div class="col s12">
+														<span class="card-title"><i class="material-icons right">close</i></span>
+													</div>
+												</div>
+												<p class="center-align">Lorem ipsum</p>
+												<p class="center-align">Lorem ipsum</p>
+												<p class="center-align">Lorem ipsum</p>
+											</div>
+											<div class="card-action center-align">
+												<i class="material-icons left">chat</i>
+												<p class="left-align">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus sit in natus.</p>
+												<span class="btn azul activator valign-wrapper">Más info<i class="material-icons right">info</i></span>
+											</div>
+										</div>
+									</div>
+									<!-- Fin de cards rechazados -->
+								</div>
+							</div>
+							<!-- Fin de tab RECHAZADOS -->
 						</div>
-						<!-- Fin de tab PENDIENTES -->
-
-						<!-- Inicio de tab RECHAZADOS -->
-						<div id="rechazados" class="col s12">
-							<!-- Inicio de cards rechazados -->
-							<div class="col l4 m6 s12">
-								<div class="card">
-									<div class="card-content">
-										<p class="center-align">EDENOR</p>
-										<p class="center-align"><b>$5.300,00</b></p>
-										<div class="divider transparent"></div>
-										<p class="center-align">Vencimiento</p>
-										<p class="center-align">14/08/17</p>
-									</div>
-									<div class="card-reveal">
-										<div class="row">
-											<div class="col s12">
-												<span class="card-title"><i class="material-icons right">close</i></span>
-											</div>
-										</div>
-										<p class="center-align">Lorem ipsum</p>
-										<p class="center-align">Lorem ipsum</p>
-										<p class="center-align">Lorem ipsum</p>
-									</div>
-									<div class="card-action center-align">
-										<i class="material-icons left">chat</i>
-										<p class="left-align">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus sit in natus.</p>
-										<span class="btn blue activator valign-wrapper"><i class="material-icons left">add</i> Info</span>
-									</div>
-								</div>
-							</div>
-
-							<div class="col l4 m6 s12">
-								<div class="card">
-									<div class="card-content">
-										<p class="center-align">Agua SRL</p>
-										<p class="center-align"><b>$10.240,00</b></p>
-										<div class="divider transparent"></div>
-										<p class="center-align">Vencimiento</p>
-										<p class="center-align">14/08/17</p>
-									</div>
-									<div class="card-reveal">
-										<div class="row">
-											<div class="col s12">
-												<span class="card-title"><i class="material-icons right">close</i></span>
-											</div>
-										</div>
-										<p class="center-align">Lorem ipsum</p>
-										<p class="center-align">Lorem ipsum</p>
-										<p class="center-align">Lorem ipsum</p>
-									</div>
-									<div class="card-action center-align">
-										<i class="material-icons left">chat</i>
-										<p class="left-align">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus sit in natus.</p>
-										<span class="btn blue activator valign-wrapper"><i class="material-icons left">add</i> Info</span>
-									</div>
-								</div>
-							</div>
-
-							<div class="col l4 m6 s12">
-								<div class="card">
-									<div class="card-content">
-										<p class="center-align">Serv. inmobiliario</p>
-										<p class="center-align"><b>$48.300,00</b></p>
-										<div class="divider transparent"></div>
-										<p class="center-align">Vencimiento</p>
-										<p class="center-align">14/08/17</p>
-									</div>
-									<div class="card-reveal">
-										<div class="row">
-											<div class="col s12">
-												<span class="card-title"><i class="material-icons right">close</i></span>
-											</div>
-										</div>
-										<p class="center-align">Lorem ipsum</p>
-										<p class="center-align">Lorem ipsum</p>
-										<p class="center-align">Lorem ipsum</p>
-									</div>
-									<div class="card-action center-align">
-										<i class="material-icons left">chat</i>
-										<p class="left-align">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus sit in natus.</p>
-										<span class="btn blue activator valign-wrapper"><i class="material-icons left">add</i> Info</span>
-									</div>
-								</div>
-							</div>
-
-							<div class="col l4 m6 s12">
-								<div class="card">
-									<div class="card-content">
-										<p class="center-align">EDENOR</p>
-										<p class="center-align"><b>$5.300,00</b></p>
-										<div class="divider transparent"></div>
-										<p class="center-align">Vencimiento</p>
-										<p class="center-align">14/08/17</p>
-									</div>
-									<div class="card-reveal">
-										<div class="row">
-											<div class="col s12">
-												<span class="card-title"><i class="material-icons right">close</i></span>
-											</div>
-										</div>
-										<p class="center-align">Lorem ipsum</p>
-										<p class="center-align">Lorem ipsum</p>
-										<p class="center-align">Lorem ipsum</p>
-									</div>
-									<div class="card-action center-align">
-										<i class="material-icons left">chat</i>
-										<p class="left-align">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus sit in natus.</p>
-										<span class="btn blue activator valign-wrapper"><i class="material-icons left">add</i> Info</span>
-									</div>
-								</div>
-							</div>
-							<!-- Fin de cards rechazados -->
-						</div>
-						<!-- Fin de tab RECHAZADOS -->
-
 					</div>
 
 					<!-- MODAL RECHAZAR PAGO PENDIENTE -->
@@ -358,8 +553,8 @@
 
 							</div>
 							<div class="modal-footer">
-								<a href="#!" class="modal-action modal-close blue waves-effect waves-blue btn">Cancelar</a>
-								<a href="#!" class="modal-action modal-close blue waves-effect waves-blue btn">Guardar</a>
+								<a href="#!" class="modal-action modal-close waves-effect waves-blue btn-flat grey-text text-darken-4">Cancelar</a>
+								<a href="#!" class="modal-action modal-close azul waves-effect waves-blue btn">Guardar</a>
 							</div>
 						</form>
 					</div>
@@ -388,14 +583,14 @@
 
 								<div class="row">
 									<div class="col s12 ">
-										<p class="valign-wrapper"><i class="material-icons left">info</i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit nulla obcaecati aut explicabo sunt vero iure.</p>
+										<p class="valign-wrapper"><i class="material-icons left">info_outline</i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit nulla obcaecati aut explicabo sunt vero iure.</p>
 									</div>
 								</div>
 
 							</div>
 							<div class="modal-footer">
-								<a href="#!" class="modal-action modal-close blue waves-effect waves-blue btn">Cancelar</a>
-								<a href="#!" class="modal-action modal-close blue waves-effect waves-blue btn">Aplicar</a>
+								<a href="#!" class="modal-action modal-close waves-effect waves-blue btn-flat grey-text text-darken-4">Cancelar</a>
+								<a href="#!" class="modal-action modal-close azul waves-effect waves-blue btn">Aplicar</a>
 							</div>
 						</form>
 					</div>

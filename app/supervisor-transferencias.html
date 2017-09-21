@@ -10,402 +10,642 @@
 							<h5>Transferencias</h5>
 						</div>
 					</div>
-					
-					<div class="row">
-						<div class="col m8 s12">
+
+					<div class="card">
+						<div class="card-tabs">
 							<ul class="tabs">
-								<li class="tab col s4"><a href="#pendientes" class="blue-text">Pendientes</a></li>
-								<li class="tab col s4"><a href="#rechazadas" class="blue-text">Rechazadas</a></li>
+								<li class="tab col s4"><a href="#pendientes" class="azul-text">Pendientes</a></li>
+								<li class="tab col s4"><a href="#rechazadas" class="azul-text">Rechazadas</a></li>
 							</ul>
 						</div>
-						<!-- Inicio de tab PENDIENTES -->
-						<div id="pendientes" class="col s12">
-							<div class="row">
-								<div class="col s12">
-									<input type="checkbox" id="all_cards" />
-									<label for="all_cards">Seleccionar todas</label>
-								</div>
-							</div>
-							<!-- Inicio de cards pendientes -->
-							<div class="card">
-								<div class="card-content">
-									<div class="row">
-										<div class="col l10 m12 s12">
-											<div class="col l12 m12 s12">
-												<input type="checkbox" id="card1" />
-												<label for="card1"></label>
-											</div>
-											<div class="col l2 m2 s12">
-												<p class="center-align"><b>Paula Castro</b></p>
-												<p class="center-align">Transporte</p>
-											</div>
-											<div class="col l4 m4 s12">
-												<p class="center-align"><b>CBU/Alias origen</b></p>
-												<p class="center-align">0720043488000016122518</p>
-											</div>
-											<div class="col l4 m4 s12">
-												<p class="center-align"><b>CUIT/CUIL/CDI Originante</b></p>
-												<p class="center-align">20-33445566/7</p>
-											</div>
-											<div class="col l2 m2 s12">
-												<p class="center-align"><b>$8.300,00-</b></p>
-												<p class="center-align">14/10/17</p>
-											</div>
-										</div>
-										<div class="col l2 m8 s12 offset-m2">
-											<div class="col l12 m6 s6 center-align">
-												<a class="modal-trigger" href="#modal-rechazar-transferencia-pendiente"><i class="material-icons">thumb_down</i></a>
-												<p>Rechazar</p>
-											</div>
-											<div class="col l12 m6 s6 center-align">
-												<a class="modal-trigger" href="#modal-aprobar-transferencia-pendiente"><i class="material-icons">thumb_up</i></a>
-												<p>Aprobar</p>
-											</div>
-										</div>
+						<div class="card-content">
+							<!-- Inicio de tab PENDIENTES -->
+							<div id="pendientes" class="col s12">
+								<div class="row">
+									<div class="col s12">
+										<input type="checkbox" id="all_cards" />
+										<label for="all_cards">Seleccionar todas</label>
 									</div>
 								</div>
-							</div>
-
-							<div class="card">
-								<div class="card-content">
-									<div class="row">
-										<div class="col l10 m12 s12">
-											<div class="col l12 m12 s12">
-												<input type="checkbox" id="card2" />
-												<label for="card2"></label>
-											</div>
-											<div class="col l2 m2 s12">
-												<p class="center-align"><b>Lucrecia Feller</b></p>
-												<p class="center-align">Diseño</p>
-											</div>
-											<div class="col l4 m4 s12">
-												<p class="center-align"><b>CBU/Alias origen</b></p>
-												<p class="center-align">0720043488000016122518</p>
-											</div>
-											<div class="col l4 m4 s12">
-												<p class="center-align"><b>CUIT/CUIL/CDI Originante</b></p>
-												<p class="center-align">20-33445566/7</p>
-											</div>
-											<div class="col l2 m2 s12">
-												<p class="center-align"><b>$4.860,00-</b></p>
-												<p class="center-align">17/09/17</p>
-											</div>
-										</div>
-										<div class="col l2 m8 s12 offset-m2">
-											<div class="col l12 m6 s6 center-align">
-												<a class="modal-trigger" href="#modal-rechazar-transferencia-pendiente"><i class="material-icons">thumb_down</i></a>
-												<p>Rechazar</p>
-											</div>
-											<div class="col l12 m6 s6 center-align">
-												<a class="modal-trigger" href="#modal-aprobar-transferencia-pendiente"><i class="material-icons">thumb_up</i></a>
-												<p>Aprobar</p>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<ul class="collection">
-								<li class="collection-item">
-									<div class="row">
-										<div class="col l10 m12 s12">
-											<div class="col l12 m12 s12">
-												<input type="checkbox" id="card2" />
-												<label for="card2"></label>
-											</div>
-											<div class="col l2 m2 s12">
-												<p class="center-align"><b>Lucrecia Feller</b></p>
-												<p class="center-align">Diseño</p>
-											</div>
-											<div class="col l4 m4 s12">
-												<p class="center-align"><b>CBU/Alias origen</b></p>
-												<p class="center-align">0720043488000016122518</p>
-											</div>
-											<div class="col l4 m4 s12">
-												<p class="center-align"><b>CUIT/CUIL/CDI Originante</b></p>
-												<p class="center-align">20-33445566/7</p>
-											</div>
-											<div class="col l2 m2 s12">
-												<p class="center-align"><b>$4.860,00-</b></p>
-												<p class="center-align">17/09/17</p>
-											</div>
-										</div>
-										<div class="col l2 m8 s12 offset-m2">
-											<div class="col l12 m6 s6 center-align">
-												<a class="modal-trigger" href="#modal-rechazar-transferencia-pendiente"><i class="material-icons">thumb_down</i></a>
-												<p>Rechazar</p>
-											</div>
-											<div class="col l12 m6 s6 center-align">
-												<a class="modal-trigger" href="#modal-aprobar-transferencia-pendiente"><i class="material-icons">thumb_up</i></a>
-												<p>Aprobar</p>
-											</div>
-										</div>
-									</div>
-								</li>
-								<li class="collection-item">
-									<div class="row">
-										<div class="col l10 m12 s12">
-											<div class="col l12 m12 s12">
-												<input type="checkbox" id="card2" />
-												<label for="card2"></label>
-											</div>
-											<div class="col l2 m2 s12">
-												<p class="center-align"><b>Lucrecia Feller</b></p>
-												<p class="center-align">Diseño</p>
-											</div>
-											<div class="col l4 m4 s12">
-												<p class="center-align"><b>CBU/Alias origen</b></p>
-												<p class="center-align">0720043488000016122518</p>
-											</div>
-											<div class="col l4 m4 s12">
-												<p class="center-align"><b>CUIT/CUIL/CDI Originante</b></p>
-												<p class="center-align">20-33445566/7</p>
-											</div>
-											<div class="col l2 m2 s12">
-												<p class="center-align"><b>$4.860,00-</b></p>
-												<p class="center-align">17/09/17</p>
-											</div>
-										</div>
-										<div class="col l2 m8 s12 offset-m2">
-											<div class="col l12 m6 s6 center-align">
-												<a class="modal-trigger" href="#modal-rechazar-transferencia-pendiente"><i class="material-icons">thumb_down</i></a>
-												<p>Rechazar</p>
-											</div>
-											<div class="col l12 m6 s6 center-align">
-												<a class="modal-trigger" href="#modal-aprobar-transferencia-pendiente"><i class="material-icons">thumb_up</i></a>
-												<p>Aprobar</p>
-											</div>
-										</div>
-									</div>
-								</li>
-								<li class="collection-item">
-									<div class="row">
-										<div class="col l10 m12 s12">
-											<div class="col l12 m12 s12">
-												<input type="checkbox" id="card2" />
-												<label for="card2"></label>
-											</div>
-											<div class="col l2 m2 s12">
-												<p class="center-align"><b>Lucrecia Feller</b></p>
-												<p class="center-align">Diseño</p>
-											</div>
-											<div class="col l4 m4 s12">
-												<p class="center-align"><b>CBU/Alias origen</b></p>
-												<p class="center-align">0720043488000016122518</p>
-											</div>
-											<div class="col l4 m4 s12">
-												<p class="center-align"><b>CUIT/CUIL/CDI Originante</b></p>
-												<p class="center-align">20-33445566/7</p>
-											</div>
-											<div class="col l2 m2 s12">
-												<p class="center-align"><b>$4.860,00-</b></p>
-												<p class="center-align">17/09/17</p>
-											</div>
-										</div>
-										<div class="col l2 m8 s12 offset-m2">
-											<div class="col l12 m6 s6 center-align">
-												<a class="modal-trigger" href="#modal-rechazar-transferencia-pendiente"><i class="material-icons">thumb_down</i></a>
-												<p>Rechazar</p>
-											</div>
-											<div class="col l12 m6 s6 center-align">
-												<a class="modal-trigger" href="#modal-aprobar-transferencia-pendiente"><i class="material-icons">thumb_up</i></a>
-												<p>Aprobar</p>
-											</div>
-										</div>
-									</div>
-								</li>
-								<li class="collection-item">
-									<div class="row">
-										<div class="col l10 m12 s12">
-											<div class="col l12 m12 s12">
-												<input type="checkbox" id="card2" />
-												<label for="card2"></label>
-											</div>
-											<div class="col l2 m2 s12">
-												<p class="center-align"><b>Lucrecia Feller</b></p>
-												<p class="center-align">Diseño</p>
-											</div>
-											<div class="col l4 m4 s12">
-												<p class="center-align"><b>CBU/Alias origen</b></p>
-												<p class="center-align">0720043488000016122518</p>
-											</div>
-											<div class="col l4 m4 s12">
-												<p class="center-align"><b>CUIT/CUIL/CDI Originante</b></p>
-												<p class="center-align">20-33445566/7</p>
-											</div>
-											<div class="col l2 m2 s12">
-												<p class="center-align"><b>$4.860,00-</b></p>
-												<p class="center-align">17/09/17</p>
-											</div>
-										</div>
-										<div class="col l2 m8 s12 offset-m2">
-											<div class="col l12 m6 s6 center-align">
-												<a class="modal-trigger" href="#modal-rechazar-transferencia-pendiente"><i class="material-icons">thumb_down</i></a>
-												<p>Rechazar</p>
-											</div>
-											<div class="col l12 m6 s6 center-align">
-												<a class="modal-trigger" href="#modal-aprobar-transferencia-pendiente"><i class="material-icons">thumb_up</i></a>
-												<p>Aprobar</p>
-											</div>
-										</div>
-									</div>
-								</li>
-							</ul>
-
-							<!-- Fin de cards pendientes -->
-							<!-- Inicio Rechazar/aprobar todos -->
-							<div class="row">
-								<div class="col l5 m5 s12 offset-l7 offset-m7">
-									<div class="card">
-										<div class="card-content">
-											<div class="row">
-												<div class="col l6 m6 s6 center-align">
-													<a class="modal-trigger" href="#modal-rechazar-pago-pendiente"><i class="material-icons">thumb_down</i></a>
-													<p>Rechazar todos</p>
+								<!-- Inicio de cards horizontales pendientes -->
+								<div class="card grey lighten-4">
+									<div class="card-content">
+										<div class="row">
+											<div class="col l10 m12 s12">
+												<div class="col l12 m12 s12">
+													<input type="checkbox" id="card1" />
+													<label for="card1"></label>
 												</div>
-												<div class="col l6 m6 s6 center-align">
-													<a class="modal-trigger" href="#modal-aprobar-pago-pendiente"><i class="material-icons">thumb_up</i></a>
-													<p>Aprobar todos</p>
+												<div class="col l2 m2 s12">
+													<h6 class="center-align">Paula Castro</h6>
+													<p class="center-align">Transporte</p>
+												</div>
+												<div class="col l4 m4 s12">
+													<p class="center-align"><b>CBU/Alias origen</b></p>
+													<p class="center-align">0720043488000016122518</p>
+												</div>
+												<div class="col l4 m4 s12">
+													<p class="center-align"><b>CUIT/CUIL/CDI Originante</b></p>
+													<p class="center-align">20-33445566/7</p>
+												</div>
+												<div class="col l2 m2 s12">
+													<p class="center-align"><b>$8.300,00-</b></p>
+													<p class="center-align">14/10/17</p>
+												</div>
+											</div>
+											<div class="col l2 m8 s12 offset-m2">
+												<div class="col l12 m6 s6 center-align">
+													<a class="modal-trigger" href="#modal-rechazar-transferencia-pendiente"><i class="material-icons">thumb_down</i></a>
+													<p>Rechazar</p>
+												</div>
+												<div class="col l12 m6 s6 center-align">
+													<a class="modal-trigger" href="#modal-aprobar-transferencia-pendiente"><i class="material-icons">thumb_up</i></a>
+													<p>Aprobar</p>
 												</div>
 											</div>
 										</div>
 									</div>
 								</div>
+
+								<div class="card grey lighten-4">
+									<div class="card-content">
+										<div class="row">
+											<div class="col l10 m12 s12">
+												<div class="col l12 m12 s12">
+													<input type="checkbox" id="card2" />
+													<label for="card2"></label>
+												</div>
+												<div class="col l2 m2 s12">
+													<h6 class="center-align">Lucrecia Feller</h6>
+													<p class="center-align">Diseño</p>
+												</div>
+												<div class="col l4 m4 s12">
+													<p class="center-align"><b>CBU/Alias origen</b></p>
+													<p class="center-align">0720043488000016122518</p>
+												</div>
+												<div class="col l4 m4 s12">
+													<p class="center-align"><b>CUIT/CUIL/CDI Originante</b></p>
+													<p class="center-align">20-33445566/7</p>
+												</div>
+												<div class="col l2 m2 s12">
+													<p class="center-align"><b>$4.860,00-</b></p>
+													<p class="center-align">17/09/17</p>
+												</div>
+											</div>
+											<div class="col l2 m8 s12 offset-m2">
+												<div class="col l12 m6 s6 center-align">
+													<a class="modal-trigger" href="#modal-rechazar-transferencia-pendiente"><i class="material-icons">thumb_down</i></a>
+													<p>Rechazar</p>
+												</div>
+												<div class="col l12 m6 s6 center-align">
+													<a class="modal-trigger" href="#modal-aprobar-transferencia-pendiente"><i class="material-icons">thumb_up</i></a>
+													<p>Aprobar</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- Fin de cards horizontales pendientes -->
+
+								<!-- Inicio de Collections pendientes -->
+								<ul class="collection">
+									<li class="collection-item grey lighten-4">
+										<div class="row">
+											<div class="col l10 m12 s12">
+												<div class="col l12 m12 s12">
+													<input type="checkbox" id="card3" />
+													<label for="card3"></label>
+												</div>
+												<div class="col l2 m2 s12">
+													<h6 class="center-align">Lucrecia Feller</h6>
+													<p class="center-align">Diseño</p>
+												</div>
+												<div class="col l4 m4 s12">
+													<p class="center-align"><b>CBU/Alias origen</b></p>
+													<p class="center-align">0720043488000016122518</p>
+												</div>
+												<div class="col l4 m4 s12">
+													<p class="center-align"><b>CUIT/CUIL/CDI Originante</b></p>
+													<p class="center-align">20-33445566/7</p>
+												</div>
+												<div class="col l2 m2 s12">
+													<p class="center-align"><b>$4.860,00-</b></p>
+													<p class="center-align">17/09/17</p>
+												</div>
+											</div>
+											<div class="col l2 m8 s12 offset-m2">
+												<div class="col l12 m6 s6 center-align">
+													<a class="modal-trigger" href="#modal-rechazar-transferencia-pendiente"><i class="material-icons">thumb_down</i></a>
+													<p>Rechazar</p>
+												</div>
+												<div class="col l12 m6 s6 center-align">
+													<a class="modal-trigger" href="#modal-aprobar-transferencia-pendiente"><i class="material-icons">thumb_up</i></a>
+													<p>Aprobar</p>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class="collection-item grey lighten-4">
+										<div class="row">
+											<div class="col l10 m12 s12">
+												<div class="col l12 m12 s12">
+													<input type="checkbox" id="card4" />
+													<label for="card4"></label>
+												</div>
+												<div class="col l2 m2 s12">
+													<h6 class="center-align">Lucrecia Feller</h6>
+													<p class="center-align">Diseño</p>
+												</div>
+												<div class="col l4 m4 s12">
+													<p class="center-align"><b>CBU/Alias origen</b></p>
+													<p class="center-align">0720043488000016122518</p>
+												</div>
+												<div class="col l4 m4 s12">
+													<p class="center-align"><b>CUIT/CUIL/CDI Originante</b></p>
+													<p class="center-align">20-33445566/7</p>
+												</div>
+												<div class="col l2 m2 s12">
+													<p class="center-align"><b>$4.860,00-</b></p>
+													<p class="center-align">17/09/17</p>
+												</div>
+											</div>
+											<div class="col l2 m8 s12 offset-m2">
+												<div class="col l12 m6 s6 center-align">
+													<a class="modal-trigger" href="#modal-rechazar-transferencia-pendiente"><i class="material-icons">thumb_down</i></a>
+													<p>Rechazar</p>
+												</div>
+												<div class="col l12 m6 s6 center-align">
+													<a class="modal-trigger" href="#modal-aprobar-transferencia-pendiente"><i class="material-icons">thumb_up</i></a>
+													<p>Aprobar</p>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class="collection-item grey lighten-4">
+										<div class="row">
+											<div class="col l10 m12 s12">
+												<div class="col l12 m12 s12">
+													<input type="checkbox" id="card5" />
+													<label for="card5"></label>
+												</div>
+												<div class="col l2 m2 s12">
+													<h6 class="center-align">Lucrecia Feller</h6>
+													<p class="center-align">Diseño</p>
+												</div>
+												<div class="col l4 m4 s12">
+													<p class="center-align"><b>CBU/Alias origen</b></p>
+													<p class="center-align">0720043488000016122518</p>
+												</div>
+												<div class="col l4 m4 s12">
+													<p class="center-align"><b>CUIT/CUIL/CDI Originante</b></p>
+													<p class="center-align">20-33445566/7</p>
+												</div>
+												<div class="col l2 m2 s12">
+													<p class="center-align"><b>$4.860,00-</b></p>
+													<p class="center-align">17/09/17</p>
+												</div>
+											</div>
+											<div class="col l2 m8 s12 offset-m2">
+												<div class="col l12 m6 s6 center-align">
+													<a class="modal-trigger" href="#modal-rechazar-transferencia-pendiente"><i class="material-icons">thumb_down</i></a>
+													<p>Rechazar</p>
+												</div>
+												<div class="col l12 m6 s6 center-align">
+													<a class="modal-trigger" href="#modal-aprobar-transferencia-pendiente"><i class="material-icons">thumb_up</i></a>
+													<p>Aprobar</p>
+												</div>
+											</div>
+										</div>
+									</li>
+								</ul>
+								<!-- Fin de Collections pendientes -->
+
+								<!-- Inicio de Collapsible pendientes -->
+								<ul class="collapsible popout" data-collapsible="expandable">
+
+									<li>
+										<div class="collapsible-header grey lighten-4">
+											<div class="row valign-wrapper">
+												<div class="col l1 m1 s1 valign-wrapper">
+													<input type="checkbox" id="card6" />
+													<label for="card6"></label>
+												</div>
+												<div class="col l4 m4 s5">
+													<h6 class="center-align">Lucrecia Feller</h6>
+													<p class="center-align">Diseño</p>
+												</div>
+												<div class="col l4 offset-l3 m4 offset-m3 s6">
+													<p class="center-align"><b>$4.860,00-</b></p>
+													<p class="center-align">17/09/17</p>
+												</div>
+											</div>
+										</div>
+										<div class="collapsible-body">
+											<div class="row mg-b-0">
+												<div class="col l8 m12 s12">
+													<div class="col l6 m6 s12">
+														<p class="center-align"><b>CBU/Alias origen</b></p>
+														<p class="center-align mg-b-10">0720043488000016122518</p>
+													</div>
+													<div class="col l6 m6 s12">
+														<p class="center-align"><b>CUIT/CUIL/CDI Originante</b></p>
+														<p class="center-align mg-b-10">20-33445566/7</p>
+													</div>
+												</div>
+												<div class="col l4 m12 s12">
+													<div class="col l6 m3 offset-m3 s6 center-align">
+														<a class="modal-trigger" href="#modal-rechazar-transferencia-pendiente"><i class="material-icons">thumb_down</i></a>
+														<p>Rechazar</p>
+													</div>
+													<div class="col l6 m3 s6 center-align">
+														<a class="modal-trigger" href="#modal-aprobar-transferencia-pendiente"><i class="material-icons">thumb_up</i></a>
+														<p>Aprobar</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+
+									<li>
+										<div class="collapsible-header grey lighten-4">
+											<div class="row valign-wrapper">
+												<div class="col l1 m1 s1 valign-wrapper">
+													<input type="checkbox" id="card7" />
+													<label for="card7"></label>
+												</div>
+												<div class="col l4 m4 s5">
+													<h6 class="center-align">Paula Castro</h6>
+													<p class="center-align">Transporte</p>
+												</div>
+												<div class="col l4 offset-l3 m4 offset-m3 s6">
+													<p class="center-align"><b>$4.860,00-</b></p>
+													<p class="center-align">17/09/17</p>
+												</div>
+											</div>
+										</div>
+										<div class="collapsible-body">
+											<div class="row mg-b-0">
+												<div class="col l8 m12 s12">
+													<div class="col l6 m6 s12">
+														<p class="center-align"><b>CBU/Alias origen</b></p>
+														<p class="center-align mg-b-10">0720043488000016122518</p>
+													</div>
+													<div class="col l6 m6 s12">
+														<p class="center-align"><b>CUIT/CUIL/CDI Originante</b></p>
+														<p class="center-align mg-b-10">20-33445566/7</p>
+													</div>
+												</div>
+												<div class="col l4 m12 s12">
+													<div class="col l6 m3 offset-m3 s6 center-align">
+														<a class="modal-trigger" href="#modal-rechazar-transferencia-pendiente"><i class="material-icons">thumb_down</i></a>
+														<p>Rechazar</p>
+													</div>
+													<div class="col l6 m3 s6 center-align">
+														<a class="modal-trigger" href="#modal-aprobar-transferencia-pendiente"><i class="material-icons">thumb_up</i></a>
+														<p>Aprobar</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+
+									<li>
+										<div class="collapsible-header grey lighten-4">
+											<div class="row valign-wrapper">
+												<div class="col l1 m1 s1 valign-wrapper">
+													<input type="checkbox" id="card8" />
+													<label for="card8"></label>
+												</div>
+												<div class="col l4 m4 s5">
+													<h6 class="center-align">Lucrecia Feller</h6>
+													<p class="center-align">Diseño</p>
+												</div>
+												<div class="col l4 offset-l3 m4 offset-m3 s6">
+													<p class="center-align"><b>$4.860,00</b></p>
+													<p class="center-align">17/09/17</p>
+												</div>
+											</div>
+										</div>
+										<div class="collapsible-body">
+											<div class="row mg-b-0">
+												<div class="col l8 m12 s12">
+													<div class="col l6 m6 s12">
+														<p class="center-align"><b>CBU/Alias origen</b></p>
+														<p class="center-align mg-b-10">0720043488000016122518</p>
+													</div>
+													<div class="col l6 m6 s12">
+														<p class="center-align"><b>CUIT/CUIL/CDI Originante</b></p>
+														<p class="center-align mg-b-10">20-33445566/7</p>
+													</div>
+												</div>
+												<div class="col l4 m12 s12">
+													<div class="col l6 m3 offset-m3 s6 center-align">
+														<a class="modal-trigger" href="#modal-rechazar-transferencia-pendiente"><i class="material-icons">thumb_down</i></a>
+														<p>Rechazar</p>
+													</div>
+													<div class="col l6 m3 s6 center-align">
+														<a class="modal-trigger" href="#modal-aprobar-transferencia-pendiente"><i class="material-icons">thumb_up</i></a>
+														<p>Aprobar</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+
+								</ul>
+								<!-- Fin de Collapsible pendientes -->
+
+								<!-- inicio Cards pendientes -->
+								<div class="row">
+
+									<div class="col l4 m6 s12">
+										<div class="card grey lighten-4">
+											<div class="card-content">
+												<div class="row">
+													<div class="col l1 m1 s2 valign-wrapper">
+														<input type="checkbox" id="card9" />
+														<label for="card9"></label>
+													</div>
+												</div>
+												<h6 class="center-align">Lucrecia Feller</h6>
+												<p class="center-align mg-b-50">Diseño</p>
+												<p class="center-align"><b>$4.860,00</b></p>
+												<p class="center-align">17/09/17</p>
+											</div>
+											<div class="card-reveal">
+												<div class="row mg-0">
+													<div class="col s12">
+														<span class="card-title"><i class="material-icons right">close</i></span>
+													</div>
+												</div>
+												<h6 class="center-align">Lucrecia Feller</h6>
+												<p class="center-align mg-b-10">Diseño</p>
+												<p class="center-align"><b>CBU/Alias origen</b></p>
+												<p class="center-align mg-b-10">0720043488000016122518</p>
+												<p class="center-align"><b>CUIT/CUIL/CDI Originante</b></p>
+												<p class="center-align mg-b-10">20-33445566/7</p>
+												<p class="center-align"><b>$4.860,00</b></p>
+												<p class="center-align">17/09/17</p>
+												<div class="col s6 center-align mg-t-10">
+													<a class="modal-trigger" href="#modal-rechazar-transferencia-pendiente"><i class="material-icons">thumb_down</i></a>
+													<p>Rechazar</p>
+												</div>
+												<div class="col s6 center-align mg-t-10">
+													<a class="modal-trigger" href="#modal-aprobar-transferencia-pendiente"><i class="material-icons">thumb_up</i></a>
+													<p>Aprobar</p>
+												</div>
+											</div>
+											<div class="card-action right-align">
+												<span class="btn azul activator valign-wrapper">Más info<i class="material-icons right">info</i></span>
+											</div>
+										</div>
+									</div>
+
+									<div class="col l4 m6 s12">
+										<div class="card grey lighten-4">
+											<div class="card-content">
+												<div class="row">
+													<div class="col l1 m1 s2 valign-wrapper">
+														<input type="checkbox" id="card10" />
+														<label for="card10"></label>
+													</div>
+												</div>
+												<h6 class="center-align">Paula Castro</h6>
+												<p class="center-align mg-b-50">Transporte</p>
+												<p class="center-align"><b>$4.860,00</b></p>
+												<p class="center-align">17/09/17</p>
+											</div>
+											<div class="card-reveal">
+												<div class="row mg-0">
+													<div class="col s12">
+														<span class="card-title"><i class="material-icons right">close</i></span>
+													</div>
+												</div>
+												<h6 class="center-align">Paula Castro</h6>
+												<p class="center-align mg-b-10">Transporte</p>
+												<p class="center-align"><b>CBU/Alias origen</b></p>
+												<p class="center-align mg-b-10">0720043488000016122518</p>
+												<p class="center-align"><b>CUIT/CUIL/CDI Originante</b></p>
+												<p class="center-align mg-b-10">20-33445566/7</p>
+												<p class="center-align"><b>$4.860,00</b></p>
+												<p class="center-align">17/09/17</p>
+												<div class="col s6 center-align mg-t-10">
+													<a class="modal-trigger" href="#modal-rechazar-transferencia-pendiente"><i class="material-icons">thumb_down</i></a>
+													<p>Rechazar</p>
+												</div>
+												<div class="col s6 center-align mg-t-10">
+													<a class="modal-trigger" href="#modal-aprobar-transferencia-pendiente"><i class="material-icons">thumb_up</i></a>
+													<p>Aprobar</p>
+												</div>
+											</div>
+											<div class="card-action right-align">
+												<span class="btn azul activator valign-wrapper">Más info<i class="material-icons right">info</i></span>
+											</div>
+										</div>
+									</div>
+
+									<div class="col l4 m6 s12">
+										<div class="card grey lighten-4">
+											<div class="card-content">
+												<div class="row">
+													<div class="col l1 m1 s2 valign-wrapper">
+														<input type="checkbox" id="card11" />
+														<label for="card7"></label>
+													</div>
+												</div>
+												<h6 class="center-align">Lucrecia Feller</h6>
+												<p class="center-align mg-b-50">Diseño</p>
+												<p class="center-align"><b>$4.860,00</b></p>
+												<p class="center-align">17/09/17</p>
+											</div>
+											<div class="card-reveal">
+												<div class="row mg-0">
+													<div class="col s12">
+														<span class="card-title"><i class="material-icons right">close</i></span>
+													</div>
+												</div>
+												<h6 class="center-align">Lucrecia Feller</h6>
+												<p class="center-align mg-b-10">Diseño</p>
+												<p class="center-align"><b>CBU/Alias origen</b></p>
+												<p class="center-align mg-b-10">0720043488000016122518</p>
+												<p class="center-align"><b>CUIT/CUIL/CDI Originante</b></p>
+												<p class="center-align mg-b-10">20-33445566/7</p>
+												<p class="center-align"><b>$4.860,00</b></p>
+												<p class="center-align">17/09/17</p>
+												<div class="col s6 center-align mg-t-10">
+													<a class="modal-trigger" href="#modal-rechazar-transferencia-pendiente"><i class="material-icons">thumb_down</i></a>
+													<p>Rechazar</p>
+												</div>
+												<div class="col s6 center-align mg-t-10">
+													<a class="modal-trigger" href="#modal-aprobar-transferencia-pendiente"><i class="material-icons">thumb_up</i></a>
+													<p>Aprobar</p>
+												</div>
+											</div>
+											<div class="card-action right-align">
+												<span class="btn azul activator valign-wrapper">Más info<i class="material-icons right">info</i></span>
+											</div>
+										</div>
+									</div>
+
+								</div>
+								<!-- fin Cards pendientes -->
+
+								<!-- Inicio Rechazar/aprobar todos -->
+								<div class="row">
+									<div class="col l5 m5 s12 offset-l7 offset-m7">
+										<div class="card grey lighten-4">
+											<div class="card-content">
+												<div class="row mg-0">
+													<div class="col l6 m6 s6 center-align">
+														<a class="modal-trigger" href="#modal-rechazar-transferencia-pendiente"><i class="material-icons">thumb_down</i></a>
+														<p>Rechazar todos</p>
+													</div>
+													<div class="col l6 m6 s6 center-align">
+														<a class="modal-trigger" href="#modal-aprobar-transferencia-pendiente"><i class="material-icons">thumb_up</i></a>
+														<p>Aprobar todos</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- Fin Rechazar/aprobar todos -->
 							</div>
-							<!-- Fin Rechazar/aprobar todos -->
+							<!-- Fin de tab PENDIENTES -->
+
+							<!-- Inicio de tab RECHAZADAS -->
+							<div id="rechazadas" class="col s12">
+								<div class="row">
+									<!-- Inicio de cards rechazadas -->
+									<div class="col l4 m6 s12">
+										<div class="card">
+											<div class="card-content">
+												<p class="center-align">ID15421225</p>
+												<p class="center-align"><b>$7.635,00</b></p>
+												<div class="divider transparent"></div>
+												<p class="center-align">11/06/17</p>
+											</div>
+											<div class="card-reveal">
+												<div class="row">
+													<div class="col s12">
+														<span class="card-title"><i class="material-icons right">close</i></span>
+													</div>
+												</div>
+												<p class="center-align">Lorem ipsum</p>
+												<p class="center-align">Lorem ipsum</p>
+												<p class="center-align">Lorem ipsum</p>
+											</div>
+											<div class="card-action right-align">
+												<i class="material-icons left">chat</i>
+												<p class="left-align">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus sit in natus.</p>
+												<span class="btn azul activator valign-wrapper">Más info<i class="material-icons right">info</i></span>
+											</div>
+										</div>
+									</div>
+
+									<div class="col l4 m6 s12">
+										<div class="card">
+											<div class="card-content">
+												<p class="center-align">ID15421878</p>
+												<p class="center-align"><b>$235,00</b></p>
+												<div class="divider transparent"></div>
+												<p class="center-align">11/06/17</p>
+											</div>
+											<div class="card-reveal">
+												<div class="row">
+													<div class="col s12">
+														<span class="card-title"><i class="material-icons right">close</i></span>
+													</div>
+												</div>
+												<p class="center-align">Lorem ipsum</p>
+												<p class="center-align">Lorem ipsum</p>
+												<p class="center-align">Lorem ipsum</p>
+											</div>
+											<div class="card-action right-align">
+												<i class="material-icons left">chat</i>
+												<p class="left-align">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus sit in natus.</p>
+												<span class="btn azul activator valign-wrapper">Más info<i class="material-icons right">info</i></span>
+											</div>
+										</div>
+									</div>
+
+									<div class="col l4 m6 s12">
+										<div class="card">
+											<div class="card-content">
+												<p class="center-align">ID15429865</p>
+												<p class="center-align"><b>$9.545,00</b></p>
+												<div class="divider transparent"></div>
+												<p class="center-align">11/06/17</p>
+											</div>
+											<div class="card-reveal">
+												<div class="row">
+													<div class="col s12">
+														<span class="card-title"><i class="material-icons right">close</i></span>
+													</div>
+												</div>
+												<p class="center-align">Lorem ipsum</p>
+												<p class="center-align">Lorem ipsum</p>
+												<p class="center-align">Lorem ipsum</p>
+											</div>
+											<div class="card-action right-align">
+												<i class="material-icons left">chat</i>
+												<p class="left-align">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus sit in natus.</p>
+												<span class="btn azul activator valign-wrapper">Más info<i class="material-icons right">info</i></span>
+											</div>
+										</div>
+									</div>
+
+									<div class="col l4 m6 s12">
+										<div class="card">
+											<div class="card-content">
+												<p class="center-align">ID15426633</p>
+												<p class="center-align"><b>$3.252,00</b></p>
+												<div class="divider transparent"></div>
+												<p class="center-align">11/06/17</p>
+											</div>
+											<div class="card-reveal">
+												<div class="row">
+													<div class="col s12">
+														<span class="card-title"><i class="material-icons right">close</i></span>
+													</div>
+												</div>
+												<p class="center-align">Lorem ipsum</p>
+												<p class="center-align">Lorem ipsum</p>
+												<p class="center-align">Lorem ipsum</p>
+											</div>
+											<div class="card-action right-align">
+												<i class="material-icons left">chat</i>
+												<p class="left-align">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus sit in natus.</p>
+												<span class="btn azul activator valign-wrapper">Más info<i class="material-icons right">info</i></span>
+											</div>
+										</div>
+									</div>
+									<!-- Fin de cards rechazadas -->
+								</div>
+							</div>
+							<!-- Fin de tab RECHAZADAS -->
 						</div>
-						<!-- Fin de tab PENDIENTES -->
-
-						<!-- Inicio de tab RECHAZADAS -->
-						<div id="rechazadas" class="col s12">
-							<!-- Inicio de cards rechazadas -->
-							<div class="col l4 m6 s12">
-								<div class="card">
-									<div class="card-content">
-										<p class="center-align">ID15421225</p>
-										<p class="center-align"><b>$7.635,00</b></p>
-										<div class="divider transparent"></div>
-										<p class="center-align">11/06/17</p>
-									</div>
-									<div class="card-reveal">
-										<div class="row">
-											<div class="col s12">
-												<span class="card-title"><i class="material-icons right">close</i></span>
-											</div>
-										</div>
-										<p class="center-align">Lorem ipsum</p>
-										<p class="center-align">Lorem ipsum</p>
-										<p class="center-align">Lorem ipsum</p>
-									</div>
-									<div class="card-action center-align">
-										<i class="material-icons left">chat</i>
-										<p class="left-align">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus sit in natus.</p>
-										<span class="btn blue activator valign-wrapper"><i class="material-icons left">add</i> Info</span>
-									</div>
-								</div>
-							</div>
-
-							<div class="col l4 m6 s12">
-								<div class="card">
-									<div class="card-content">
-										<p class="center-align">ID15421878</p>
-										<p class="center-align"><b>$235,00</b></p>
-										<div class="divider transparent"></div>
-										<p class="center-align">11/06/17</p>
-									</div>
-									<div class="card-reveal">
-										<div class="row">
-											<div class="col s12">
-												<span class="card-title"><i class="material-icons right">close</i></span>
-											</div>
-										</div>
-										<p class="center-align">Lorem ipsum</p>
-										<p class="center-align">Lorem ipsum</p>
-										<p class="center-align">Lorem ipsum</p>
-									</div>
-									<div class="card-action center-align">
-										<i class="material-icons left">chat</i>
-										<p class="left-align">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus sit in natus.</p>
-										<span class="btn blue activator valign-wrapper"><i class="material-icons left">add</i> Info</span>
-									</div>
-								</div>
-							</div>
-
-							<div class="col l4 m6 s12">
-								<div class="card">
-									<div class="card-content">
-										<p class="center-align">ID15429865</p>
-										<p class="center-align"><b>$9.545,00</b></p>
-										<div class="divider transparent"></div>
-										<p class="center-align">11/06/17</p>
-									</div>
-									<div class="card-reveal">
-										<div class="row">
-											<div class="col s12">
-												<span class="card-title"><i class="material-icons right">close</i></span>
-											</div>
-										</div>
-										<p class="center-align">Lorem ipsum</p>
-										<p class="center-align">Lorem ipsum</p>
-										<p class="center-align">Lorem ipsum</p>
-									</div>
-									<div class="card-action center-align">
-										<i class="material-icons left">chat</i>
-										<p class="left-align">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus sit in natus.</p>
-										<span class="btn blue activator valign-wrapper"><i class="material-icons left">add</i> Info</span>
-									</div>
-								</div>
-							</div>
-
-							<div class="col l4 m6 s12">
-								<div class="card">
-									<div class="card-content">
-										<p class="center-align">ID15426633</p>
-										<p class="center-align"><b>$3.252,00</b></p>
-										<div class="divider transparent"></div>
-										<p class="center-align">11/06/17</p>
-									</div>
-									<div class="card-reveal">
-										<div class="row">
-											<div class="col s12">
-												<span class="card-title"><i class="material-icons right">close</i></span>
-											</div>
-										</div>
-										<p class="center-align">Lorem ipsum</p>
-										<p class="center-align">Lorem ipsum</p>
-										<p class="center-align">Lorem ipsum</p>
-									</div>
-									<div class="card-action center-align">
-										<i class="material-icons left">chat</i>
-										<p class="left-align">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus sit in natus.</p>
-										<span class="btn blue activator valign-wrapper"><i class="material-icons left">add</i> Info</span>
-									</div>
-								</div>
-							</div>
-							<!-- Fin de cards rechazadas -->
-						</div>
-						<!-- Fin de tab RECHAZADAS -->
 					</div>
 
 					<!-- MODAL RECHAZAR TRANSFERENCIA PENDIENTE -->
 					<div id="modal-rechazar-transferencia-pendiente" class="modal">
 						<form action="#">
 							<div class="modal-content">
-								
+
 								<i class="material-icons right modal-close">close</i>
 								<h5 class="valign-wrapper"><i class="material-icons left">chat</i>Motivo del rechazo</h5>
 
 								<div class="divider"></div>
-								
-								<div class="input-field col s12">
+
+								<div class="input-field col s12 mg-t-20">
 									<textarea id="motivo-rechazo" class="materialize-textarea"></textarea>
 									<label for="motivo-rechazo">Escribe el motivo del rechazo</label>
 								</div>
 
 							</div>
 							<div class="modal-footer">
-								<a href="#!" class="modal-action modal-close blue waves-effect waves-blue btn">Cancelar</a>
-								<a href="#!" class="modal-action modal-close blue waves-effect waves-blue btn">Guardar</a>
+								<a href="#!" class="modal-action modal-close waves-effect waves-blue btn-flat grey-text text-darken-4">Cancelar</a>
+								<a href="#!" class="modal-action modal-close azul waves-effect waves-blue btn">Guardar</a>
 							</div>
 						</form>
 					</div>
@@ -415,7 +655,7 @@
 					<div id="modal-aprobar-transferencia-pendiente" class="modal">
 						<form action="#">
 							<div class="modal-content">
-								
+
 								<i class="material-icons right modal-close">close</i>
 								<h5 class="valign-wrapper"><i class="material-icons left">thumb_up</i>Aprobar pago</h5>
 
@@ -440,8 +680,8 @@
 
 							</div>
 							<div class="modal-footer">
-								<a href="#!" class="modal-action modal-close blue waves-effect waves-blue btn">Cancelar</a>
-								<a href="#!" class="modal-action modal-close blue waves-effect waves-blue btn">Aplicar</a>
+								<a href="#!" class="modal-action modal-close waves-effect waves-blue btn-flat grey-text text-darken-4">Cancelar</a>
+								<a href="#!" class="modal-action modal-close azul waves-effect waves-blue btn">Aplicar</a>
 							</div>
 						</form>
 					</div>
