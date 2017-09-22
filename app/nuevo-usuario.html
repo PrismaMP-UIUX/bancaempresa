@@ -1,0 +1,140 @@
+@@include("_partials/header.html")
+	<body>
+<!-- 	@@include("_partials/nav_out.html") -->
+		@@include("_partials/nav_columbia.html")
+		<main>
+			<div class="container">
+				<div class="section">
+					<div class="row">
+
+						<div class="col l8 offset-l2 m10 offset-m1 s12">
+							<div class="card">
+								<div class="card-content">
+									<h5><i class="material-icons left">person_add</i>Nuevo usuario</h5>
+
+									<div class="divider"></div>
+
+									<div class="row mg-b-0 mg-t-20">
+									<div class="col s12">
+										<div class="input-field">
+											<select id="">
+												<option value="" selected disabled>Seleccione</option>
+												<option value="1">20-33438457-4 - Nombre Empresa</option>
+											</select>
+											<label for="">CUIT / Empresa (*)</label>
+										</div>
+									</div>
+								</div>
+								<div class="row mg-b-0">
+									<div class="col m5 s12">
+										<div class="input-field">
+											<select id="">
+												<option value="dni">DNI</option>
+												<option value="lc">Libreta Cívica</option>
+											</select>
+											<label for=""> Documento (*)</label>
+										</div>
+									</div>
+									<div class="col m7 s12">
+										<div class="input-field">
+											<label for=""> Nro.</label>
+											<input id="" type="text">
+										</div>
+									</div>
+								</div>
+								<div class="row mg-b-0">
+									<div class="col s12">
+										<div class="input-field">
+											<label for="">Clave (*)</label>
+											<input id="" type="password">
+										</div>
+									</div>
+								</div>
+
+								<div class="divider"></div>
+
+								<h6>Perfil</h6>
+								<div class="row mg-b-0">
+									<div class="col l4 m2 offset-m2 s4">
+										<input name="perfil" type="radio" id="operador" class="with-gap" />
+										<label for="operador">Operador</label>
+									</div>
+									<div class="col l4 m3 offset-m1 s4">
+										<input name="perfil" type="radio" id="supervisor" class="with-gap" />
+										<label for="supervisor">Supervisor</label>
+									</div>
+									<div class="col l4 m3 s4">
+										<input name="perfil" type="radio" id="ejecutivo" class="with-gap" />
+										<label for="ejecutivo">Ejecutivo</label>
+									</div>
+								</div>
+								<p class="grey-text">*Tiene permisos para generar pagos y/o transferencias</p>
+
+								<div class="divider"></div>
+
+								<h6>Permisos para pagar</h6>
+								<div class="row mg-b-0 valign-wrapper">
+									<div class="col m2 s2 left-align">
+										<input name="pagos" type="radio" id="pa_si" class="with-gap" />
+										<label for="pa_si" class="mg-r-15">Si</label>
+										<input name="pagos" type="radio" id="pa_no" class="with-gap " />
+										<label for="pa_no">No</label>
+									</div>
+									<div class="col m10 s10">
+										<div class="input-field">
+											<i class="material-icons prefix">attach_money</i>
+											<label for="">Límite</label>
+											<input id="" type="text">
+										</div>
+									</div>
+								</div>
+
+								<div class="divider"></div>
+
+								<h6>Permisos para transferir</h6>
+								<div class="row mg-b-0 valign-wrapper">
+									<div class="col m2 s2 left-align">
+										<input name="transferencias" type="radio" id="tr_si" class="with-gap" />
+										<label for="tr_si" class="mg-r-15">Si</label>
+										<input name="transferencias" type="radio" id="tr_no" class="with-gap" />
+										<label for="tr_no">No</label>
+									</div>
+									<div class="col m10 s10">
+										<div class="input-field">
+											<i class="material-icons prefix">attach_money</i>
+											<label for="">Límite</label>
+											<input id="" type="text">
+										</div>
+									</div>
+								</div>
+
+								<div class="divider"></div>
+
+								<div class="blue lighten-4 mg-t-10">
+									<p class="valign-wrapper"><i class="material-icons left">warning</i>No seleccionaste ningún permiso de cuenta. Elige una cuenta para continuar.</p>
+								</div>
+
+								<h6><b>Permisos de cuentas</b></h6>
+								<div class="row mg-b-0">
+									<div class="col s12 mg-t-10">
+										<input type="checkbox" id="CA_1" />
+										<label for="CA_1">CA$ 156488913115</label>
+										<input type="checkbox" id="CA_2" />
+										<label for="CA_2" class="mg-l-40">CA$ 156488913115</label>
+									</div>
+								</div>
+
+								</div>
+								<div class="card-action right-align">
+									<a href="#!" class="waves-effect waves-blue btn-flat grey-text text-darken-4">Cancelar</a>
+									<a href="#!" class="azul waves-effect waves-blue btn">Siguiente</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		@@include("_partials/footer.html")
+	</body>
+</html>

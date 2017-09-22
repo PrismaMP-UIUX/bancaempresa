@@ -16,8 +16,19 @@
 	}
 }
 
-.card-reveal {
-	h6, p {
-		margin: 0;
+[type="radio"]:not(:checked) + label,
+[type="radio"]:checked + label,
+[type="checkbox"] + label {
+	padding-left: 25px;
+}
+
+.card {
+	.card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating) {
+		margin-right: 15px;
+	}
+	.card-reveal {
+		h6, p {
+			margin: 0;
+		}
 	}
 }

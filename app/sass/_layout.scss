@@ -15,7 +15,24 @@ main {
 	z-index: 1000;
 }
 
-//Para acomodar el logo
+//Acomodo iconos en side-nav y navbar-fixed
+.side-nav {
+	.collapsible-header {
+		padding: 0 32px;
+	}
+}
+
+.navbar-fixed {
+	i.left {
+		margin-right: 3px;
+	}
+	.dropdown-content li > a,
+	.dropdown-content li > span {
+		color: $azul;
+	}
+}
+
+//Acomodo el logo
 .brand-logo {
 	img {
 		height: 50px;
@@ -24,6 +41,14 @@ main {
 
 	}
 }
+
+//El ojo del login
+.login .input-field a i {
+	position: absolute;
+	right: 40px;
+	top: 12px;
+}
+
 
 a {color: $azul;}
 

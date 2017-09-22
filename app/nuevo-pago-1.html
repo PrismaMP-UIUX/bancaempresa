@@ -13,30 +13,38 @@
 		            	<h5>Nuevo pago</h5>
 
 		            	<div class="divider"></div>
-		              
+
 		              <div class="row mg-t-20">
-										<div class="input-field col s12">
-											<i class="material-icons prefix">search</i>
-											<input id="buscar" type="text" class="validate">
-											<label for="buscar">Buscar servicio por nombre</label>
+		              	<div class="col s12">
+											<div class="input-field">
+												<i class="material-icons prefix">search</i>
+												<input id="buscar" type="text" class="validate">
+												<label for="buscar">Buscar servicio por nombre</label>
+											</div>
 										</div>
 									</div>
 									<div class="divider"></div>
-									<div class="row">
-										<div class="input-field col s12">
+									<div class="row mg-t-10">
+
+										<div class="col s12">
 											<p>Buscar servicio por rubro</p>
-											<select>
-												<option value="" selected disabled>Seleccione rubro</option>
-												<option value="telefonica">Telefónica</option>
-												<option value="seguro">Seguro</option>
-											</select>
+											<div class="input-field">
+												<select id="rubro">
+													<option value="" selected disabled>Seleccione rubro</option>
+													<option value="telefonica">Telefónica</option>
+													<option value="seguro">Seguro</option>
+												</select>
+<!-- 												<label for="rubro">Buscar servicio por rubro</label> -->
+											</div>
 										</div>
-										<div class="input-field col s12">
-											<select>
-												<option value="" selected disabled>Seleccione empresa</option>
-												<option value="movistar">Movistar</option>
-												<option value="personal">Personal</option>
-											</select>
+										<div class="col s12">
+											<div class="input-field">
+												<select>
+													<option value="" selected disabled>Seleccione empresa</option>
+													<option value="movistar">Movistar</option>
+													<option value="personal">Personal</option>
+												</select>
+											</div>
 										</div>
 									</div>
 									<div class="row">
@@ -46,19 +54,21 @@
 										</div>
 									</div>
 									<div class="row">
-										<div class="input-field col s12">
-											<input id="nro-referencia" type="text">
-											<label for="nro-referencia">Ingrese Nro. de referencia</label>
+										<div class="col s12">
+											<div class="input-field">
+												<input id="nro-referencia" type="text">
+												<label for="nro-referencia">Ingrese Nro. de referencia</label>
+											</div>
 										</div>
 									</div>
 
-		            </div>
-		            <div class="card-action right-align">
-		              <a href="#!" class="waves-effect waves-blue btn-flat grey-text text-darken-4">Cancelar</a>
+								</div>
+								<div class="card-action right-align">
+									<a href="#!" class="waves-effect waves-blue btn-flat grey-text text-darken-4">Cancelar</a>
 									<a href="nuevo-pago-2.html" class="azul waves-effect waves-blue btn">Siguiente</a>
-		            </div>
-		          </div>
-		        </div>
+								</div>
+							</div>
+						</div>
 
 					</div>
 				</div>
