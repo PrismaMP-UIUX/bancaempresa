@@ -32,3 +32,56 @@
 		}
 	}
 }
+
+//Color de texto de las opciones de los SELECT
+.dropdown-content li > a,
+.dropdown-content li > span {
+	color: $azul;
+}
+
+//Color del input al hacer FOCUS
+input:not([type]):focus:not([readonly]),
+input[type=text]:not(.browser-default):focus:not([readonly]),
+input[type=password]:not(.browser-default):focus:not([readonly]),
+input[type=email]:not(.browser-default):focus:not([readonly]),
+input[type=url]:not(.browser-default):focus:not([readonly]),
+input[type=time]:not(.browser-default):focus:not([readonly]),
+input[type=date]:not(.browser-default):focus:not([readonly]),
+input[type=datetime]:not(.browser-default):focus:not([readonly]),
+input[type=datetime-local]:not(.browser-default):focus:not([readonly]),
+input[type=tel]:not(.browser-default):focus:not([readonly]),
+input[type=number]:not(.browser-default):focus:not([readonly]),
+input[type=search]:not(.browser-default):focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]) {
+	border-bottom: 1px solid $azul;
+	-webkit-box-shadow: 0 1px 0 0 $azul;
+	box-shadow: 0 1px 0 0 $azul;
+}
+
+//Color de la LABEL del input
+.input-field label.active ::after{
+	color: $azul;
+}
+
+//Color del prefix icon al hacer FOCUS en el input
+i.material-icons.prefix.active {
+	color: $azul;
+}
+
+//Color del radio button
+[type="radio"]:checked + label:after,
+[type="radio"].with-gap:checked + label:before,
+[type="radio"].with-gap:checked + label:after {
+	border: 2px solid $azul;
+}
+
+[type="radio"]:checked + label:after,
+[type="radio"].with-gap:checked + label:after {
+	background-color: $azul;
+}
+
+//Color de los checkboxs
+[type="checkbox"]:checked + label:before {
+	border-right: 2px solid $azul;
+	border-bottom: 2px solid $azul;
+}
