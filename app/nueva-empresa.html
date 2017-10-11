@@ -1,50 +1,82 @@
 @@include("_partials/header.html")
 	<body>
-<!-- 	@@include("_partials/nav_out.html") -->
-		@@include("_partials/nav_columbia.html")
+		@@include("_partials/nav_admin.html")
 		<main>
 			<div class="container">
 				<div class="section">
 					<div class="row">
 
-						<div class="col l8 offset-l2 m10 offset-m1 s12">
+						<div class="col m10 offset-m1 s12">
 							<div class="card">
 								<div class="card-content">
-									<h5><i class="material-icons left">business</i>Nueva empresa</h5>
+									<h5 class="mg-b-40"><i class="material-icons left">business</i>Nueva empresa</h5>
 
-									<div class="divider"></div>
-
-									<div class="row mg-b-0 mg-t-20">
+									<div class="row">
 										<div class="col s12">
 											<div class="input-field">
-												<label for=""> Empresa (*)</label>
-												<input id="" type="text">
-											</div>
-										</div>
-										<div class="col s12">
-											<div class="input-field">
-												<label for=""> CUIT/CUIL/CDI (*)</label>
-												<input id="" type="text">
+												<input id="nombre-empresa" type="text" class="validate" required="" aria-required="true">
+												<label for="nombre-empresa"> Empresa (*)</label>
 											</div>
 										</div>
 									</div>
-									<div class="row mg-b-0 mg-t-10">
+									<div class="row">
 										<div class="col s12">
 											<div class="input-field">
-												<label for=""> Nro. de Cuenta 1 (*)</label>
-												<input id="" type="text">
+												<input id="cuit" type="text" class="validate" required="" aria-required="true">
+												<label for="cuit"> CUIT/CUIL/CDI (*)</label>
 											</div>
 										</div>
-										<div class="col s12">
+									</div>
+									<div class="row">
+										<div class="col m4 s12">
 											<div class="input-field">
-												<label for=""> Nro. de Cuenta 2</label>
-												<input id="" type="text">
+												<select id="">
+													<option value="capesos">CA $</option>
+													<option value="cadolares">CA U$S</option>
+													<option value="ccpesos">CC $</option>
+													<option value="ccdolares">CC U$S</option>
+													<option value="espesos">Especial $</option>
+													<option value="esdolares">Especial U$S</option>
+												</select>
+												<label for="">Tipo Cta (*)</label>
 											</div>
+										</div>
+										<div class="col m8 s12">
+											<div class="input-field">
+												<input id="numero" type="text" class="validate" required="" aria-required="true">
+												<label for="numero"> Nro. de Cuenta 1 (*)</label>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col m4 s12">
+											<div class="input-field">
+												<select id="">
+													<option value="capesos">CA $</option>
+													<option value="cadolares">CA U$S</option>
+													<option value="ccpesos">CC $</option>
+													<option value="ccdolares">CC U$S</option>
+													<option value="espesos">Especial $</option>
+													<option value="esdolares">Especial U$S</option>
+												</select>
+												<label for="">Tipo Cta</label>
+											</div>
+										</div>
+										<div class="col m8 s12">
+											<div class="input-field">
+												<input id="numero" type="text">
+												<label for="numero"> Nro. de Cuenta 2</label>
+											</div>
+										</div>
+									</div>
+									<div class="row mg-b-0">
+										<div class="col s12">
+											<p>Los campos con asterisco (*) son obligatorios</p>
 										</div>
 									</div>
 								</div>
 								<div class="card-action right-align">
-									<a href="#!" class="azul waves-effect waves-blue btn">Crear empresa</a>
+									<a href="#!" class="azul waves-effect waves-light btn">Crear empresa</a>
 								</div>
 							</div>
 						</div>

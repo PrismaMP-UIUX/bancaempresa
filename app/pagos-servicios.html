@@ -1,17 +1,15 @@
 @@include("_partials/header.html")
 	<body>
-<!-- 	@@include("_partials/nav_out.html") -->
-		@@include("_partials/nav_columbia.html")
+		@@include("_partials/nav_operador-supervisor.html")
 		<main>
 			<div class="container">
 				<div class="section">
 					<div class="row valign-wrapper">
 						<div class="col s6 left-align ">
-							<h5>Pagos</h5>
-							<h6>Servicios</h6>
+							<h5>Servicios Adheridos</h5>
 						</div>
-						<div class="col s6 right-align">
-							<a class="waves-effect waves-light azul btn modal-trigger" href="#modal-nuevo-pago-servicios"><i class="material-icons left">assignment</i>Nuevo servicio</a>
+						<div class="col s6 flex-end">
+							<a class="waves-effect waves-light azul btn modal-trigger" href="#modal-nuevo-pago-servicios"><i class="material-icons left">assignment</i>Adherir servicio</a>
 						</div>
 					</div>
 
@@ -20,27 +18,9 @@
 						<div class="col l4 m6 s12">
 							<div class="card">
 								<div class="card-content">
-									<div class="row">
-										<div class="col s12">
-											<a href="#"><i class="material-icons right">delete</i></a>
-										</div>
-									</div>
 									<h6 class="center-align">Camuzzi</h6>
 									<p class="center-align"><b>5241541</b></p>
-									<p class="center-align mg-t-20">Desde 12/06/11</p>
-								</div>
-								<div class="card-reveal">
-									<div class="row">
-										<div class="col s12">
-											<span class="card-title"><i class="material-icons right">close</i></span>
-										</div>
-									</div>
-									<p class="center-align">Lorem ipsum</p>
-									<p class="center-align">Lorem ipsum</p>
-									<p class="center-align">Lorem ipsum</p>
-								</div>
-								<div class="card-action center-align">
-									<span class="btn azul activator valign-wrapper"><i class="material-icons left">info</i>Más info</span>
+									<p class="center-align mg-b-20">Desde 12/06/11</p>
 								</div>
 							</div>
 						</div>
@@ -48,27 +28,9 @@
 						<div class="col l4 m6 s12">
 							<div class="card">
 								<div class="card-content">
-									<div class="row">
-										<div class="col s12">
-											<a href="#"><i class="material-icons right">delete</i></a>
-										</div>
-									</div>
 									<h6 class="center-align">ABSA</h6>
 									<p class="center-align"><b>5241541</b></p>
-									<p class="center-align mg-t-20">Desde 12/06/11</p>
-								</div>
-								<div class="card-reveal">
-									<div class="row">
-										<div class="col s12">
-											<span class="card-title"><i class="material-icons right">close</i></span>
-										</div>
-									</div>
-									<p class="center-align">Lorem ipsum</p>
-									<p class="center-align">Lorem ipsum</p>
-									<p class="center-align">Lorem ipsum</p>
-								</div>
-								<div class="card-action center-align">
-									<span class="btn azul activator valign-wrapper"><i class="material-icons left">info</i>Más info</span>
+									<p class="center-align mg-b-20">Desde 12/06/11</p>
 								</div>
 							</div>
 						</div>
@@ -76,27 +38,9 @@
 						<div class="col l4 m6 s12">
 							<div class="card">
 								<div class="card-content">
-									<div class="row">
-										<div class="col s12">
-											<a href="#"><i class="material-icons right">delete</i></a>
-										</div>
-									</div>
 									<h6 class="center-align">Swiss Medical</h6>
 									<p class="center-align"><b>5241541</b></p>
-									<p class="center-align mg-t-20">Desde 12/06/11</p>
-								</div>
-								<div class="card-reveal">
-									<div class="row">
-										<div class="col s12">
-											<span class="card-title"><i class="material-icons right">close</i></span>
-										</div>
-									</div>
-									<p class="center-align">Lorem ipsum</p>
-									<p class="center-align">Lorem ipsum</p>
-									<p class="center-align">Lorem ipsum</p>
-								</div>
-								<div class="card-action center-align">
-									<span class="btn azul activator valign-wrapper"><i class="material-icons left">info</i>Más info</span>
+									<p class="center-align mg-b-20">Desde 12/06/11</p>
 								</div>
 							</div>
 						</div>
@@ -107,42 +51,91 @@
 					<div id="modal-nuevo-pago-servicios" class="modal">
 						<form action="#">
 							<div class="modal-content">
-
-								<i class="material-icons right modal-close">close</i>
-								<h5 class="valign-wrapper"><i class="material-icons left">assignment</i>Nuevo servicio</h5>
-
-								<div class="divider"></div>
-
-								<div class="row mg-b-0 mg-t-10">
-									<div class="input-field">
-										<div class="col s12">
-											<select id="">
-												<option value="" selected disabled>Seleccione</option>
-												<option value="directv">DirecTV</option>
-												<option value="cablevision">Cablevisión</option>
-												<label for="">Empresa de servicio</label>
-											</select>
-										</div>
-									</div>
-								</div>
-								<div class="row mg-b-0">
+								<div class="row">
 									<div class="col s12">
-										<div class="input-field">
-											<label for="">N° de referencia</label>
-											<input id="" type="text">
-										</div>
+										<i class="material-icons right modal-close">close</i>
+										<h5 class="valign-wrapper"><i class="material-icons left">assignment_turned_in</i>Adherir servicio</h5>
 									</div>
 								</div>
 
+								<div class="row">
+									<div class="col s12">
+										<ul class="tabs tabs-fixed-width">
+											<li class="tab"><a href="#nombre" class="azul-text">Buscar por Nombre</a></li>
+											<li class="tab"><a href="#rubro" class="azul-text">Buscar por Rubro</a></li>
+										</ul>
+									</div>
+								</div>
+								<!-- Inicio de tab NOMBRE -->
+								<div id="nombre">
+									<div class="container">
+										<div class="row mg-t-20">
+											<div class="col s12">
+												<div class="input-field">
+													<i class="material-icons prefix">search</i>
+													<input id="buscar" type="text">
+													<label for="buscar">Buscar servicio por nombre</label>
+												</div>
+											</div>
+										</div>
+
+										<div class="row">
+											<div class="col s12">
+												<div class="input-field">
+													<input id="nro-cliente" type="text">
+													<label for="nro-cliente">Ingrese Nro. de Cliente</label>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- Fin de tab NOMBRE -->
+								<!-- Inicio de tab RUBRO -->
+								<div id="rubro">
+									<div class="container">
+										<div class="row mg-t-20">
+											<div class="col s12">
+												<div class="input-field">
+													<select id="rubro">
+														<option value="telefonica">Telefónica</option>
+														<option value="seguro">Seguro</option>
+													</select>
+													<label for="rubro">Seleccione rubro</label>
+												</div>
+											</div>
+										</div>
+
+										<div class="row">
+											<div class="col s12">
+												<div class="input-field">
+													<select id="empresa">
+														<option value="movistar">Movistar</option>
+														<option value="personal">Personal</option>
+													</select>
+													<label for="empresa">Seleccione empresa</label>
+												</div>
+											</div>
+										</div>
+
+										<div class="row mg-b-0">
+											<div class="col s12">
+												<div class="input-field">
+													<input id="nro-cliente" type="text">
+													<label for="nro-cliente">Ingrese Nro. de Cliente</label>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- Fin de tab RUBRO -->
 							</div>
 							<div class="modal-footer">
-								<a href="#!" class="modal-action modal-close waves-effect waves-blue btn-flat grey-text text-darken-4">Cancelar</a>
-								<a href="#!" class="modal-action modal-close azul waves-effect waves-blue btn">Agregar</a>
+								<a href="#!" class="modal-action modal-close waves-effect waves-light btn-flat grey-text text-darken-4">Cancelar</a>
+								<a href="#!" class="modal-action modal-close azul waves-effect waves-light btn">Agregar</a>
 							</div>
 						</form>
 					</div>
 					<!-- fin MODAL NUEVO PAGO SERVICIOS -->
-
 				</div>
 			</div>
 		</main>

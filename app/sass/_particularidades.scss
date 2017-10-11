@@ -1,5 +1,15 @@
 /* PARTICULARIDADES */
 
+//El ojo del login
+.login, .token-virtual {
+	.input-field a i {
+		position: absolute;
+		right: 40px;
+		top: 12px;
+	}
+}
+
+
 .collapsible-body {
 	h6, p {
 		margin: 0;
@@ -9,7 +19,7 @@
 .collapsible-header {
 	.row {
 		width: 100%;
-		margin-bottom: 0;
+		margin: 0 auto;
 	}
 	h6, p {
 		margin: 0;
@@ -58,10 +68,27 @@ textarea.materialize-textarea:focus:not([readonly]) {
 	box-shadow: 0 1px 0 0 $azul;
 }
 
-//Color de la LABEL del input
-.input-field label.active ::after{
+//Color del LABEL de los inputs
+input:not([type]):focus:not([readonly]) + label,
+input[type=text]:not(.browser-default):focus:not([readonly]) + label,
+input[type=password]:not(.browser-default):focus:not([readonly]) + label,
+input[type=email]:not(.browser-default):focus:not([readonly]) + label,
+input[type=url]:not(.browser-default):focus:not([readonly]) + label,
+input[type=time]:not(.browser-default):focus:not([readonly]) + label,
+input[type=date]:not(.browser-default):focus:not([readonly]) + label,
+input[type=datetime]:not(.browser-default):focus:not([readonly]) + label,
+input[type=datetime-local]:not(.browser-default):focus:not([readonly]) + label,
+input[type=tel]:not(.browser-default):focus:not([readonly]) + label,
+input[type=number]:not(.browser-default):focus:not([readonly]) + label,
+input[type=search]:not(.browser-default):focus:not([readonly]) + label,
+textarea.materialize-textarea:focus:not([readonly]) + label {
 	color: $azul;
 }
+
+//
+// .input-field label.active ::after{
+// 	color: $azul;
+// }
 
 //Color del prefix icon al hacer FOCUS en el input
 i.material-icons.prefix.active {
@@ -84,4 +111,27 @@ i.material-icons.prefix.active {
 [type="checkbox"]:checked + label:before {
 	border-right: 2px solid $azul;
 	border-bottom: 2px solid $azul;
+}
+
+// Input de pago parcial
+.btn.actualizar {
+	position: absolute;
+	top: -10px;
+	right: 0;
+}
+
+//Efecto de papel cortado en el ticket
+.card.ticket {
+	position:relative;
+
+	&::before {
+		background: linear-gradient(45deg, transparent 20px, #fff 0), linear-gradient(-45deg, transparent 20px, #fff 0);
+		background-size: 18px 25px;
+		content: "";
+		height: 20px;
+		position: absolute;
+		bottom: -20px;
+		left: 0;
+		width: 100%;
+	}
 }

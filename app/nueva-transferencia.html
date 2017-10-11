@@ -1,73 +1,84 @@
 @@include("_partials/header.html")
 	<body>
-<!-- 	@@include("_partials/nav_out.html") -->
-		@@include("_partials/nav_columbia.html")
+		@@include("_partials/nav_operador-supervisor.html")
 		<main>
 			<div class="container">
 				<div class="section">
 					<div class="row">
 
-						<div class="col l8 offset-l2 m10 offset-m1 s12">
-		          <div class="card">
-		            <div class="card-content">
-									<h5><i class="material-icons left">swap_horiz</i>Nueva transferencia</h5>
+						<div class="col m10 offset-m1 s12">
+							<div class="card">
+								<div class="card-content">
+									<h5 class="mg-b-40"><i class="material-icons left">swap_horiz</i>Nueva transferencia</h5>
 
-									<div class="divider"></div>
-
-		              <div class="row mg-t-20">
-		              	<div class="col m6 s12">
-			              	<p><b>Cuenta origen</b></p>
-											<div class="input-field mg-0">
-												<select>
-													<option value="" selected disabled>Seleccione una cuenta</option>
-													<option value="ca">Especial/CA$ 156488913115</option>
-													<option value="cc">Especial/CC$ 156488913115</option>
+									<div class="row">
+										<div class="col m6 s12">
+											<div class="input-field">
+												<select id="">
+													<option value="capesos">CA $ 156488913115</option>
+													<option value="cadolares">CA U$S 156488913115</option>
+													<option value="ccpesos">CC $ 156488913115</option>
+													<option value="ccdolares">CC U$S 156488913115</option>
+													<option value="espesos">Especial $ 156488913115</option>
+													<option value="esdolares">Especial U$S 156488913115</option>
 												</select>
+												<label for="">Seleccione cuenta origen</label>
 											</div>
 										</div>
 										<div class="col m6 s12">
-											<p><b>CBU/Alias</b></p>
 											<div class="input-field">
-												<p>Cuenta alquiler</p>
+												<input type="text" value="Cuenta origen" disabled />
+												<label for="">CBU/Alias</label>
 											</div>
 										</div>
 									</div>
-									<p><b>Cuenta destino</b></p>
-									<div class="row mg-b-0 valign-wrapper">
+									<div class="row mg-b-0">
+										<div class="col s12">
+											<p class="label grey-text">Cuenta destino</p>
+										</div>
+									</div>
+									<div class="row valign-wrapper">
 										<div class="col s3 left-align">
 											<input name="cta-destino" type="radio" id="cbu" class="with-gap" />
-											<label for="cbu">CBU</label>
+											<label class="mg-b-10" for="cbu">CBU</label>
 											<input name="cta-destino" type="radio" id="alias" class="with-gap" />
-											<label for="alias">ALias</label>
+											<label for="alias">Alias</label>
 										</div>
 										<div class="input-field col s9">
 											<input id="alias-name" type="text" placeholder="LOBO.CASA.SILLA">
 										</div>
 									</div>
-									<div class="row mg-b-0">
+									<div class="row">
 										<div class="col s12">
 											<div class="input-field">
 												<select>
-													<option value="1" selected>En otra cuenta propia</option>
-													<option value="2">En una cuenta no propia</option>
+													<option value="1" selected>Cuenta corriente propia</option>
+													<option value="2">Cuenta corriente no propia</option>
+													<option value="3">Otra cuenta propia</option>
+													<option value="4">Otra cuenta no propia</option>
 												</select>
 												<label for="">Tipo de cuenta destino</label>
 											</div>
 										</div>
 									</div>
-									<div class="row mg-b-0">
+									<div class="row">
 										<div class="col s12">
 											<div class="input-field">
 												<select>
 													<option value="1" selected>Varios</option>
 													<option value="2">Honorarios</option>
-													<option value="3">Alquiler</option>
+													<option value="3">Seguro</option>
+													<option value="4">Préstamo</option>
+													<option value="5">Factura</option>
+													<option value="6">Expensas</option>
+													<option value="7">Cuota</option>
+													<option value="8">Alquileres</option>
 												</select>
 												<label for="">Concepto</label>
 											</div>
 										</div>
 									</div>
-									<div class="row mg-b-0">
+									<div class="row">
 										<div class="col s12">
 											<div class="input-field">
 												<input id="referencia" type="text">
@@ -75,7 +86,7 @@
 											</div>
 										</div>
 									</div>
-									<div class="row mg-b-0">
+									<div class="row">
 										<div class="col s12">
 											<div class="input-field">
 												<i class="material-icons prefix">attach_money</i>
@@ -87,8 +98,8 @@
 
 								</div>
 								<div class="card-action right-align">
-									<a href="#!" class="waves-effect waves-blue btn-flat grey-text text-darken-4">Cancelar</a>
-									<a href="#!" class="azul waves-effect waves-blue btn">Pedir aprobación</a>
+									<a href="javascript:history.go(-1)" class="waves-effect waves-light btn-flat grey-text text-darken-4">Cancelar</a>
+									<a href="#!" class="azul waves-effect waves-light btn">Pedir aprobación</a>
 								</div>
 							</div>
 						</div>

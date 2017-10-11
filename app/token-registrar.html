@@ -1,0 +1,58 @@
+@@include("_partials/header.html")
+	<body>
+		@@include("_partials/nav_operador-supervisor.html")
+		<main>
+			<div class="token-virtual container">
+				<div class="section">
+					<div class="row">
+						<div class="col m6 s12 left-align ">
+							<h5>Token Virtual</h5>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col m8 offset-m2 s12">
+							<div class="card">
+								<div class="card-content">
+									<div class="row">
+										<div class="col s12">
+											<h6 class="left-align">Código de Registración: OS8WRR44</h6>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col s12">
+											<p class="left-align"><i class="material-icons left">info_outline</i>Recuerde que debe ingresar este Código de Asociación en su App de Token Virtual Empresa</p>
+										</div>
+									</div>
+									<div class="row mg-b-0">
+										<div class="input-field right-align">
+											<!-- <a href="#!" class="waves-effect waves-light btn-flat grey-text text-darken-4">Cancelar</a> -->
+											<a href="#!" class="waves-effect azul waves-light btn">Aceptar</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		@@include("_partials/footer.html")
+	</body>
+	<script>
+		var pw = $(".validate"),
+				cb = $(".unmask"),
+				mask = true;
+
+		cb.on("click", function(){
+
+			if(mask === true){
+				mask = false;
+				pw.attr("type", "text");
+			} else {
+				mask = true;
+				pw.attr("type", "password");
+			}
+
+		});
+	</script>
+</html>

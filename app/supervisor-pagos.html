@@ -1,13 +1,12 @@
 @@include("_partials/header.html")
 	<body>
-<!-- 	@@include("_partials/nav_out.html") -->
-		@@include("_partials/nav_columbia.html")
+		@@include("_partials/nav_operador-supervisor.html")
 		<main>
 			<div class="container">
 				<div class="section">
 					<div class="row valign-wrapper">
 						<div class="col s12 left-align ">
-							<h5>Pagos</h5>
+							<h5>Aprobar pagos</h5>
 						</div>
 					</div>
 
@@ -21,8 +20,8 @@
 						<div class="card-content">
 							<!-- Inicio de tab PENDIENTES -->
 							<div id="pendientes" class="col s12">
-								<div class="row">
-									<div class="col s12">
+								<div class="row mg-l-12">
+									<div class="col s12 ">
 										<input type="checkbox" onClick="toggle(this)" id="all_cards" />
 										<label for="all_cards">Seleccionar todos</label>
 									</div>
@@ -169,10 +168,10 @@
 								<!-- fin collapsible pendientes -->
 
 								<!-- Inicio Rechazar/aprobar todos -->
-								<div class="row">
-									<div class="col s12 right-align">
-										<a class="modal-trigger waves-effect waves-light azul btn" href="#modal-rechazar-pago-pendiente"><i class="material-icons left">thumb_down</i>Rechazar</a>
-										<a class="modal-trigger waves-effect waves-light azul btn mg-l-10" href="#modal-aprobar-pago-pendiente"><i class="material-icons left">thumb_up</i>Aprobar</a>
+								<div class="row mg-t-30 mg-b-0">
+									<div class="col s12 flex-end">
+										<a class="modal-trigger waves-effect waves-light azul btn mg-b-10" href="#modal-rechazar-pago-pendiente"><i class="material-icons left">thumb_down</i>Rechazar seleccionados</a>
+										<a class="modal-trigger waves-effect waves-light azul btn mg-l-10 mg-b-10" href="#modal-aprobar-pago-pendiente"><i class="material-icons left">thumb_up</i>Aprobar seleccionados</a>
 									</div>
 								</div>
 								<!-- Fin Rechazar/aprobar todos -->
@@ -190,7 +189,12 @@
 												<p class="center-align"><b>$5.300,00</b></p>
 												<div class="divider transparent"></div>
 												<p class="center-align mg-t-10">Vencimiento</p>
-												<p class="center-align">14/08/17</p>
+												<p class="center-align mg-b-10">14/08/17</p>
+												<div class="row mg-b-0">
+													<div class="col s12 right-align">
+														<a class="activator azul-text btn-flat waves-effect waves-light" href="#!"><i class="material-icons left mg-r-5">info</i>Más info</a>
+													</div>
+												</div>
 											</div>
 											<div class="card-reveal">
 												<div class="row">
@@ -198,14 +202,13 @@
 														<span class="card-title"><i class="material-icons right">close</i></span>
 													</div>
 												</div>
-												<p class="center-align">Lorem ipsum</p>
-												<p class="center-align">Lorem ipsum</p>
-												<p class="center-align">Lorem ipsum</p>
+												<p class="center-align"><b>Cuenta origen</b></p>
+												<p class="center-align">Especial/CA$</p>
+												<p class="center-align">156488913115</p>
 											</div>
 											<div class="card-action right-align">
-												<i class="material-icons left">chat</i>
-												<p class="left-align">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus sit in natus.</p>
-												<span class="btn azul activator valign-wrapper"><i class="material-icons left">info</i>Más info</span>
+												<i class="material-icons azul-text left">chat</i>
+												<p class="left-align">Rechazado por inconsistencia de datos.</p>
 											</div>
 										</div>
 									</div>
@@ -217,7 +220,12 @@
 												<p class="center-align"><b>$10.240,00</b></p>
 												<div class="divider transparent"></div>
 												<p class="center-align mg-t-10">Vencimiento</p>
-												<p class="center-align">14/08/17</p>
+												<p class="center-align mg-b-10">14/08/17</p>
+												<div class="row mg-b-0">
+													<div class="col s12 right-align">
+														<a class="activator azul-text btn-flat waves-effect waves-light" href="#!"><i class="material-icons left mg-r-5">info</i>Más info</a>
+													</div>
+												</div>
 											</div>
 											<div class="card-reveal">
 												<div class="row">
@@ -225,14 +233,13 @@
 														<span class="card-title"><i class="material-icons right">close</i></span>
 													</div>
 												</div>
-												<p class="center-align">Lorem ipsum</p>
-												<p class="center-align">Lorem ipsum</p>
-												<p class="center-align">Lorem ipsum</p>
+												<p class="center-align"><b>Cuenta origen</b></p>
+												<p class="center-align">Especial/CA$</p>
+												<p class="center-align">156488913115</p>
 											</div>
 											<div class="card-action right-align">
-												<i class="material-icons left">chat</i>
-												<p class="left-align">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus sit in natus.</p>
-												<span class="btn azul activator valign-wrapper"><i class="material-icons left">info</i>Más info</span>
+												<i class="material-icons azul-text left">chat</i>
+												<p class="left-align">Rechazado por inconsistencia de datos.</p>
 											</div>
 										</div>
 									</div>
@@ -244,7 +251,12 @@
 												<p class="center-align"><b>$48.300,00</b></p>
 												<div class="divider transparent"></div>
 												<p class="center-align mg-t-10">Vencimiento</p>
-												<p class="center-align">14/08/17</p>
+												<p class="center-align mg-b-10">14/08/17</p>
+												<div class="row mg-b-0">
+													<div class="col s12 right-align">
+														<a class="activator azul-text btn-flat waves-effect waves-light" href="#!"><i class="material-icons left mg-r-5">info</i>Más info</a>
+													</div>
+												</div>
 											</div>
 											<div class="card-reveal">
 												<div class="row">
@@ -252,14 +264,13 @@
 														<span class="card-title"><i class="material-icons right">close</i></span>
 													</div>
 												</div>
-												<p class="center-align">Lorem ipsum</p>
-												<p class="center-align">Lorem ipsum</p>
-												<p class="center-align">Lorem ipsum</p>
+												<p class="center-align"><b>Cuenta origen</b></p>
+												<p class="center-align">Especial/CA$</p>
+												<p class="center-align">156488913115</p>
 											</div>
 											<div class="card-action right-align">
-												<i class="material-icons left">chat</i>
-												<p class="left-align">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus sit in natus.</p>
-												<span class="btn azul activator valign-wrapper"><i class="material-icons left">info</i>Más info</span>
+												<i class="material-icons azul-text left">chat</i>
+												<p class="left-align">Rechazado por inconsistencia de datos.</p>
 											</div>
 										</div>
 									</div>
@@ -271,7 +282,12 @@
 												<p class="center-align"><b>$5.300,00</b></p>
 												<div class="divider transparent"></div>
 												<p class="center-align mg-t-10">Vencimiento</p>
-												<p class="center-align">14/08/17</p>
+												<p class="center-align mg-b-10">14/08/17</p>
+												<div class="row mg-b-0">
+													<div class="col s12 right-align">
+														<a class="activator azul-text btn-flat waves-effect waves-light" href="#!"><i class="material-icons left mg-r-5">info</i>Más info</a>
+													</div>
+												</div>
 											</div>
 											<div class="card-reveal">
 												<div class="row">
@@ -279,14 +295,13 @@
 														<span class="card-title"><i class="material-icons right">close</i></span>
 													</div>
 												</div>
-												<p class="center-align">Lorem ipsum</p>
-												<p class="center-align">Lorem ipsum</p>
-												<p class="center-align">Lorem ipsum</p>
+												<p class="center-align"><b>Cuenta origen</b></p>
+												<p class="center-align">Especial/CA$</p>
+												<p class="center-align">156488913115</p>
 											</div>
 											<div class="card-action right-align">
-												<i class="material-icons left">chat</i>
-												<p class="left-align">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus sit in natus.</p>
-												<span class="btn azul activator valign-wrapper"><i class="material-icons left">info</i>Más info</span>
+												<i class="material-icons azul-text left">chat</i>
+												<p class="left-align">Rechazado por inconsistencia de datos.</p>
 											</div>
 										</div>
 									</div>
@@ -303,19 +318,25 @@
 							<div class="modal-content">
 
 								<i class="material-icons right modal-close">close</i>
-								<h5 class="valign-wrapper"><i class="material-icons left">chat</i>Motivo del rechazo</h5>
+								<h5 class="valign-wrapper mg-b-40"><i class="material-icons left">chat</i>Motivo del rechazo</h5>
 
-								<div class="divider"></div>
+									<div class="container">
 
-								<div class="input-field col s12">
-									<textarea id="motivo-rechazo" class="materialize-textarea"></textarea>
-									<label for="motivo-rechazo">Escribe el motivo del rechazo</label>
+									<div class="row">
+										<div class="col s12">
+											<div class="input-field">
+												<textarea id="motivo-rechazo" class="materialize-textarea"></textarea>
+												<label for="motivo-rechazo">Escribe el motivo del rechazo</label>
+											</div>
+										</div>
+									</div>
+
 								</div>
 
 							</div>
 							<div class="modal-footer">
-								<a href="#!" class="modal-action modal-close waves-effect waves-blue btn-flat grey-text text-darken-4">Cancelar</a>
-								<a href="#!" class="modal-action modal-close azul waves-effect waves-blue btn">Guardar</a>
+								<a href="#!" class="modal-action modal-close waves-effect waves-light btn-flat grey-text text-darken-4">Cancelar</a>
+								<a href="#!" class="modal-action modal-close azul waves-effect waves-light btn">Guardar</a>
 							</div>
 						</form>
 					</div>
@@ -327,31 +348,31 @@
 							<div class="modal-content">
 
 								<i class="material-icons right modal-close">close</i>
-								<h5 class="valign-wrapper"><i class="material-icons left">thumb_up</i>Aprobar pago</h5>
+								<h5 class="valign-wrapper mg-b-40"><i class="material-icons left">thumb_up</i>Aprobar pago</h5>
 
-								<div class="divider"></div>
+									<div class="container">
 
-								<div class="row">
-									<div class="input-field col s12">
-										<p class="center-align">Ingrese clave Token virtual</p>
+									<div class="row">
+										<div class="col s12 m8 offset-m2">
+											<div class="input-field">
+												<input id="token" type="text">
+												<label for="token">Ingrese clave Token virtual</label>
+											</div>
+										</div>
 									</div>
-									<div class="input-field col s4 offset-s4">
-										<input placeholder="" id="" type="text">
-									</div>
-								</div>
 
-								<div class="divider"></div>
-
-								<div class="row">
-									<div class="col s12 ">
-										<p class="valign-wrapper"><i class="material-icons left">info_outline</i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit nulla obcaecati aut explicabo sunt vero iure.</p>
+									<div class="row">
+										<div class="col s12 ">
+											<p class="valign-wrapper"><i class="material-icons left">info_outline</i>Se debe ingresar el Token obtenido desde la App Token Virtual Empresas</p>
+										</div>
 									</div>
+
 								</div>
 
 							</div>
 							<div class="modal-footer">
-								<a href="#!" class="modal-action modal-close waves-effect waves-blue btn-flat grey-text text-darken-4">Cancelar</a>
-								<a href="#!" class="modal-action modal-close azul waves-effect waves-blue btn">Aplicar</a>
+								<a href="#!" class="modal-action modal-close waves-effect waves-light btn-flat grey-text text-darken-4">Cancelar</a>
+								<a href="#!" class="modal-action modal-close azul waves-effect waves-light btn">Aplicar</a>
 							</div>
 						</form>
 					</div>

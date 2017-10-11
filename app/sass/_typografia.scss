@@ -38,6 +38,12 @@ h6 {
 
 p, a, span {font-family: "Roboto-Regular";}
 
+.label {
+  font-family: "Roboto-Regular";
+  font-size: 0.8rem;
+  color: $azul;
+}
+
 @font-face {
   font-family: 'Material Icons';
   font-style: normal;

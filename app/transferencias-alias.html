@@ -1,14 +1,12 @@
 @@include("_partials/header.html")
 	<body>
-<!-- 	@@include("_partials/nav_out.html") -->
-		@@include("_partials/nav_columbia.html")
+		@@include("_partials/nav_operador-supervisor.html")
 		<main>
 			<div class="container">
 				<div class="section">
 					<div class="row valign-wrapper">
 						<div class="col s12 left-align ">
-							<h5>Transferencias</h5>
-							<h6>Alias</h6>
+							<h5>Alias de Cuentas</h5>
 						</div>
 					</div>
 					<div class="row">
@@ -16,14 +14,14 @@
 						<div class="col l4 m6 s12">
 							<div class="card">
 								<div class="card-content">
-									<div class="row">
+									<h6 class="center-align">Alquiler</h6>
+									<p class="center-align mg-b-10">CA$ 156488913115</p>
+									<p class="center-align mg-b-10">20-33445566-7</p>
+									<div class="row mg-b-0">
 										<div class="col s12">
-											<a class="modal-trigger" href="#modal-editar-alias"><i class="material-icons right">edit</i></a>
+											<a class="modal-trigger right valign-wrapper" href="#modal-editar-alias"><i class="material-icons mg-r-5">edit</i>Editar</a>
 										</div>
 									</div>
-									<h6 class="center-align">CA$ 156488913115</h6>
-									<p class="center-align mg-b-20"><b>Alquiler</b></p>
-									<p class="center-align">20-33445566-7</p>
 								</div>
 							</div>
 						</div>
@@ -31,14 +29,14 @@
 						<div class="col l4 m6 s12">
 							<div class="card">
 								<div class="card-content">
-									<div class="row">
+									<h6 class="center-align">Gastos</h6>
+									<p class="center-align mg-b-10">CA$ 156488913115</p>
+									<p class="center-align mg-b-10">20-33445566-7</p>
+									<div class="row mg-b-0">
 										<div class="col s12">
-											<a class="modal-trigger" href="#modal-editar-alias"><i class="material-icons right">edit</i></a>
+											<a class="modal-trigger right valign-wrapper" href="#modal-editar-alias"><i class="material-icons mg-r-5">edit</i>Editar</a>
 										</div>
 									</div>
-									<h6 class="center-align">CA$ 156488913115</h6>
-									<p class="center-align mg-b-20"><b>Gastos</b></p>
-									<p class="center-align">20-33445566-7</p>
 								</div>
 							</div>
 						</div>
@@ -46,14 +44,14 @@
 						<div class="col l4 m6 s12">
 							<div class="card">
 								<div class="card-content">
-									<div class="row">
+									<h6 class="center-align">Gastos varios</h6>
+									<p class="center-align mg-b-10">CA$ 156488913115</p>
+									<p class="center-align mg-b-10">20-33445566-7</p>
+									<div class="row mg-b-0">
 										<div class="col s12">
-											<a class="modal-trigger" href="#modal-editar-alias"><i class="material-icons right">edit</i></a>
+											<a class="modal-trigger right valign-wrapper" href="#modal-editar-alias"><i class="material-icons mg-r-5">edit</i>Editar</a>
 										</div>
 									</div>
-									<h6 class="center-align">CA$ 156488913115</h6>
-									<p class="center-align mg-b-20"><b>Gastos varios</b></p>
-									<p class="center-align">20-33445566-7</p>
 								</div>
 							</div>
 						</div>
@@ -66,39 +64,36 @@
 							<div class="modal-content">
 
 								<i class="material-icons right modal-close">close</i>
-								<h5 class="valign-wrapper"><i class="material-icons left">edit</i>Editar Alias</h5>
+								<h5 class="valign-wrapper mg-b-40"><i class="material-icons left">edit</i>Editar Alias</h5>
 
-								<div class="divider"></div>
-
-								<div class="row">
-									<div class="input-field col s12">
-										<p class="center-align">Cuenta origen</p>
-									</div>
-									<div class="input-field col s12">
-										<p class="center-align">CA$ 156488913115</p>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col s12">
-										<div class="input-field">
-											<input id="" type="text">
-											<label for="">CUIT/CUIL/CDI (*)</label>
+								<div class="container">
+									<div class="row">
+										<div class="col s12">
+											<p class="mg-t-20"><b>Cuenta origen: </b>CA$ 156488913115</p>
 										</div>
 									</div>
-								</div>
-								<div class="row">
-									<div class="col s12">
-										<div class="input-field">
-											<input id="" type="text">
-											<label for="">Alias (*)</label>
+									<div class="row">
+										<div class="col s12">
+											<div class="input-field">
+												<input id="" type="text">
+												<label for="">CUIT/CUIL/CDI</label>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col s12">
+											<div class="input-field">
+												<input id="" type="text" class="validate" required="" aria-required="true">
+												<label for="">Alias (*)</label>
+											</div>
 										</div>
 									</div>
 								</div>
 
 							</div>
 							<div class="modal-footer">
-								<a href="#!" class="modal-action modal-close waves-effect waves-blue btn-flat grey-text text-darken-4">Cancelar</a>
-								<a href="#!" class="modal-action azul modal-close waves-effect waves-blue btn">Guardar</a>
+								<a href="#!" class="modal-action modal-close waves-effect waves-light btn-flat grey-text text-darken-4">Cancelar</a>
+								<a href="#!" class="modal-action azul modal-close waves-effect waves-light btn">Guardar</a>
 							</div>
 						</form>
 					</div>

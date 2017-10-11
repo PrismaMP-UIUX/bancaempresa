@@ -9,35 +9,32 @@
 							<div class="card white">
 								<div class="card-content black-text">
 									<div class="row">
-										<span class="card-title col s12 azul-text">Ingreso</span>
+										<span class="card-title col s12 azul-text">Cambio de contraseña</span>
 									</div>
 									<div class="row mg-b-0">
-										<div class="input-field col s4">
-											<select>
-												<option value="DNI" selected>DNI</option>
-												<option value="LC">LC</option>
-												<option value="LE">LE</option>
-												<option value="PAS">PAS</option>
-												<option value="CI">CI</option>
-												<option value="cuit-cuil">CUIT/CUIL</option>
-											</select>
-											<label>Tipo</label>
-										</div>
-										<div class="input-field col s8">
-											<input id="nro" type="text" class="validate" required="" aria-required="true">
-											<label for="nro">Número de documento</label>
+										<div class="input-field col s12">
+											<input id="password" type="password" class="validate" required="" aria-required="true">
+											<label for="password">Contraseña actual</label>
+											<a href="#"><i for="password" class="material-icons unmask">remove_red_eye</i></a>
 										</div>
 									</div>
 									<div class="row mg-b-0">
 										<div class="input-field col s12">
 											<input id="password" type="password" class="validate" required="" aria-required="true">
-											<label for="password">Contraseña</label>
+											<label for="password">Nueva contraseña</label>
+											<a href="#"><i for="password" class="material-icons unmask">remove_red_eye</i></a>
+										</div>
+									</div>
+									<div class="row mg-b-0">
+										<div class="input-field col s12">
+											<input id="password" type="password" class="validate" required="" aria-required="true">
+											<label for="password">Repetir nueva contraseña</label>
 											<a href="#"><i for="password" class="material-icons unmask">remove_red_eye</i></a>
 										</div>
 									</div>
 									<div class="row mg-b-0">
 										<div class="input-field right-align">
-											<a href="login-forzado.html" class="waves-effect azul waves-light btn">Ingresar</a>
+											<a href="pantalla-falsa.html" class="waves-effect azul waves-light btn">Ingresar</a>
 										</div>
 									</div>
 								</div>
@@ -51,8 +48,8 @@
 	</body>
 	<script>
 		var pw = $(".validate"),
-				cb = $(".unmask"),
-				mask = true;
+			cb = $(".unmask"),
+			mask = true;
 
 		cb.on("click", function(){
 

@@ -1,0 +1,113 @@
+@@include("_partials/header.html")
+	<body>
+		@@include("_partials/nav_admin.html")
+		<main>
+			<div class="container">
+				<div class="section">
+					<div class="row">
+
+						<div class="col m10 offset-m1 s12">
+							<div class="card">
+								<div class="card-content">
+									<h5 class="mg-b-40"><i class="material-icons left">person_add</i>Nuevo administrador</h5>
+
+									<div class="row">
+									<div class="col s12">
+										<div class="input-field">
+											<select id="">
+												<option value="0">20-35437453-0 - Nombre Empresa</option>
+												<option value="1">20-33438457-4 - Nombre Empresa</option>
+											</select>
+											<label for="">Seleccione CUIT / Empresa (*)</label>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col m5 s12">
+										<div class="input-field">
+											<select id="">
+												<option value="DNI" selected>DNI</option>
+												<option value="LC">LC</option>
+												<option value="LE">LE</option>
+												<option value="PAS">PAS</option>
+												<option value="CI">CI</option>
+												<option value="cuit-cuil">CUIT/CUIL</option>
+											</select>
+											<label for=""> Documento (*)</label>
+										</div>
+									</div>
+									<div class="col m7 s12">
+										<div class="input-field">
+											<input id="numero" type="text" class="validate" required="" aria-required="true">
+											<label for="numero"> Nro.</label>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col s12">
+										<div class="input-field">
+											<input id="clave" type="password" class="validate" required="" aria-required="true">
+											<label for="clave">Clave (*)</label>
+										</div>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col m4 s12">
+										<div class="input-field">
+											<select id="">
+												<option value="capesos">CA $</option>
+												<option value="cadolares">CA U$S</option>
+												<option value="ccpesos">CC $</option>
+												<option value="ccdolares">CC U$S</option>
+												<option value="espesos">Especial $</option>
+												<option value="esdolares">Especial U$S</option>
+											</select>
+											<label for="">Tipo Cta (*)</label>
+										</div>
+									</div>
+									<div class="col m8 s12">
+										<div class="input-field">
+											<input id="numero" type="text" class="validate" required="" aria-required="true">
+											<label for="numero"> Nro. de Cuenta 1 (*)</label>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col m4 s12">
+										<div class="input-field">
+											<select id="">
+												<option value="capesos">CA $</option>
+												<option value="cadolares">CA U$S</option>
+												<option value="ccpesos">CC $</option>
+												<option value="ccdolares">CC U$S</option>
+												<option value="espesos">Especial $</option>
+												<option value="esdolares">Especial U$S</option>
+											</select>
+											<label for="">Tipo Cta</label>
+										</div>
+									</div>
+									<div class="col m8 s12">
+										<div class="input-field">
+											<input id="numero" type="text">
+											<label for="numero"> Nro. de Cuenta 2</label>
+										</div>
+									</div>
+								</div>
+								<div class="row mg-b-0">
+									<div class="col s12">
+										<p>Los campos con asterisco (*) son obligatorios</p>
+									</div>
+								</div>
+							</div>
+							<div class="card-action right-align">
+								<a id="btn-crear" href="#!" class="azul waves-effect waves-light btn">Crear</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		@@include("_partials/footer.html")
+	</body>
+</html>

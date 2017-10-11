@@ -1,7 +1,6 @@
 @@include("_partials/header.html")
 	<body>
-<!-- 	@@include("_partials/nav_out.html") -->
-		@@include("_partials/nav_columbia.html")
+		@@include("_partials/nav_admin.html")
 		<main>
 			<div class="container">
 				<div class="section">
@@ -9,7 +8,7 @@
 						<div class="col s6 left-align ">
 							<h5>Usuarios</h5>
 						</div>
-						<div class="col s6 right-align">
+						<div class="col s6 flex-end">
 							<a class="waves-effect waves-light azul btn modal-trigger" href="#modal-nuevo-usuario"><i class="material-icons left">person_add</i>Nuevo usuario</a>
 						</div>
 					</div>
@@ -19,18 +18,18 @@
 						<div class="col l4 m6 s12">
 							<div class="card">
 								<div class="card-content">
-									<div class="row">
-										<div class="col s12">
-											<a href="#"><i class="material-icons right">delete</i></a>
-											<a class="modal-trigger" href="#modal-editar-usuario"><i class="material-icons right">edit</i></a>
-										</div>
-									</div>
 									<h6 class="center-align">FluxIT</h6>
 									<p class="center-align">20-32098739/5</p>
 									<p class="center-align">Operador</p>
+									<div class="row mg-t-10 mg-b-0">
+										<div class="col s12 right-align">
+											<a class="modal-trigger azul-text btn-flat waves-effect waves-light" href="#modal-editar-usuario"><i class="material-icons left mg-r-5">edit</i>Editar</a>&nbsp;
+											<a class="activator azul-text btn-flat waves-effect waves-light" href="#!"><i class="material-icons left mg-r-5">info</i>Más info</a>
+										</div>
+									</div>
 								</div>
 								<div class="card-reveal">
-									<div class="row">
+									<div class="row mg-b-0">
 										<div class="col s12">
 											<span class="card-title"><i class="material-icons right">close</i></span>
 										</div>
@@ -39,27 +38,24 @@
 									<p class="center-align">Tiene permisos para:</p>
 									<p class="center-align">Pagos y Transferencias</p>
 								</div>
-								<div class="card-action right-align">
-									<span class="btn azul activator valign-wrapper"><i class="material-icons left">info</i>Más info</span>
-								</div>
 							</div>
 						</div>
 
 						<div class="col l4 m6 s12">
 							<div class="card">
 								<div class="card-content">
-									<div class="row">
-										<div class="col s12">
-											<a href="#"><i class="material-icons right">delete</i></a>
-											<a class="modal-trigger" href="#modal-editar-usuario"><i class="material-icons right">edit</i></a>
-										</div>
-									</div>
 									<h6 class="center-align">Prisma</h6>
 									<p class="center-align">20-32098739/5</p>
 									<p class="center-align">Supervisor</p>
+									<div class="row mg-t-10 mg-b-0">
+										<div class="col s12 right-align">
+											<a class="modal-trigger azul-text btn-flat waves-effect waves-light" href="#modal-editar-usuario"><i class="material-icons left mg-r-5">edit</i>Editar</a>&nbsp;
+											<a class="activator azul-text btn-flat waves-effect waves-light" href="#!"><i class="material-icons left mg-r-5">info</i>Más info</a>
+										</div>
+									</div>
 								</div>
 								<div class="card-reveal">
-									<div class="row">
+									<div class="row mg-b-0">
 										<div class="col s12">
 											<span class="card-title"><i class="material-icons right">close</i></span>
 										</div>
@@ -68,27 +64,24 @@
 									<p class="center-align">Tiene permisos para:</p>
 									<p class="center-align">Pagos y Transferencias</p>
 								</div>
-								<div class="card-action right-align">
-									<span class="btn azul activator valign-wrapper"><i class="material-icons left">info</i>Más info</span>
-								</div>
 							</div>
 						</div>
 
 						<div class="col l4 m6 s12">
 							<div class="card">
 								<div class="card-content">
-									<div class="row">
-										<div class="col s12">
-											<a href="#"><i class="material-icons right">delete</i></a>
-											<a class="modal-trigger" href="#modal-editar-usuario"><i class="material-icons right">edit</i></a>
-										</div>
-									</div>
 									<h6 class="center-align">Banelco</h6>
 									<p class="center-align">20-32098739/5</p>
 									<p class="center-align">Supervisor</p>
+									<div class="row mg-t-10 mg-b-0">
+										<div class="col s12 right-align">
+											<a class="modal-trigger azul-text btn-flat waves-effect waves-light" href="#modal-editar-usuario"><i class="material-icons left mg-r-5">edit</i>Editar</a>&nbsp;
+											<a class="activator azul-text btn-flat waves-effect waves-light" href="#!"><i class="material-icons left mg-r-5">info</i>Más info</a>
+										</div>
+									</div>
 								</div>
 								<div class="card-reveal">
-									<div class="row">
+									<div class="row mg-b-0">
 										<div class="col s12">
 											<span class="card-title"><i class="material-icons right">close</i></span>
 										</div>
@@ -96,9 +89,6 @@
 									<p class="center-align">DNI 38726265</p>
 									<p class="center-align">Tiene permisos para:</p>
 									<p class="center-align">Pagos y Transferencias</p>
-								</div>
-								<div class="card-action right-align">
-									<span class="btn azul activator valign-wrapper"><i class="material-icons left">info</i>Más info</span>
 								</div>
 							</div>
 						</div>
@@ -106,18 +96,18 @@
 						<div class="col l4 m6 s12">
 							<div class="card">
 								<div class="card-content">
-									<div class="row">
-										<div class="col s12">
-											<a href="#"><i class="material-icons right">delete</i></a>
-											<a class="modal-trigger" href="#modal-editar-usuario"><i class="material-icons right">edit</i></a>
-										</div>
-									</div>
 									<h6 class="center-align">VISA</h6>
 									<p class="center-align">20-32098739/5</p>
 									<p class="center-align">Operador</p>
+									<div class="row mg-t-10 mg-b-0">
+										<div class="col s12 right-align">
+											<a class="modal-trigger azul-text btn-flat waves-effect waves-light" href="#modal-editar-usuario"><i class="material-icons left mg-r-5">edit</i>Editar</a>&nbsp;
+											<a class="activator azul-text btn-flat waves-effect waves-light" href="#!"><i class="material-icons left mg-r-5">info</i>Más info</a>
+										</div>
+									</div>
 								</div>
 								<div class="card-reveal">
-									<div class="row">
+									<div class="row mg-b-0">
 										<div class="col s12">
 											<span class="card-title"><i class="material-icons right">close</i></span>
 										</div>
@@ -125,9 +115,6 @@
 									<p class="center-align">DNI 38726265</p>
 									<p class="center-align">Tiene permisos para:</p>
 									<p class="center-align">Pagos y Transferencias</p>
-								</div>
-								<div class="card-action right-align">
-									<span class="btn azul activator valign-wrapper"><i class="material-icons left">info</i>Más info</span>
 								</div>
 							</div>
 						</div>
@@ -141,67 +128,69 @@
 							<div class="modal-content">
 
 								<i class="material-icons right modal-close">close</i>
-								<h5 class="valign-wrapper"><i class="material-icons left">edit</i>Editar Usuario</h5>
+								<h5 class="valign-wrapper mg-b-40"><i class="material-icons left">edit</i>Editar Usuario</h5>
 
-								<div class="divider"></div>
-
-								<div class="row mg-b-0 mg-t-10">
-									<div class="col s12">
-										<div class="input-field">
-											<input id="" type="text">
-											<label for="">Empresa (*)</label>
+								<div class="container">
+									<div class="row mg-b-0">
+										<div class="col s12">
+											<div class="input-field">
+												<input id="" type="text" class="validate" required="" aria-required="true">
+												<label for="">Empresa (*)</label>
+											</div>
 										</div>
-									</div>
-								</div>
-								<div class="row mg-b-0">
-									<div class="col s12">
-										<div class="input-field">
-											<input id="" type="text">
-											<label for="">CUIT/CUIL/CDI (*)</label>
+										<div class="col s12">
+											<div class="input-field">
+												<input id="" type="text" class="validate" required="" aria-required="true">
+												<label for="">CUIT/CUIL/CDI (*)</label>
+											</div>
 										</div>
-									</div>
-								</div>
-								<div class="row mg-b-0">
-									<div class="col m5 s12">
-										<div class="input-field">
-											<select id="">
-												<option value="dni">DNI</option>
-												<option value="lc">Libreta Cívica</option>
-											</select>
-											<label for=""> Documento (*)</label>
+										<div class="col m5 s12">
+											<div class="input-field">
+												<select id="">
+													<option value="DNI" selected>DNI</option>
+													<option value="LC">LC</option>
+													<option value="LE">LE</option>
+													<option value="PAS">PAS</option>
+													<option value="CI">CI</option>
+													<option value="unoMas">Uno más</option>
+												</select>
+												<label for=""> Documento (*)</label>
+											</div>
 										</div>
-									</div>
-									<div class="col m7 s12">
-										<div class="input-field">
-											<label for=""> Nro.</label>
-											<input id="" type="text">
+										<div class="col m7 s12">
+											<div class="input-field">
+												<input id="numero" type="text" class="validate" required="" aria-required="true">
+												<label for="numero"> Nro. (*)</label>
+											</div>
 										</div>
-									</div>
-								</div>
-
-								<div class="divider"></div>
-
-								<h6>Perfil</h6>
-								<div class="row mg-b-0">
-									<div class="col l4 m2 offset-m2 s4">
-										<input name="perfil" type="radio" id="operador" class="with-gap" />
-										<label for="operador">Operador</label>
-									</div>
-									<div class="col l4 m3 offset-m1 s4">
-										<input name="perfil" type="radio" id="supervisor" class="with-gap" />
-										<label for="supervisor">Supervisor</label>
-									</div>
-									<div class="col l4 m3 s4">
-										<input name="perfil" type="radio" id="ejecutivo" class="with-gap" />
-										<label for="ejecutivo">Ejecutivo</label>
-									</div>
-								</div>
-								<p class="grey-text">*Tiene permisos para generar pagos y/o transferencias</p>
+										<div class="col s12">
+											<p class="label">Perfil</p>
+										</div>
+										<div class="col l4 m2 offset-m2 s4">
+											<input name="perfil" type="radio" id="operador" value="Tiene permisos para generar pagos y/o transferencias" class="with-gap" />
+											<label for="operador">Operador</label>
+										</div>
+										<div class="col l4 m3 offset-m1 s4">
+											<input name="perfil" type="radio" id="supervisor" value="Tiene permisos para aprobar y/o rechazar pagos y/o transferencias" class="with-gap" />
+											<label for="supervisor">Supervisor</label>
+										</div>
+										<div class="col l4 m3 s4">
+											<input name="perfil" type="radio" id="ejecutivo" value="Tiene permisos para generar, aprobar y/o rechazar pagos y/o transferencias" class="with-gap" />
+											<label for="ejecutivo">Ejecutivo</label>
+										</div>
+										<div class="col s12">
+											<p class="grey-text" id="label-perfil"></p>
+										</div>
+										<div class="col s12">
+											<p>Los campos con asterisco (*) son obligatorios</p>
+										</div>
+									</div> <!-- fin row -->
+								</div> <!-- fin container -->
 
 							</div>
 							<div class="modal-footer">
-								<a href="#!" class="modal-action modal-close waves-effect waves-blue btn-flat grey-text text-darken-4">Cancelar</a>
-								<a href="#!" class="modal-action azul modal-close waves-effect waves-blue btn">Guardar</a>
+								<a href="#!" class="modal-action modal-close waves-effect waves-light btn-flat grey-text text-darken-4">Cancelar</a>
+								<a href="#!" class="modal-action azul modal-close waves-effect waves-light btn">Guardar</a>
 							</div>
 						</form>
 					</div>
@@ -212,122 +201,128 @@
 							<div class="modal-content">
 
 								<i class="material-icons right modal-close">close</i>
-								<h5 class="valign-wrapper"><i class="material-icons left">person_add</i>Nuevo Usuario</h5>
+								<h5 class="valign-wrapper mg-b-40"><i class="material-icons left">person_add</i>Nuevo Usuario</h5>
 
-								<div class="divider"></div>
+								<div class="container">
 
-								<div class="row mg-b-0 mg-t-20">
+									<div class="row mg-b-0">
+										<div class="col s12">
+											<div class="input-field">
+												<select id="">
+													<option value="0">20-35888600-6 - Nombre Empresa</option>
+													<option value="1">20-33438457-4 - Nombre Empresa</option>
+												</select>
+												<label for="">Seleccione CUIT / Empresa (*)</label>
+											</div>
+										</div>
+
+										<div class="col m5 s12">
+											<div class="input-field">
+												<select id="">
+													<option value="DNI" selected>DNI</option>
+													<option value="LC">LC</option>
+													<option value="LE">LE</option>
+													<option value="PAS">PAS</option>
+													<option value="CI">CI</option>
+													<option value="unoMas">Uno más</option>
+												</select>
+												<label for=""> Documento (*)</label>
+											</div>
+										</div>
+										<div class="col m7 s12">
+											<div class="input-field">
+												<input id="numero" type="text" class="validate" required="" aria-required="true">
+												<label for="numero"> Nro. (*)</label>
+											</div>
+										</div>
+
+										<div class="col s12">
+											<div class="input-field">
+												<input id="clave" type="password" class="validate" required="" aria-required="true">
+												<label for="clave">Clave (*)</label>
+											</div>
+										</div>
+
+										<div class="col s12">
+											<p class="label">Perfil</p>
+										</div>
+										<div class="col l4 m2 offset-m2 s12">
+											<input name="perfil1" type="radio" id="operador1" value="Tiene permisos para generar pagos y/o transferencias" class="with-gap" />
+											<label for="operador1">Operador</label>
+										</div>
+										<div class="col l4 m3 offset-m1 s12">
+											<input name="perfil1" type="radio" id="supervisor1" value="Tiene permisos para aprobar y/o rechazar pagos y/o transferencias" class="with-gap" />
+											<label for="supervisor1">Supervisor</label>
+										</div>
+										<div class="col l4 m3 s12">
+											<input name="perfil1" type="radio" id="ejecutivo1" value="Tiene permisos para generar, aprobar y/o rechazar pagos y/o transferencias" class="with-gap" />
+											<label for="ejecutivo1">Ejecutivo</label>
+										</div>
+										<div class="col s12">
+											<p class="grey-text mg-b-20" id="label-perfil1"></p>
+										</div>
+									</div>
+
 									<div class="col s12">
-										<div class="input-field">
-											<select id="">
-												<option value="" selected disabled>Seleccione</option>
-												<option value="1">20-33438457-4 - Nombre Empresa</option>
-											</select>
-											<label for="">CUIT / Empresa (*)</label>
+										<p class="label">Permisos para pagar</p>
+									</div>
+									<div class="row mg-b-0 valign-wrapper">
+										<div class="col m2 s2 left-align">
+											<input name="pagos" type="radio" id="pa_si" class="with-gap" />
+											<label for="pa_si" class="mg-r-15">Si</label>
+											<input name="pagos" type="radio" id="pa_no" class="with-gap " />
+											<label for="pa_no">No</label>
+										</div>
+										<div class="col m10 s10">
+											<div class="input-field">
+												<i class="material-icons prefix">attach_money</i>
+												<label for="">Límite</label>
+												<input id="" type="text">
+											</div>
 										</div>
 									</div>
-								</div>
-								<div class="row mg-b-0">
-									<div class="col m5 s12">
-										<div class="input-field">
-											<select id="">
-												<option value="dni">DNI</option>
-												<option value="lc">Libreta Cívica</option>
-											</select>
-											<label for=""> Documento (*)</label>
-										</div>
-									</div>
-									<div class="col m7 s12">
-										<div class="input-field">
-											<label for=""> Nro.</label>
-											<input id="" type="text">
-										</div>
-									</div>
-								</div>
-								<div class="row mg-b-0">
+
 									<div class="col s12">
-										<div class="input-field">
-											<label for="">Clave (*)</label>
-											<input id="" type="password">
+										<p class="label">Permisos para transferir</p>
+									</div>
+									<div class="row mg-b-0 valign-wrapper">
+										<div class="col m2 s2 left-align">
+											<input name="transferencias" type="radio" id="tr_si" class="with-gap" />
+											<label for="tr_si" class="mg-r-15">Si</label>
+											<input name="transferencias" type="radio" id="tr_no" class="with-gap" />
+											<label for="tr_no">No</label>
+										</div>
+										<div class="col m10 s10">
+											<div class="input-field">
+												<i class="material-icons prefix">attach_money</i>
+												<label for="">Límite</label>
+												<input id="" type="text">
+											</div>
 										</div>
 									</div>
-								</div>
 
-								<div class="divider"></div>
-
-								<h6>Perfil</h6>
-								<div class="row mg-b-0">
-									<div class="col l4 m2 offset-m2 s4">
-										<input name="perfil1" type="radio" id="operador1" class="with-gap" />
-										<label for="operador1">Operador</label>
-									</div>
-									<div class="col l4 m3 offset-m1 s4">
-										<input name="perfil1" type="radio" id="supervisor1" class="with-gap" />
-										<label for="supervisor1">Supervisor</label>
-									</div>
-									<div class="col l4 m3 s4">
-										<input name="perfil1" type="radio" id="ejecutivo1" class="with-gap" />
-										<label for="ejecutivo1">Ejecutivo</label>
-									</div>
-								</div>
-								<p class="grey-text">*Tiene permisos para generar pagos y/o transferencias</p>
-
-								<div class="divider"></div>
-
-								<h6>Permisos para pagar</h6>
-								<div class="row mg-b-0 valign-wrapper">
-									<div class="col m2 s2 left-align">
-										<input name="pagos" type="radio" id="pa_si" class="with-gap" />
-										<label for="pa_si" class="mg-r-15">Si</label>
-										<input name="pagos" type="radio" id="pa_no" class="with-gap " />
-										<label for="pa_no">No</label>
-									</div>
-									<div class="col m10 s10">
-										<div class="input-field">
-											<label for="">Límite</label>
-											<input id="" type="text">
+									<div class="row mg-b-0">
+										<div class="col s12">
+											<p class="label">Permisos de cuentas</p>
+										</div>
+										<div class="col s12 mg-t-10" id="checkArray">
+											<input type="checkbox" id="CA_1" />
+											<label for="CA_1" class="mg-r-40">CA$ 156488913115</label>
+											<input type="checkbox" id="CA_2" />
+											<label for="CA_2">CA$ 156488913115</label>
 										</div>
 									</div>
-								</div>
-
-								<div class="divider"></div>
-
-								<h6>Permisos para transferir</h6>
-								<div class="row mg-b-0 valign-wrapper">
-									<div class="col m2 s2 left-align">
-										<input name="transferencias" type="radio" id="tr_si" class="with-gap" />
-										<label for="tr_si" class="mg-r-15">Si</label>
-										<input name="transferencias" type="radio" id="tr_no" class="with-gap" />
-										<label for="tr_no">No</label>
+									<div class="orange lighten-4 mg-t-10">
+										<p id="msj-error" class="valign-wrapper"><i class="material-icons left">warning</i>No seleccionaste ningún permiso de cuenta. Elige una cuenta para continuar.</p>
 									</div>
-									<div class="col m10 s10">
-										<div class="input-field">
-											<label for="">Límite</label>
-											<input id="" type="text">
-										</div>
-									</div>
-								</div>
+									<p class="mg-t-10">Los campos con asterisco (*) son obligatorios</p>
 
-								<div class="divider"></div>
-
-								<div class="blue lighten-4 mg-t-10">
-									<p class="valign-wrapper"><i class="material-icons left">warning</i>No seleccionaste ningún permiso de cuenta. Elige una cuenta para continuar.</p>
-								</div>
-
-								<h6><b>Permisos de cuentas</b></h6>
-								<div class="row mg-b-0">
-									<div class="col s12 mg-t-10">
-										<input type="checkbox" id="CA_1" />
-										<label for="CA_1">CA$ 156488913115</label>
-										<input type="checkbox" id="CA_2" />
-										<label for="CA_2" class="mg-l-40">CA$ 156488913115</label>
-									</div>
-								</div>
+								</div> <!-- fin container -->
 
 							</div>
 							<div class="modal-footer">
-								<a href="#!" class="modal-action modal-close waves-effect waves-blue btn-flat mg-r-10">Cancelar</a>
-								<a href="#!" class="modal-action modal-close waves-effect waves-blue btn azul">Crear</a>
+								<a href="#!" class="modal-action modal-close waves-effect waves-light btn-flat mg-r-10">Cancelar</a>
+								<a id="btn-crear" disabled href="#!" class="modal-action modal-close waves-effect waves-light btn azul">Crear</a>
 							</div>
 						</form>
 					</div>
@@ -336,4 +331,25 @@
 		</main>
 		@@include("_partials/footer.html")
 	</body>
+	<script>
+	$(document).ready(function() {
+
+		// Mostrar texto al elegir tipo de perfil
+		$("input[type=radio]").click(function() {
+			$('#label-'+ this.name).html(this.value);
+		});
+
+		//Mostrar/ocultar warning y boton Crear cuando no elige cuenta
+		$("#checkArray").click(function() {
+			if($('input:checkbox:checked').length > 0){
+				$("#msj-error").hide();
+				$('#btn-crear').removeAttr('disabled');
+			 }else{
+				$("#msj-error").show();
+				$('#btn-crear').attr('disabled','disabled');
+			}
+		});
+
+	});
+	</script>
 </html>

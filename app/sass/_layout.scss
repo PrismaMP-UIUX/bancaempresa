@@ -42,13 +42,40 @@ main {
 	}
 }
 
-//El ojo del login
-.login .input-field a i {
-	position: absolute;
-	right: 40px;
-	top: 12px;
+// Links
+a {
+	color: $azul;
+	cursor: pointer;
 }
 
 
-a {color: $azul;}
+// TABS
+.tabs {
+	height: 60px;
+	.tab {
+		height: 60px;
+		line-height: 60px;
+		a {
+			font-size: 17px;
+			font-weight: bold;
+		}
+	}
+	.indicator {
+		background-color: $azul;
+	}
+}
 
+
+// CARDS
+.card {
+	.card-content {
+		.btn-flat {
+			padding: 0 1rem;
+		}
+	}
+	.card-action {
+		.btn-flat {
+			padding: 0 1rem;
+		}
+	}
+}

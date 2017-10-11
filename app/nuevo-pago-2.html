@@ -1,56 +1,174 @@
 @@include("_partials/header.html")
 	<body>
-<!-- 	@@include("_partials/nav_out.html") -->
-		@@include("_partials/nav_columbia.html")
+		@@include("_partials/nav_operador-supervisor.html")
 		<main>
 			<div class="container">
 				<div class="section">
 					<div class="row">
 
-						<div class="col l8 offset-l2 m10 offset-m1 s12">
-		          <div class="card">
-		            <div class="card-content">
-		            	<h5>Nuevo pago</h5>
+						<div class="col l12 m10 offset-m1 s12">
+							<div class="card">
+								<div class="card-content">
+									<h5>Pagar</h5>
 
-		            	<div class="divider"></div>
+									<div class="divider"></div>
 
-		              <div class="row mg-t-20">
+									<div class="row mg-t-20">
 										<div class="col s12">
-											<h6 class="center-align">Servicio</h6>
-											<p class="mg-b-10 center-align">Movistar</p>
-											<h6 class="center-align">Nro. de referencia</h6>
-											<p class="mg-b-10 center-align">54874512</p>
-											<h6 class="center-align">Vencimiento</h6>
-											<p class="center-align">17/09/17</p>
+											<h6 class="mg-b-15">Seleccioná la factura a pagar</h6>
+											<p class="left-align"><b>Servicio: </b>Movistar | <b>Nro. de referencia: </b>54874512</p>
 										</div>
 									</div>
-									<div class="divider mg-b-10"></div>
 									<div class="row">
 										<div class="col s12">
-											<div class="input-field">
-												<i class="material-icons prefix">attach_money</i>
-												<input id="importe" type="text">
-												<label for="importe">Importe</label>
+											<div class="row mg-l-12">
+												<div class="col s12">
+													<input type="checkbox" onClick="toggle(this)" id="selectAll" />
+													<label for="selectAll">Seleccionar todas</label>
+												</div>
+											</div>
+
+											<!-- inicio Collapsible popout -->
+											<ul class="collapsible popout" data-collapsible="expandable">
+
+												<li class="item-factura">
+													<div class="collapsible-header grey lighten-4">
+														<div class="row">
+															<div class="col m1 s12">
+																<div class="valign-wrapper">
+																	<input type="checkbox" name="facturas-pendientes" id="fc1" />
+																	<label for="fc1"></label>
+																</div>
+															</div>
+															<div class="col m4 s12">
+																<p class="center-align mg-b-5">FC A-0001-12345678</p>
+															</div>
+															<div class="col m4 s12">
+																<p class="center-align mg-b-5">Vto: 19/10/2017</p>
+															</div>
+															<div class="col m3 s12">
+																<p class="center-align mg-b-5 tooltipped importe-a-pagar" data-position="top" data-delay="50" data-tooltip="Editar importe" data-importe="5300.00" href="#">$5.300,00</p>
+															</div>
+														</div>
+													</div>
+													<div class="collapsible-body">
+														<h6 class="center-align mg-b-10">Editar el importe a pagar</h6>
+														<div class="row mg-b-0">
+															<div class="col l6 offset-l3 m8 offset-m2 s12">
+																<div class="input-field">
+																	<i class="material-icons prefix">attach_money</i>
+																	<a class="waves-effect waves-light btn azul tooltipped actualizar mg-t-10 right" data-position="top" data-delay="50" data-tooltip="Actualizar importe a pagar" href="#"><i class="material-icons text-white">refresh</i></a>
+																	<input id="importe1" class="importe-nuevo" type="text" placeholder="5.300,00">
+																	<label for="importe1">Pagar</label>
+																</div>
+															</div>
+														</div>
+													</div>
+												</li>
+
+												<li class="item-factura">
+													<div class="collapsible-header grey lighten-4">
+														<div class="row">
+															<div class="col m1 s12">
+																<div class="valign-wrapper">
+																	<input type="checkbox" name="facturas-pendientes" id="fc2" />
+																	<label for="fc2"></label>
+																</div>
+															</div>
+															<div class="col m4 s12">
+																<p class="center-align mg-b-5">FC A-0001-12345678</p>
+															</div>
+															<div class="col m4 s12">
+																<p class="center-align mg-b-5">Vto: 19/10/2017</p>
+															</div>
+															<div class="col m3 s12">
+																<p class="center-align mg-b-5 tooltipped importe-a-pagar" data-position="top" data-delay="50" data-tooltip="Editar importe" data-importe="5300.00" href="#">$5.300,00</p>
+															</div>
+														</div>
+													</div>
+													<div class="collapsible-body">
+														<h6 class="center-align mg-b-10">Editar el importe a pagar</h6>
+														<div class="row mg-b-0">
+															<div class="col l6 offset-l3 m8 offset-m2 s12">
+																<div class="input-field">
+																	<i class="material-icons prefix">attach_money</i>
+																	<a class="waves-effect waves-light btn azul tooltipped actualizar mg-t-10 right" data-position="top" data-delay="50" data-tooltip="Actualizar importe a pagar" href="#"><i class="material-icons text-white">refresh</i></a>
+																	<input id="importe2" class="importe-nuevo" type="text" placeholder="5.300,00">
+																	<label for="importe2">Pagar</label>
+																</div>
+															</div>
+														</div>
+													</div>
+												</li>
+
+												<li class="item-factura">
+													<div class="collapsible-header grey lighten-4">
+														<div class="row">
+															<div class="col m1 s12">
+																<div class="valign-wrapper">
+																	<input type="checkbox" name="facturas-pendientes" id="fc3" />
+																	<label for="fc3"></label>
+																</div>
+															</div>
+															<div class="col m4 s12">
+																<p class="center-align mg-b-5">FC A-0001-12345678</p>
+															</div>
+															<div class="col m4 s12">
+																<p class="center-align mg-b-5">Vto: 19/10/2017</p>
+															</div>
+															<div class="col m3 s12">
+																<p class="center-align mg-b-5 tooltipped importe-a-pagar" data-position="top" data-delay="50" data-tooltip="Editar importe" data-importe="5300.00" href="#"><span>$</span>5.300,00</p>
+															</div>
+														</div>
+													</div>
+													<div class="collapsible-body">
+														<h6 class="center-align mg-b-10">Editar el importe a pagar</h6>
+														<div class="row mg-b-0">
+															<div class="col l6 offset-l3 m8 offset-m2 s12">
+																<div class="input-field">
+																	<i class="material-icons prefix">attach_money</i>
+																	<a class="waves-effect waves-light btn azul tooltipped actualizar mg-t-10 right" data-position="top" data-delay="50" data-tooltip="Actualizar importe a pagar" href="#"><i class="material-icons text-white">refresh</i></a>
+																	<input id="importe3" class="importe-nuevo" type="text" placeholder="5.300,00">
+																	<label for="importe3">Pagar</label>
+																</div>
+															</div>
+														</div>
+													</div>
+												</li>
+
+											</ul>
+											<!-- fin Collapsible popout -->
+
+											<div class="col m5 offset-m7 s12">
+												<div class="input-field">
+													<i class="material-icons prefix">attach_money</i>
+													<input id="importe-total" type="text" placeholder="0,00" />
+													<label for="importe-total">Total a pagar</label>
+												</div>
 											</div>
 										</div>
 									</div>
+
 									<div class="row">
 										<div class="col s12">
 											<div class="input-field">
 												<select id="">
-													<option value="" selected disabled>Seleccione una cuenta</option>
-													<option value="ca">CA$ 156488913115</option>
-													<option value="cc">CC$ 156488913115</option>
+													<option value="capesos">CA $ 156488913115</option>
+													<option value="cadolares">CA U$S 156488913115</option>
+													<option value="ccpesos">CC $ 156488913115</option>
+													<option value="ccdolares">CC U$S 156488913115</option>
+													<option value="espesos">Especial $ 156488913115</option>
+													<option value="esdolares">Especial U$S 156488913115</option>
 												</select>
-												<label for="">Cuenta origen</label>
+												<label for="">Seleccione cuenta origen</label>
 											</div>
 										</div>
 									</div>
 
 								</div>
 								<div class="card-action right-align">
-									<a href="#!" class="waves-effect waves-blue btn-flat grey-text text-darken-4">Cancelar</a>
-									<a href="#!" class="azul waves-effect waves-blue btn">Pedir aprobación</a>
+									<a href="javascript:history.go(-1)" class="waves-effect waves-light btn-flat grey-text text-darken-4">Cancelar</a>
+									<a href="#!" class="azul waves-effect waves-light btn">Pedir aprobación</a>
 								</div>
 							</div>
 						</div>
@@ -61,4 +179,77 @@
 		</main>
 		@@include("_partials/footer.html")
 	</body>
+	<script language="JavaScript">
+		$(document).ready(function(){
+
+			//Gestionamos click de los botones para pagar otro importe
+			$('.actualizar').click(function(){
+				var $padre =  $(this).closest('.item-factura');
+				var importeNuevo = $padre.find('.importe-nuevo').val().replace(',','.');
+				//Abajo falta validar que sea un numero float y no letras
+
+				$padre.find('.importe-a-pagar').html('$'+formatNumber(importeNuevo));
+				$padre.find('.importe-a-pagar').attr('data-importe', importeNuevo);
+				calcularImporteTotal();
+			});
+
+			//Gestionamos el click sobre los checkboxes
+			$('.item-factura input[type=checkbox]').click(function(){
+				calcularImporteTotal();
+			});
+			//Gestionamos cuando selecciona todos juntos
+			$('#selectAll').click(function(){
+				calcularImporteTotal();
+			});
+
+
+		});
+
+	//Calcular el importe total
+	function calcularImporteTotal(){
+		var importe_total = 0;
+		$('.item-factura input[type=checkbox]:checked').each(function(index,element){
+			var $padre = $(this).closest('.item-factura');
+			var importe = parseFloat($padre.find('.importe-a-pagar').attr('data-importe'));
+			importe_total += importe;
+			console.log("La factura " + index + " suma " + importe);
+		});
+		$('#importe-total').val(formatNumber(importe_total));
+
+	}
+
+	/* Funcion equivalente al number_format de PHP */
+	function formatNumber(number, decimals, dec_point, thousands_sep) {
+		// Strip all characters but numerical ones.
+		number = (number + '').replace(/[^0-9+\-Ee.]/g, '');
+		var n = !isFinite(+number) ? 0 : +number,
+			prec = !isFinite(+decimals) ? 2 : Math.abs(decimals),
+			sep = (typeof thousands_sep === 'undefined') ? '.' : thousands_sep,
+			dec = (typeof dec_point === 'undefined') ? ',' : dec_point,
+			s = '',
+			toFixedFix = function(n, prec) {
+				var k = Math.pow(10, prec);
+				return '' + Math.round(n * k) / k;
+			};
+		// Fix for IE parseFloat(0.55).toFixed(0) = 0;
+		s = (prec ? toFixedFix(n, prec) : '' + Math.round(n)).split('.');
+		if (s[0].length > 3) {
+			s[0] = s[0].replace(/\B(?=(?:\d{3})+(?!\d))/g, sep);
+		}
+		if ((s[1] || '').length < prec) {
+			s[1] = s[1] || '';
+			s[1] += new Array(prec - s[1].length + 1).join('0');
+		}
+		return s.join(dec);
+	}
+
+
+		function toggle(source) {
+			checkboxes = document.getElementsByName('facturas-pendientes');
+			for(var i=0, n=checkboxes.length;i<n;i++) {
+				checkboxes[i].checked = source.checked;
+			}
+
+		}
+	</script>
 </html>

@@ -8,7 +8,7 @@ $rojo: #E30034;
 $tabla_de_colores: (
   "azul" : $azul,
   "rojo": $rojo,
-) !default; 
+) !default;
 
 @each $color in $tabla_de_colores {
   .#{nth($color,1)} {
@@ -16,7 +16,7 @@ $tabla_de_colores: (
   }
   .#{nth($color,1)}-text {
     color: #{nth($color,2)} !important;
-  } 
+  }
 }
 
 @for $mg from 0 through 300 {
@@ -26,3 +26,19 @@ $tabla_de_colores: (
     .mg-t-#{$mg} {margin-top: #{$mg}px !important;}
     .mg-b-#{$mg} {margin-bottom: #{$mg}px !important;}
 }
+
+.flex-end {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-start {
+  display: flex;
+  justify-content: flex-start;
+}
+
