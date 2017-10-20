@@ -1,6 +1,6 @@
 @@include("_partials/header.html")
 	<body>
-		@@include("_partials/nav_admin.html")
+		@@include("_partials/nav_admin-banco.html")
 		<main>
 			<div class="container">
 				<div class="section">
@@ -51,7 +51,11 @@
 										</div>
 									</div>
 								</div>
-
+								<div class="row">
+									<div class="col s12">
+										<p>Ingrese las cuentas que va a administrar:</p>
+									</div>
+								</div>
 								<div class="row">
 									<div class="col m4 s12">
 										<div class="input-field">
@@ -63,13 +67,13 @@
 												<option value="espesos">Especial $</option>
 												<option value="esdolares">Especial U$S</option>
 											</select>
-											<label for="">Tipo Cta (*)</label>
+											<label for="">Seleccione tipo cuenta (*)</label>
 										</div>
 									</div>
 									<div class="col m8 s12">
 										<div class="input-field">
 											<input id="numero" type="text" class="validate" required="" aria-required="true">
-											<label for="numero"> Nro. de Cuenta 1 (*)</label>
+											<label for="numero">Ingrese número de Cuenta (*)</label>
 										</div>
 									</div>
 								</div>
@@ -84,24 +88,24 @@
 												<option value="espesos">Especial $</option>
 												<option value="esdolares">Especial U$S</option>
 											</select>
-											<label for="">Tipo Cta</label>
+											<label for="">Seleccione tipo cuenta</label>
 										</div>
 									</div>
 									<div class="col m8 s12">
 										<div class="input-field">
 											<input id="numero" type="text">
-											<label for="numero"> Nro. de Cuenta 2</label>
+											<label for="numero"> Ingrese número de cuenta</label>
 										</div>
 									</div>
 								</div>
 								<div class="row mg-b-0">
 									<div class="col s12">
-										<p>Los campos con asterisco (*) son obligatorios</p>
+										<p><i>Los campos con asterisco (*) son obligatorios</i></p>
 									</div>
 								</div>
 							</div>
 							<div class="card-action right-align">
-								<a id="btn-crear" href="#!" class="azul waves-effect waves-light btn">Crear</a>
+								<a id="btn-crear" href="#!" class="azul waves-effect waves-light btn">Crear administrador</a>
 							</div>
 						</div>
 					</div>

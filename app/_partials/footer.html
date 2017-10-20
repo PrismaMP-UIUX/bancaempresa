@@ -37,5 +37,8 @@
             stopPropagation: false // Stops event propagation
           }
         );
+        $('#modal-nuevo-pago-servicios').modal({
+          ready: function() { $('ul.tabs').tabs(); }
+        });
       });
     </script>

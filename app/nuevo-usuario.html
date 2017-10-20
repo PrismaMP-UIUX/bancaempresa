@@ -1,6 +1,6 @@
 @@include("_partials/header.html")
 	<body>
-		@@include("_partials/nav_admin.html")
+		@@include("_partials/nav_admin-empresa.html")
 		<main>
 			<div class="container">
 				<div class="section">
@@ -53,10 +53,12 @@
 									</div>
 
 
-									<div class="row">
+									<div class="row mg-b-10">
 										<div class="col s12">
 											<p class="label">Perfil</p>
 										</div>
+									</div>
+									<div class="row">
 										<div class="col l4 m2 offset-m2 s4">
 											<input name="perfil" type="radio" id="operador" value="Tiene permisos para generar pagos y/o transferencias" class="with-gap" />
 											<label for="operador">Operador</label>
@@ -130,7 +132,7 @@
 									<div class="orange lighten-4 mg-t-10">
 										<p id="msj-error" class="valign-wrapper"><i class="material-icons left">warning</i>No seleccionaste ningún permiso de cuenta. Elige una cuenta para continuar.</p>
 									</div>
-									<p class="mg-t-10">Los campos con asterisco (*) son obligatorios</p>
+									<p class="mg-t-10"><i>Los campos con asterisco (*) son obligatorios</i></p>
 
 								</div>
 								<div class="card-action right-align">

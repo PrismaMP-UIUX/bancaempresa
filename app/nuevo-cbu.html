@@ -1,6 +1,6 @@
 @@include("_partials/header.html")
 	<body>
-		@@include("_partials/nav_admin-banco.html")
+		@@include("_partials/nav_operador-supervisor.html")
 		<main>
 			<div class="container">
 				<div class="section">
@@ -9,13 +9,13 @@
 						<div class="col m10 offset-m1 s12">
 							<div class="card">
 								<div class="card-content">
-									<h5 class="mg-b-40"><i class="material-icons left">business</i>Nueva empresa</h5>
+									<h5 class="mg-b-40"><i class="material-icons left">playlist_add</i>Nuevo CBU</h5>
 
 									<div class="row">
 										<div class="col s12">
 											<div class="input-field">
-												<input id="nombre-empresa" type="text" class="validate" required="" aria-required="true">
-												<label for="nombre-empresa"> Empresa (*)</label>
+												<input id="cbu" type="text" class="validate" required="" aria-required="true">
+												<label for="cbu"> CBU (*)</label>
 											</div>
 										</div>
 									</div>
@@ -29,11 +29,6 @@
 									</div>
 									<div class="row">
 										<div class="col s12">
-											<p>Ingrese las cuentas que va a administrar:</p>
-										</div>
-									</div>
-									<div class="row">
-										<div class="col m4 s12">
 											<div class="input-field">
 												<select id="">
 													<option value="capesos">CA $</option>
@@ -46,31 +41,12 @@
 												<label for="">Seleccione tipo cuenta (*)</label>
 											</div>
 										</div>
-										<div class="col m8 s12">
-											<div class="input-field">
-												<input id="numero" type="text" class="validate" required="" aria-required="true">
-												<label for="numero">Ingrese número de Cuenta (*)</label>
-											</div>
-										</div>
 									</div>
 									<div class="row">
-										<div class="col m4 s12">
+										<div class="col s12">
 											<div class="input-field">
-												<select id="">
-													<option value="capesos">CA $</option>
-													<option value="cadolares">CA U$S</option>
-													<option value="ccpesos">CC $</option>
-													<option value="ccdolares">CC U$S</option>
-													<option value="espesos">Especial $</option>
-													<option value="esdolares">Especial U$S</option>
-												</select>
-												<label for="">Seleccione tipo cuenta</label>
-											</div>
-										</div>
-										<div class="col m8 s12">
-											<div class="input-field">
-												<input id="numero" type="text">
-												<label for="numero">Ingrese número de Cuenta</label>
+												<textarea id="descripcion" class="materialize-textarea"></textarea>
+												<label for="descripcion">Descripción</label>
 											</div>
 										</div>
 									</div>
@@ -81,7 +57,7 @@
 									</div>
 								</div>
 								<div class="card-action right-align">
-									<a href="#!" class="azul waves-effect waves-light btn">Crear empresa</a>
+									<a href="#!" class="azul waves-effect waves-light btn">Agregar CBU</a>
 								</div>
 							</div>
 						</div>

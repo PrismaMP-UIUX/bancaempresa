@@ -14,7 +14,7 @@
 									<div class="row">
 										<div class="col m6 s12">
 											<div class="input-field">
-												<select id="">
+												<select id="" disabled>
 													<option value="capesos">CA $ 156488913115</option>
 													<option value="cadolares">CA U$S 156488913115</option>
 													<option value="ccpesos">CC $ 156488913115</option>
@@ -22,87 +22,68 @@
 													<option value="espesos">Especial $ 156488913115</option>
 													<option value="esdolares">Especial U$S 156488913115</option>
 												</select>
-												<label for="">Seleccione cuenta origen</label>
+												<label for="">Cuenta origen</label>
 											</div>
 										</div>
 										<div class="col m6 s12">
 											<div class="input-field">
-												<input type="text" value="Cuenta origen" readonly />
-												<label for="">CBU/Alias</label>
+												<input type="text" value="Cuenta origen" disabled />
+												<label for="">Gastos varios</label>
 											</div>
 										</div>
 									</div>
-									<div class="row mg-b-0 grey lighten-4">
+									<div class="row mg-b-0">
 										<div class="col s12">
 											<p class="label grey-text">Cuenta destino</p>
 										</div>
 									</div>
-									<div class="row grey lighten-4">
-										<div class="col s12">
-											<ul class="tabs tabs-fixed-width">
-												<li class="tab grey lighten-4"><a href="#cbu" class="azul-text">CBU</a></li>
-												<li class="tab grey lighten-4"><a href="#alias" class="azul-text">Alias</a></li>
-											</ul>
-										</div>
-										<!-- Inicio de tab cbu -->
-										<div id="cbu" class="col s12">
-											<div class="row">
-												<div class="col s12 mg-t-20">
-													<div class="input-field">
-														<select>
-															<option value="0" selected disabled></option>
-															<option value="1">1234567890123456789012</option>
-															<option value="2">0987654321098765432109</option>
-															<option value="3">6789012345678901234567</option>
-															<option value="4">1029384756102938475610</option>
-														</select>
-														<label for="">Seleccione CBU</label>
-													</div>
-												</div>
+									<div class="row valign-wrapper mg-b-0">
+										<div class="col s11 mg-t-20">
+											<div class="input-field">
+												<select disabled>
+													<option value="0" disabled></option>
+													<option value="1">1234567890123456789012</option>
+													<option value="2" selected >0987654321098765432109</option>
+													<option value="3">6789012345678901234567</option>
+													<option value="4">1029384756102938475610</option>
+												</select>
+												<label for="">CBU/Alias</label>
 											</div>
 										</div>
-										<!-- fin tab cbu -->
-										<!-- Inicio de tab alias -->
-										<div id="alias" class="col s12">
-											<div class="row">
-												<div class="col s12 mg-t-20">
-													<div class="input-field">
-														<select>
-															<option value="0" selected disabled></option>
-															<option value="1">CASA.SILLA.PERRO</option>
-															<option value="2">FLECHA.CAJON.PUENTE</option>
-															<option value="3">GATO.BOTAS.ESPADA</option>
-															<option value="4">BURRO.PANTANO.OGRO</option>
-														</select>
-														<label for="">Seleccione Alias</label>
-													</div>
-												</div>
-											</div>
+										<div class="col s1">
+											<i class="material-icons left green-text">check_circle</i>
 										</div>
-										<!-- fin tab alias -->
 									</div>
 									<div class="row">
 										<div class="col s12">
+											<p class="orange lighten-4">Juan Perez / CUIT/CUIL: 20-33456789-0 / BBVA Francés bla bla</p>
+										</div>
+									</div>
+									<div class="row valign-wrapper">
+										<div class="col s11">
 											<div class="input-field">
-												<select>
-													<option value="1" selected>Cuenta corriente propia</option>
+												<select disabled>
+													<option value="1">Cuenta corriente propia</option>
 													<option value="2">Cuenta corriente no propia</option>
 													<option value="3">Otra cuenta propia</option>
-													<option value="4">Otra cuenta no propia</option>
+													<option value="4" selected>Otra cuenta no propia</option>
 												</select>
 												<label for="">Tipo de cuenta destino</label>
 											</div>
 										</div>
+										<div class="col s1">
+											<i class="material-icons left green-text">check_circle</i>
+										</div>
 									</div>
 									<div class="row">
 										<div class="col s12">
 											<div class="input-field">
-												<select>
-													<option value="1" selected>Varios</option>
+												<select disabled>
+													<option value="1">Varios</option>
 													<option value="2">Honorarios</option>
 													<option value="3">Seguro</option>
 													<option value="4">Préstamo</option>
-													<option value="5">Factura</option>
+													<option value="5" selected>Factura</option>
 													<option value="6">Expensas</option>
 													<option value="7">Cuota</option>
 													<option value="8">Alquileres</option>
@@ -114,25 +95,28 @@
 									<div class="row">
 										<div class="col s12">
 											<div class="input-field">
-												<input id="referencia" type="text">
+												<input id="referencia" type="text" value="FC A-4567" disabled>
 												<label for="referencia">Referencia</label>
 											</div>
 										</div>
 									</div>
-									<div class="row">
-										<div class="col s12">
+									<div class="row valign-wrapper">
+										<div class="col s11">
 											<div class="input-field">
 												<i class="material-icons prefix">attach_money</i>
-												<input id="importe" type="text">
+												<input id="importe" type="text" value="$5.300,00" disabled>
 												<label for="importe">Importe a transferir</label>
 											</div>
+										</div>
+										<div class="col s1">
+											<i class="material-icons left green-text">check_circle</i>
 										</div>
 									</div>
 
 								</div>
 								<div class="card-action right-align">
-									<a href="javascript:history.go(-1)" class="waves-effect waves-light btn-flat grey-text text-darken-4">Cancelar</a>
-									<a href="nueva-transferencia-confirmacion.html" class="azul waves-effect waves-light btn">Pedir aprobación</a>
+									<a href="nueva-transferencia.html" class="waves-effect waves-light btn-flat grey-text text-darken-4">Modificar</a>
+									<a href="#!" class="azul waves-effect waves-light btn">Pedir aprobación</a>
 								</div>
 							</div>
 						</div>
